@@ -16,6 +16,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".GameInfoActivity" />
+        <activity android:name=".ItemsActivity" />
+        <activity android:name=".MechanicsActivity" />
+        <activity android:name=".BiomesActivity" />
+        <activity android:name=".CharactersActivity"/>
     </application>
 
 </manifest>
