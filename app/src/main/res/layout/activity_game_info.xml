@@ -7,4 +7,15 @@
     android:orientation="vertical"
     tools:context="com.zevzikovas.aivaras.terraria.activities.GameInfoActivity">
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/the_game" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Terraria is a land of adventure! A land of mystery! A land that's yours to shape, defend, and enjoy. Your options in Terraria are limitless. Are you an action gamer with an itchy trigger finger? A master builder? A collector? An explorer? There's something for everyone.  Start by building basic shelter, then dig for Ore and other resources. Discover and craft over 300 weapons of magic, ranged, melee, and summon varieties, as well as armor, and use them to battle hundreds of different enemies. Soon you'll be going head-to-head with any of a dozen enormous bosses. Go Fishing, ride a Mount, find Floating Islands, build Houses for helpful NPCs, and much, much more." />
 </LinearLayout>
