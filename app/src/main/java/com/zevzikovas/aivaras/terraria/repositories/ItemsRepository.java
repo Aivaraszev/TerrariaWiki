@@ -64,6 +64,7 @@ public class ItemsRepository extends SQLiteOpenHelper {
         prepareItem(db, "Lead Broadsword", R.drawable.item_lead_broadsword, 15, "Green", 22);
         prepareItem(db, "Silver Broadsword", R.drawable.item_silver_broadsword, 15, "Green", 22);
         prepareItem(db, "Bladed Glove", R.drawable.item_bladed_glove, 15, "Green", 22);
+        prepareItem(db, "Tungsten Broadsword", R.drawable.item_tungsten_broadsword, 15, "Green", 22);
         prepareItem(db, "Zombie Arm", R.drawable.item_zombie_arm, 15, "Green", 22);
         prepareItem(db, "Gold Broadsword", R.drawable.item_gold_broadsword, 15, "Green", 22);
         prepareItem(db, "Platinum Shortsword", R.drawable.item_platinum_shortsword, 15, "Green", 22);
@@ -74,22 +75,20 @@ public class ItemsRepository extends SQLiteOpenHelper {
         prepareItem(db, "Candy Cane Sword", R.drawable.item_candy_cane_sword, 15, "Green", 22);
         prepareItem(db, "Katana", R.drawable.item_katana, 15, "Green", 22);
         prepareItem(db, "Ice Blade", R.drawable.item_ice_blade, 15, "Green", 22);
+        prepareItem(db, "Light's Bane", R.drawable.item_lights_bane, 15, "Green", 22);
+        prepareItem(db, "Muramasa", R.drawable.item_muramasa, 15, "Green", 22);
+        prepareItem(db, "Arkhalis", R.drawable.item_arkhalis, 15, "Green", 22);
+        prepareItem(db, "Exotic Scimitar", R.drawable.item_exotic_scimitar, 15, "Green", 22);
+        prepareItem(db, "Phaseblade", R.drawable.item_phaseblade, 15, "Green", 22);
+        prepareItem(db, "Blood Butcherer", R.drawable.item_blood_butcherer, 15, "Green", 22);
+        prepareItem(db, "Starfury", R.drawable.item_starfury, 15, "Green", 22);
+        prepareItem(db, "Enchanted Sword", R.drawable.item_enchanted_sword, 15, "Green", 22);
+        prepareItem(db, "Purple Clubberfish", R.drawable.item_purple_clubberfish, 15, "Green", 22);
         prepareItem(db, "Bee Keeper", R.drawable.item_bee_keeper, 15, "Green", 22);
-        prepareItem(db, "Bee Keeper", R.drawable.item_bee_keeper, 15, "Green", 22);
-        prepareItem(db, "Bee Keeper", R.drawable.item_bee_keeper, 15, "Green", 22);
-        prepareItem(db, "Bee Keeper", R.drawable.item_bee_keeper, 15, "Green", 22);
-        prepareItem(db, "Bee Keeper", R.drawable.item_bee_keeper, 15, "Green", 22);
-        prepareItem(db, "Bee Keeper", R.drawable.item_bee_keeper, 15, "Green", 22);
-        prepareItem(db, "Bee Keeper", R.drawable.item_bee_keeper, 15, "Green", 22);
-        prepareItem(db, "Bee Keeper", R.drawable.item_bee_keeper, 15, "Green", 22);
-        prepareItem(db, "Bee Keeper", R.drawable.item_bee_keeper, 15, "Green", 22);
-        prepareItem(db, "Bee Keeper", R.drawable.item_bee_keeper, 15, "Green", 22);
-        prepareItem(db, "Bee Keeper", R.drawable.item_bee_keeper, 15, "Green", 22);
-        prepareItem(db, "Bee Keeper", R.drawable.item_bee_keeper, 15, "Green", 22);
-        prepareItem(db, "Bee Keeper", R.drawable.item_bee_keeper, 15, "Green", 22);
-        prepareItem(db, "Bee Keeper", R.drawable.item_bee_keeper, 15, "Green", 22);
-        prepareItem(db, "Bee Keeper", R.drawable.item_bee_keeper, 15, "Green", 22);
-        prepareItem(db, "Bee Keeper", R.drawable.item_bee_keeper, 15, "Green", 22);
+        prepareItem(db, "Falcon Blade", R.drawable.item_falcon_blade, 15, "Green", 22);
+        prepareItem(db, "Blade of Grass", R.drawable.item_blade_of_grass, 15, "Green", 22);
+        prepareItem(db, "Fiery Greatsword", R.drawable.item_fiery_greatsword, 15, "Green", 22);
+        prepareItem(db, "Night's Edge", R.drawable.item_nights_edge, 15, "Green", 22);
     }
 
     @Override
