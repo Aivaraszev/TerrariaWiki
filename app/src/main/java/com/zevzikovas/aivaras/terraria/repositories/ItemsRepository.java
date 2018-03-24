@@ -90,7 +90,6 @@ public class ItemsRepository extends SQLiteOpenHelper {
         prepareItem(db, "Bee Keeper", R.drawable.item_bee_keeper, 15, "Green", 22);
         prepareItem(db, "Bee Keeper", R.drawable.item_bee_keeper, 15, "Green", 22);
         prepareItem(db, "Bee Keeper", R.drawable.item_bee_keeper, 15, "Green", 22);
-        prepareItem(db, "Bee Keeper", R.drawable.item_bee_keeper, 15, "Green", 22);
     }
 
     @Override
