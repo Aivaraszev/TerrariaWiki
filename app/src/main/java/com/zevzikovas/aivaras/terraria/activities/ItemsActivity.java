@@ -33,7 +33,7 @@ public class ItemsActivity extends Activity {
 
         itemListAdapter = new ItemListAdapter(this, R.layout.item_list_item, items);
 
-        itemListView = findViewById(R.id.itemsList);
+        itemListView = findViewById(R.id.ItemsList);
         itemListView.setAdapter(itemListAdapter);
         itemListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
