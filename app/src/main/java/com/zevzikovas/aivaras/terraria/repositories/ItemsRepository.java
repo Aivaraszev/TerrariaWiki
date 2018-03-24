@@ -45,9 +45,9 @@ public class ItemsRepository extends SQLiteOpenHelper {
             ")"
         );
 
-        prepareItem(db, "Some item", R.drawable.item_bee_keeper, 15, "Green", 22);
-        prepareItem(db, "Some item 2", R.drawable.item_blade_of_grass, 15, "Green", 22);
-        prepareItem(db, "Some item 3", R.drawable.item_bladed_glove, 15, "Green", 22);
+        prepareItem(db, "Bee Keeper", R.drawable.item_bee_keeper, 15, "Green", 22);
+        prepareItem(db, "Blade of Grass", R.drawable.item_blade_of_grass, 15, "Green", 22);
+        prepareItem(db, "Bladed Glove", R.drawable.item_bladed_glove, 15, "Green", 22);
     }
 
     @Override
