@@ -18,7 +18,7 @@ public class DataBase extends SQLiteOpenHelper {
 
     private static final String ID = "id";
     private static final String RECIPE = "pavadinimas";
-    private static final String PRODUCTS = "produktai";
+    private static final String PRODUCTS = "items";
 
 
     public DataBase(Context context) {
