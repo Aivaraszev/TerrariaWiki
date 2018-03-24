@@ -45,9 +45,52 @@ public class ItemsRepository extends SQLiteOpenHelper {
             ")"
         );
 
-        prepareItem(db, "Some item", R.drawable.item_bee_keeper, 15, "Green", 22);
-        prepareItem(db, "Some item 2", R.drawable.item_blade_of_grass, 15, "Green", 22);
-        prepareItem(db, "Some item 3", R.drawable.item_bladed_glove, 15, "Green", 22);
+        prepareItem(db, "Copper Short Sword", R.drawable.item_copper_shortsword, 15, "Green", 22);
+        prepareItem(db, "Tin Short Sword", R.drawable.item_tin_shortsword, 15, "Green", 22);
+        prepareItem(db, "Wooden Sword", R.drawable.item_wooden_sword, 15, "Green", 22);
+        prepareItem(db, "Boreal Wood Sword", R.drawable.item_copper_broadsword, 15, "Green", 22);
+        prepareItem(db, "Iron Short Sword", R.drawable.item_iron_shortsword, 15, "Green", 22);
+        prepareItem(db, "Palm Wood Sword", R.drawable.item_palm_wood_sword, 15, "Green", 22);
+        prepareItem(db, "Rich Mahogany Sword", R.drawable.item_rich_mahogany_sword, 15, "Green", 22);
+        prepareItem(db, "Cactus Sword", R.drawable.item_cactus_sword, 15, "Green", 22);
+        prepareItem(db, "Bee Keeper", R.drawable.item_lead_shortsword, 15, "Green", 22);
+        prepareItem(db, "Bee Keeper", R.drawable.item_silver_shortsword, 15, "Green", 22);
+        prepareItem(db, "Bee Keeper", R.drawable.item_tin_broadsword, 15, "Green", 22);
+        prepareItem(db, "Bee Keeper", R.drawable.item_ebonwood_sword, 15, "Green", 22);
+        prepareItem(db, "Bee Keeper", R.drawable.item_iron_broadsword, 15, "Green", 22);
+        prepareItem(db, "Bee Keeper", R.drawable.item_shadewood_sword, 15, "Green", 22);
+        prepareItem(db, "Bee Keeper", R.drawable.item_tungsten_shortsword, 15, "Green", 22);
+        prepareItem(db, "Bee Keeper", R.drawable.item_gold_short_sword, 15, "Green", 22);
+        prepareItem(db, "Bee Keeper", R.drawable.item_lead_broadsword, 15, "Green", 22);
+        prepareItem(db, "Bee Keeper", R.drawable.item_bee_keeper, 15, "Green", 22);
+        prepareItem(db, "Bee Keeper", R.drawable.item_bee_keeper, 15, "Green", 22);
+        prepareItem(db, "Bee Keeper", R.drawable.item_bee_keeper, 15, "Green", 22);
+        prepareItem(db, "Bee Keeper", R.drawable.item_bee_keeper, 15, "Green", 22);
+        prepareItem(db, "Bee Keeper", R.drawable.item_bee_keeper, 15, "Green", 22);
+        prepareItem(db, "Bee Keeper", R.drawable.item_bee_keeper, 15, "Green", 22);
+        prepareItem(db, "Bee Keeper", R.drawable.item_bee_keeper, 15, "Green", 22);
+        prepareItem(db, "Bee Keeper", R.drawable.item_bee_keeper, 15, "Green", 22);
+        prepareItem(db, "Bee Keeper", R.drawable.item_bee_keeper, 15, "Green", 22);
+        prepareItem(db, "Bee Keeper", R.drawable.item_bee_keeper, 15, "Green", 22);
+        prepareItem(db, "Bee Keeper", R.drawable.item_bee_keeper, 15, "Green", 22);
+        prepareItem(db, "Bee Keeper", R.drawable.item_bee_keeper, 15, "Green", 22);
+        prepareItem(db, "Bee Keeper", R.drawable.item_bee_keeper, 15, "Green", 22);
+        prepareItem(db, "Bee Keeper", R.drawable.item_bee_keeper, 15, "Green", 22);
+        prepareItem(db, "Bee Keeper", R.drawable.item_bee_keeper, 15, "Green", 22);
+        prepareItem(db, "Bee Keeper", R.drawable.item_bee_keeper, 15, "Green", 22);
+        prepareItem(db, "Bee Keeper", R.drawable.item_bee_keeper, 15, "Green", 22);
+        prepareItem(db, "Bee Keeper", R.drawable.item_bee_keeper, 15, "Green", 22);
+        prepareItem(db, "Bee Keeper", R.drawable.item_bee_keeper, 15, "Green", 22);
+        prepareItem(db, "Bee Keeper", R.drawable.item_bee_keeper, 15, "Green", 22);
+        prepareItem(db, "Bee Keeper", R.drawable.item_bee_keeper, 15, "Green", 22);
+        prepareItem(db, "Bee Keeper", R.drawable.item_bee_keeper, 15, "Green", 22);
+        prepareItem(db, "Bee Keeper", R.drawable.item_bee_keeper, 15, "Green", 22);
+        prepareItem(db, "Bee Keeper", R.drawable.item_bee_keeper, 15, "Green", 22);
+        prepareItem(db, "Bee Keeper", R.drawable.item_bee_keeper, 15, "Green", 22);
+        prepareItem(db, "Bee Keeper", R.drawable.item_bee_keeper, 15, "Green", 22);
+        prepareItem(db, "Bee Keeper", R.drawable.item_bee_keeper, 15, "Green", 22);
+        prepareItem(db, "Bee Keeper", R.drawable.item_bee_keeper, 15, "Green", 22);
+        prepareItem(db, "Bee Keeper", R.drawable.item_bee_keeper, 15, "Green", 22);
     }
 
     @Override
