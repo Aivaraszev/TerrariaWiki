@@ -45,7 +45,41 @@ public class HSwordsRepository extends SQLiteOpenHelper {
                         PRICE + " INTEGER" +
                         ")"
         );
-        prepareHswords(db, "Copper Shortsword", R.drawable.item_copper_shortsword, 5, "White", 70);
+        prepareHswords(db, "Pearlwood sword", R.drawable.item_pearlwood_sword, 11, "White", 20);
+        prepareHswords(db, "Copper Shortsword", R.drawable.item_classy_cane, 16, "Green", 5000);
+        prepareHswords(db, "Copper Shortsword", R.drawable.item_pearlwood_sword, 11, "White", 20);
+        prepareHswords(db, "Copper Shortsword", R.drawable.item_pearlwood_sword, 11, "White", 20);
+        prepareHswords(db, "Copper Shortsword", R.drawable.item_pearlwood_sword, 11, "White", 20);
+        prepareHswords(db, "Copper Shortsword", R.drawable.item_pearlwood_sword, 11, "White", 20);
+        prepareHswords(db, "Copper Shortsword", R.drawable.item_pearlwood_sword, 11, "White", 20);
+        prepareHswords(db, "Copper Shortsword", R.drawable.item_pearlwood_sword, 11, "White", 20);
+        prepareHswords(db, "Copper Shortsword", R.drawable.item_pearlwood_sword, 11, "White", 20);
+        prepareHswords(db, "Copper Shortsword", R.drawable.item_pearlwood_sword, 11, "White", 20);
+        prepareHswords(db, "Copper Shortsword", R.drawable.item_pearlwood_sword, 11, "White", 20);
+        prepareHswords(db, "Copper Shortsword", R.drawable.item_pearlwood_sword, 11, "White", 20);
+        prepareHswords(db, "Copper Shortsword", R.drawable.item_pearlwood_sword, 11, "White", 20);
+        prepareHswords(db, "Copper Shortsword", R.drawable.item_pearlwood_sword, 11, "White", 20);
+        prepareHswords(db, "Copper Shortsword", R.drawable.item_pearlwood_sword, 11, "White", 20);
+        prepareHswords(db, "Copper Shortsword", R.drawable.item_pearlwood_sword, 11, "White", 20);
+        prepareHswords(db, "Copper Shortsword", R.drawable.item_pearlwood_sword, 11, "White", 20);
+        prepareHswords(db, "Copper Shortsword", R.drawable.item_pearlwood_sword, 11, "White", 20);
+        prepareHswords(db, "Copper Shortsword", R.drawable.item_pearlwood_sword, 11, "White", 20);
+        prepareHswords(db, "Copper Shortsword", R.drawable.item_pearlwood_sword, 11, "White", 20);
+        prepareHswords(db, "Copper Shortsword", R.drawable.item_pearlwood_sword, 11, "White", 20);
+        prepareHswords(db, "Copper Shortsword", R.drawable.item_pearlwood_sword, 11, "White", 20);
+        prepareHswords(db, "Copper Shortsword", R.drawable.item_pearlwood_sword, 11, "White", 20);
+        prepareHswords(db, "Copper Shortsword", R.drawable.item_pearlwood_sword, 11, "White", 20);
+        prepareHswords(db, "Copper Shortsword", R.drawable.item_pearlwood_sword, 11, "White", 20);
+        prepareHswords(db, "Copper Shortsword", R.drawable.item_pearlwood_sword, 11, "White", 20);
+        prepareHswords(db, "Copper Shortsword", R.drawable.item_pearlwood_sword, 11, "White", 20);
+        prepareHswords(db, "Copper Shortsword", R.drawable.item_pearlwood_sword, 11, "White", 20);
+        prepareHswords(db, "Copper Shortsword", R.drawable.item_pearlwood_sword, 11, "White", 20);
+        prepareHswords(db, "Copper Shortsword", R.drawable.item_pearlwood_sword, 11, "White", 20);
+        prepareHswords(db, "Copper Shortsword", R.drawable.item_pearlwood_sword, 11, "White", 20);
+        prepareHswords(db, "Copper Shortsword", R.drawable.item_pearlwood_sword, 11, "White", 20);
+        prepareHswords(db, "Copper Shortsword", R.drawable.item_pearlwood_sword, 11, "White", 20);
+        prepareHswords(db, "Copper Shortsword", R.drawable.item_pearlwood_sword, 11, "White", 20);
+        prepareHswords(db, "Copper Shortsword", R.drawable.item_pearlwood_sword, 11, "White", 20);
     }
 
     @Override
