@@ -17,30 +17,30 @@ import java.util.List;
 
 public class HswordActivity extends Activity {
 
-    ListView hswordsListView;
-    HswordsListAdapter hswordsListAdapter;
-    List<Hswords> hsword;
-    HSwordsRepository hswordRepository;
+    ListView pickaxesListView;
+    HswordsListAdapter pickaxesListAdapter;
+    List<Hswords> pickaxe;
+    HSwordsRepository pickaxeRepository;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hsword);
 
-        hswordRepository = new hswordRepository(this);
+        pickaxeRepository = new pickaxeRepository(this);
 
-        hsword = hswordRepository.getAllHsword();
+        pickaxe = pickaxeRepository.getAllPickaxe();
 
-        hswordsListAdapter = new HswordsListAdapter(this, R.layout.hswords_list_item, hsword);
+        pickaxesListAdapter = new HswordsListAdapter(this, R.layout.hswords_list_item, pickaxe);
 
-        hswordsListView = findViewById(R.id.HswordList);
-        hswordsListView.setAdapter(hswordsListAdapter);
-        hswordsListView.setOnHswordsClickListener(new AdapterView.OnHswordsClickListener() {
+        pickaxesListView = findViewById(R.id.PickaxeList);
+        pickaxesListView.setAdapter(pickaxesListAdapter);
+        pickaxesListView.setOnPickaxesClickListener(new AdapterView.OnPickaxesClickListener() {
             @Override
             public void onHswordsClick(AdapterView<?> adapterView, View view, int position, long l) {
-                Intent i = new Intent(getApplicationContext(), HswordsDescriptionActivity.class);
+                Intent i = new Intent(getApplicationContext(), PickaxesDescriptionActivity.class);
 
-                int hswordsId = hsword.get(position).id;
+                int hswordsId = pickaxe.get(position).id;
                 i.putExtra("hswordsId", hswordsId);
 
                 startActivity(i);
