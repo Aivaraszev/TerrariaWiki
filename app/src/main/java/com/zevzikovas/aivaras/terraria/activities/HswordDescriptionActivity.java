@@ -7,15 +7,15 @@ import android.widget.TextView;
 
 import com.zevzikovas.aivaras.terraria.R;
 
-public class ItemDescriptionActivity extends Activity {
+public class HswordDescriptionActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_item_description);
+        setContentView(R.layout.activity_hswords_description);
 
         Intent i = getIntent();
-        TextView itemId = findViewById(R.id.hswordsId);
-        itemId.setText(String.valueOf(i.getIntExtra("itemId", 0)));
+        TextView hswordsId = findViewById(R.id.hswordsId);
+        hswordsId.setText(String.valueOf(i.getIntExtra("hswordsId", 0)));
     }
 }

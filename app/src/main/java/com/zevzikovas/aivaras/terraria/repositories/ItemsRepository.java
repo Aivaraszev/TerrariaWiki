@@ -1,7 +1,6 @@
 package com.zevzikovas.aivaras.terraria.repositories;
 
 import android.content.ContentValues;
-import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
@@ -12,12 +11,7 @@ import com.zevzikovas.aivaras.terraria.models.Item;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ItemsRepository extends SQLiteOpenHelper {
-
-    private static final int DATABASE_VERSION = 1;
-
-    private static final String DATABASE_NAME = "terraria_wiki_db";
-
+public class ItemsRepository {
     private static final String TABLE_NAME = "items";
 
     private static final String ID = "id";
@@ -26,14 +20,13 @@ public class ItemsRepository extends SQLiteOpenHelper {
     private static final String DAMAGE = "damage";
     private static final String RARITY = "rarity";
     private static final String PRICE = "price";
+    private SQLiteOpenHelper dbHelper;
 
-
-    public ItemsRepository(Context context) {
-        super(context, DATABASE_NAME, null, DATABASE_VERSION);
+    public ItemsRepository(SQLiteOpenHelper dbHelper) {
+        this.dbHelper = dbHelper;
     }
 
-    @Override
-    public void onCreate(SQLiteDatabase db) {
+    public void create(SQLiteDatabase db) {
         db.execSQL(
             "CREATE TABLE " + TABLE_NAME + "(" +
                 ID + " INTEGER PRIMARY KEY," +
@@ -44,7 +37,13 @@ public class ItemsRepository extends SQLiteOpenHelper {
                 PRICE + " INTEGER" +
             ")"
         );
+    }
 
+    public void drop(SQLiteDatabase db) {
+        db.execSQL("DROP TABLE IF EXISTS " + TABLE_NAME);
+    }
+
+    public void fill(SQLiteDatabase db) {
         prepareItem(db, "Copper Shortsword", R.drawable.item_copper_shortsword, 5, "White", 70);
         prepareItem(db, "Tin Shortsword", R.drawable.item_tin_shortsword, 7, "White", 105);
         prepareItem(db, "Wooden Sword", R.drawable.item_wooden_sword, 7, "White", 20);
@@ -92,12 +91,6 @@ public class ItemsRepository extends SQLiteOpenHelper {
         prepareItem(db, "Night's Edge", R.drawable.item_nights_edge, 42, "Orange", 10800);
     }
 
-    @Override
-    public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-        db.execSQL("DROP TABLE IF EXISTS " + TABLE_NAME);
-        onCreate(db);
-    }
-
     private void prepareItem(SQLiteDatabase db, String name, int picture, int damage, String rarity, int price) {
         ContentValues values = new ContentValues();
         values.put(NAME, name);
@@ -109,7 +102,7 @@ public class ItemsRepository extends SQLiteOpenHelper {
     }
 
     public void addItem(Item item) {
-        SQLiteDatabase db = this.getWritableDatabase();
+        SQLiteDatabase db = dbHelper.getWritableDatabase();
 
         ContentValues values = new ContentValues();
         values.put(NAME, item.name);
@@ -124,7 +117,7 @@ public class ItemsRepository extends SQLiteOpenHelper {
 
     public List<Item> getAllItems() {
         List<Item> items = new ArrayList<>();
-        SQLiteDatabase db = this.getReadableDatabase();
+        SQLiteDatabase db = dbHelper.getReadableDatabase();
         String selectQuery = "SELECT * FROM " + TABLE_NAME;
         Cursor cursor = db.rawQuery(selectQuery, null);
 

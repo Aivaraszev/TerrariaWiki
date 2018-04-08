@@ -11,6 +11,7 @@ import com.zevzikovas.aivaras.terraria.R;
 import com.zevzikovas.aivaras.terraria.adapters.ItemListAdapter;
 import com.zevzikovas.aivaras.terraria.models.Item;
 import com.zevzikovas.aivaras.terraria.repositories.ItemsRepository;
+import com.zevzikovas.aivaras.terraria.repositories.RepositoryManager;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -20,16 +21,16 @@ public class ItemsActivity extends Activity {
     ListView itemListView;
     ItemListAdapter itemListAdapter;
     List<Item> items;
-    ItemsRepository itemsRepository;
+    RepositoryManager repositoryManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_items);
 
-        itemsRepository = new ItemsRepository(this);
+        repositoryManager = new RepositoryManager(this);
 
-        items = itemsRepository.getAllItems();
+        items = repositoryManager.itemsRepository.getAllItems();
 
         itemListAdapter = new ItemListAdapter(this, R.layout.item_list_item, items);
 
