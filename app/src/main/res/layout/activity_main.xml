@@ -48,4 +48,11 @@
         android:layout_height="wrap_content"
         android:onClick="CharactersList"
         android:text="Characters" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="HswordsList"
+        android:text="Button" />
 </LinearLayout>

@@ -11,6 +11,7 @@ import com.zevzikovas.aivaras.terraria.R;
 import com.zevzikovas.aivaras.terraria.adapters.HswordsListAdapter;
 import com.zevzikovas.aivaras.terraria.models.Hswords;
 import com.zevzikovas.aivaras.terraria.repositories.HSwordsRepository;
+import com.zevzikovas.aivaras.terraria.repositories.RepositoryManager;
 
 import java.util.List;
 
@@ -20,16 +21,16 @@ public class HswordActivity extends Activity {
     ListView hswordsListView;
     HswordsListAdapter hswordsListAdapter;
     List<Hswords> hsword;
-    HSwordsRepository hswordRepository;
+    RepositoryManager repositoryManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hsword);
 
-        hswordRepository = new HSwordsRepository(this);
+        repositoryManager = new RepositoryManager(this);
 
-        hsword = hswordRepository.getAllHsword();
+        hsword = repositoryManager.hSwordsRepository.getAllHsword();
 
         hswordsListAdapter = new HswordsListAdapter(this, R.layout.hswords_list_item, hsword);
 
