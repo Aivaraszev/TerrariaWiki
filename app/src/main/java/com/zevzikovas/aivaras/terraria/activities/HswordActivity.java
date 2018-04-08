@@ -8,6 +8,7 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 
 import com.zevzikovas.aivaras.terraria.R;
+import com.zevzikovas.aivaras.terraria.adapters.HswordsListAdapter;
 import com.zevzikovas.aivaras.terraria.models.Hswords;
 import com.zevzikovas.aivaras.terraria.repositories.HSwordsRepository;
 
@@ -26,7 +27,7 @@ public class HswordActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hsword);
 
-        hswordRepository = new HSwordsRepository(this);
+        hswordRepository = new hswordRepository(this);
 
         hsword = hswordRepository.getAllHsword();
 
@@ -34,9 +35,9 @@ public class HswordActivity extends Activity {
 
         hswordsListView = findViewById(R.id.HswordList);
         hswordsListView.setAdapter(hswordsListAdapter);
-        hswordsListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        hswordsListView.setOnHswordClickListener(new AdapterView.OnHswordsClickListener() {
             @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
+            public void onHswordsClick(AdapterView<?> adapterView, View view, int position, long l) {
                 Intent i = new Intent(getApplicationContext(), HswordDescriptionActivity.class);
 
                 int hswordsId = hsword.get(position).id;
