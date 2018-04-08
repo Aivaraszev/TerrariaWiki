@@ -15,7 +15,7 @@ import java.util.List;
 
 public class HswordsListAdapter extends ArrayAdapter<Hswords> {
     public HswordsListAdapter(Context context, int resource, List<Hswords> hsword) {
-        super(context, resource, hswords);
+        super(context, resource, hsword);
     }
 
     @Override
