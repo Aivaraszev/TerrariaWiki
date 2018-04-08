@@ -38,8 +38,6 @@ public class HswordsListAdapter extends ArrayAdapter<Hswords> {
         return convertView;
     }
 
-
-
 }
 
 
