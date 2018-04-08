@@ -20,7 +20,7 @@ public class HswordsListAdapter extends ArrayAdapter<Hswords> {
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        Hswords hswords = getHswords(position);
+        Hswords hswords = getItem(position);
 
         if (convertView == null) {
             convertView = LayoutInflater.from(getContext()).inflate(R.layout.hswords_list_item, parent, false);
@@ -37,9 +37,4 @@ public class HswordsListAdapter extends ArrayAdapter<Hswords> {
 
         return convertView;
     }
-
-
-
 }
-
-

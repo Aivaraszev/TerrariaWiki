@@ -99,5 +99,4 @@ public class PickaxesRepository  extends SQLiteOpenHelper {
 
             return pickaxe;
         }
-    }
 }

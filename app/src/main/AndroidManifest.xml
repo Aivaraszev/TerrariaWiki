@@ -16,6 +16,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+       <activity android:name=".activities.HswordDescriptionActivity" />
+        <activity android:name=".activities.HswordActivity" />
         <activity android:name=".activities.GameInfoActivity" />
         <activity android:name=".activities.ItemsActivity" />
         <activity android:name=".activities.MechanicsActivity" />
