@@ -13,29 +13,30 @@ import com.zevzikovas.aivaras.terraria.models.Hswords;
 
 import java.util.List;
 
-    public class HswordListAdapter  extends ArrayAdapter<hsword> {
-        public HswordListAdapter(Context context, int resource, List<hsword> hsword) {
-            super(context, resource, hsword);
-        }
-
-        @Override
-        public View getView(int position, View convertView, ViewGroup parent) {
-            Hswords hsword = getHsword(position);
-
-            if (convertView == null) {
-                convertView = LayoutInflater.from(getContext()).inflate(R.layout.hsword_list_hsword, parent, false);
-            }
-
-            if (hsword != null) {
-                TextView hswordName = convertView.findViewById(R.id.hswordName);
-                ImageView hswordPicture = convertView.findViewById(R.id.hswordPicture);
-
-                hswordName.setText(hsword.name);
-                hswordPicture.setImageResource(hsword.picture);
-            }
-
-            return convertView;
-        }
+public class HswordsListAdapter extends ArrayAdapter<Hswords> {
+    public HswordsListAdapter(Context context, int resource, List<Hswords> hsword) {
+        super(context, resource, hswords);
     }
 
+    @Override
+    public View getView(int position, View convertView, ViewGroup parent) {
+        Hswords hswords = getHswords(position);
+
+        if (convertView == null) {
+            convertView = LayoutInflater.from(getContext()).inflate(R.layout.hswords_list_item, parent, false);
+        }
+
+        if (hswords != null) {
+            TextView hswordsName = convertView.findViewById(R.id.hswordsName);
+            TextView hswordsDamage = convertView.findViewById(R.id.hswordsDamage);
+            ImageView hswordsPicture = convertView.findViewById(R.id.hswordsPicture);
+
+            hswordsName.setText(hswords.name);
+            hswordsPicture.setImageResource(hswords.picture);
+        }
+
+        return convertView;
+    }
 }
+
+
