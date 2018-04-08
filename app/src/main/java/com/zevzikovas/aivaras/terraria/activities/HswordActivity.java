@@ -35,10 +35,10 @@ public class HswordActivity extends Activity {
 
         hswordsListView = findViewById(R.id.HswordList);
         hswordsListView.setAdapter(hswordsListAdapter);
-        hswordsListView.setOnHswordsClickListener(new AdapterView.OnHswordsClickListener() {
+        hswordsListView.setOnHswordClickListener(new AdapterView.OnHswordsClickListener() {
             @Override
             public void onHswordsClick(AdapterView<?> adapterView, View view, int position, long l) {
-                Intent i = new Intent(getApplicationContext(), HswordsDescriptionActivity.class);
+                Intent i = new Intent(getApplicationContext(), HswordDescriptionActivity.class);
 
                 int hswordsId = hsword.get(position).id;
                 i.putExtra("hswordsId", hswordsId);

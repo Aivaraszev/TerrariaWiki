@@ -28,7 +28,7 @@ public class ItemListAdapter extends ArrayAdapter<Item> {
 
         if (item != null) {
             TextView itemName = convertView.findViewById(R.id.itemName);
-            TextView itemDamage = convertView.findViewById(R.id.itemDamage);
+            TextView itemDamage = convertView.findViewById(R.id.hswordsDamage);
             ImageView itemPicture = convertView.findViewById(R.id.itemPicture);
 
             itemName.setText(item.name);

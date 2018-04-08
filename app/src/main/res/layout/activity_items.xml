@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.zevzikovas.aivaras.terraria.activities.ItemsActivity">
+    tools:context="com.zevzikovas.aivaras.terraria.activities.HswordActivity">
 
     <ImageView
         android:id="@+id/imageView3"

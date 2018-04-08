@@ -45,9 +45,10 @@ public class HSwordsRepository extends SQLiteOpenHelper {
                         PRICE + " INTEGER" +
                         ")"
         );
+        prepareItem(db, "Copper Shortsword", R.drawable.item_copper_shortsword, 5, "White", 70);
     }
 
-        @Override
+    @Override
         public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
             db.execSQL("DROP TABLE IF EXISTS " + TABLE_NAME);
             onCreate(db);
@@ -77,7 +78,7 @@ public class HSwordsRepository extends SQLiteOpenHelper {
             db.close();
         }
 
-        public List<Hswords> getAllHSword() {
+        public List<Hswords> getAllHsword() {
             List<Hswords> hsword = new ArrayList<>();
             SQLiteDatabase db = this.getReadableDatabase();
             String selectQuery = "SELECT * FROM " + TABLE_NAME;
