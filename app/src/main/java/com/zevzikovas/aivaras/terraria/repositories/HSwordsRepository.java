@@ -77,8 +77,8 @@ public class HSwordsRepository extends SQLiteOpenHelper {
             db.close();
         }
 
-        public List<Hswords> getAllHSwords() {
-            List<Hswords> hswords = new ArrayList<>();
+        public List<Hswords> getAllHSword() {
+            List<Hswords> hsword = new ArrayList<>();
             SQLiteDatabase db = this.getReadableDatabase();
             String selectQuery = "SELECT * FROM " + TABLE_NAME;
             Cursor cursor = db.rawQuery(selectQuery, null);
@@ -94,13 +94,13 @@ public class HSwordsRepository extends SQLiteOpenHelper {
                             cursor.getInt(5)
                     );
 
-                    hswords.add(hswords);
+                    hsword.add(hswords);
                 } while (cursor.moveToNext());
             }
 
             cursor.close();
             db.close();
 
-            return hswords;
+            return hsword;
         }
     }
