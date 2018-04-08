@@ -45,23 +45,24 @@ public class HSwordsRepository extends SQLiteOpenHelper {
                         PRICE + " INTEGER" +
                         ")"
         );
+        prepareHswords(db, "Copper Shortsword", R.drawable.item_copper_shortsword, 5, "White", 70);
     }
 
-        @Override
+    @Override
         public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
             db.execSQL("DROP TABLE IF EXISTS " + TABLE_NAME);
             onCreate(db);
         }
 
-        private void prepareHswords(SQLiteDatabase db, String name, int picture, int damage, String rarity, int price) {
-            ContentValues values = new ContentValues();
-            values.put(NAME, name);
-            values.put(PICTURE, picture);
-            values.put(DAMAGE, damage);
-            values.put(RARITY, rarity);
-            values.put(PRICE, price);
-            db.insert(TABLE_NAME, null, values);
-        }
+    private void prepareHswords(SQLiteDatabase db, String name, int picture, int damage, String rarity, int price) {
+        ContentValues values = new ContentValues();
+        values.put(NAME, name);
+        values.put(PICTURE, picture);
+        values.put(DAMAGE, damage);
+        values.put(RARITY, rarity);
+        values.put(PRICE, price);
+        db.insert(TABLE_NAME, null, values);
+    }
 
         public void addHswords(Hswords hswords) {
             SQLiteDatabase db = this.getWritableDatabase();
@@ -77,7 +78,7 @@ public class HSwordsRepository extends SQLiteOpenHelper {
             db.close();
         }
 
-        public List<Hswords> getAllHSword() {
+        public List<Hswords> getAllHsword() {
             List<Hswords> hsword = new ArrayList<>();
             SQLiteDatabase db = this.getReadableDatabase();
             String selectQuery = "SELECT * FROM " + TABLE_NAME;

@@ -15,7 +15,7 @@ public class ItemDescriptionActivity extends Activity {
         setContentView(R.layout.activity_item_description);
 
         Intent i = getIntent();
-        TextView itemId = findViewById(R.id.itemId);
+        TextView itemId = findViewById(R.id.hswordsId);
         itemId.setText(String.valueOf(i.getIntExtra("itemId", 0)));
     }
 }
