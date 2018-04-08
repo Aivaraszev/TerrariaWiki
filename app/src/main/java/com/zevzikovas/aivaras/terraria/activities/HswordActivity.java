@@ -37,7 +37,7 @@ public class HswordActivity extends Activity {
         hswordsListView.setAdapter(hswordsListAdapter);
         hswordsListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
-            public void onHswordsClick(AdapterView<?> adapterView, View view, int position, long l) {
+            public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
                 Intent i = new Intent(getApplicationContext(), HswordDescriptionActivity.class);
 
                 int hswordsId = hsword.get(position).id;
