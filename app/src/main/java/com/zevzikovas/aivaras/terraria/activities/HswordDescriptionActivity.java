@@ -1,8 +1,21 @@
 package com.zevzikovas.aivaras.terraria.activities;
 
-/**
- * Created by PM3762TP on 2018-04-08.
- */
+import android.app.Activity;
+import android.content.Intent;
+import android.os.Bundle;
+import android.widget.TextView;
 
-public class HswordDescriptionActivity {
+import com.zevzikovas.aivaras.terraria.R;
+
+public class HswordDescriptionActivity extends Activity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_hswords_description);
+
+        Intent i = getIntent();
+        TextView hswordsId = findViewById(R.id.hswordsId);
+        hswordsId.setText(String.valueOf(i.getIntExtra("hswordsId", 0)));
+    }
 }
