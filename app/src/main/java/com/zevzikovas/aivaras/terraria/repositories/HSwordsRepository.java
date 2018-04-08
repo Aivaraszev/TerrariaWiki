@@ -45,7 +45,7 @@ public class HSwordsRepository extends SQLiteOpenHelper {
                         PRICE + " INTEGER" +
                         ")"
         );
-        prepareItem(db, "Copper Shortsword", R.drawable.item_copper_shortsword, 5, "White", 70);
+        prepareHswords(db, "Copper Shortsword", R.drawable.item_copper_shortsword, 5, "White", 70);
     }
 
     @Override
@@ -54,15 +54,15 @@ public class HSwordsRepository extends SQLiteOpenHelper {
             onCreate(db);
         }
 
-        private void prepareHswords(SQLiteDatabase db, String name, int picture, int damage, String rarity, int price) {
-            ContentValues values = new ContentValues();
-            values.put(NAME, name);
-            values.put(PICTURE, picture);
-            values.put(DAMAGE, damage);
-            values.put(RARITY, rarity);
-            values.put(PRICE, price);
-            db.insert(TABLE_NAME, null, values);
-        }
+    private void prepareHswords(SQLiteDatabase db, String name, int picture, int damage, String rarity, int price) {
+        ContentValues values = new ContentValues();
+        values.put(NAME, name);
+        values.put(PICTURE, picture);
+        values.put(DAMAGE, damage);
+        values.put(RARITY, rarity);
+        values.put(PRICE, price);
+        db.insert(TABLE_NAME, null, values);
+    }
 
         public void addHswords(Hswords hswords) {
             SQLiteDatabase db = this.getWritableDatabase();
