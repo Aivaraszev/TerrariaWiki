@@ -39,6 +39,8 @@ public class PickaxesRepository  extends SQLiteOpenHelper {
                             DAMAGE + " INTEGER," +
                             RARITY + " TEXT," +
                             PRICE + " INTEGER" +
+                            PICKAXE_POWER + " INTEGER" +
+                            PICKAXE_POWER + " INTEGER" +
                             ")"
             );
         }
@@ -68,6 +70,7 @@ public class PickaxesRepository  extends SQLiteOpenHelper {
             values.put(DAMAGE, pickaxes.damage);
             values.put(RARITY, pickaxes.rarity);
             values.put(PRICE, pickaxes.price);
+            values.put(POWER, pickaxes.power);
 
             db.insert(TABLE_NAME, null, values);
             db.close();
