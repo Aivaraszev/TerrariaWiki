@@ -8,7 +8,6 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 
 import com.zevzikovas.aivaras.terraria.R;
-import com.zevzikovas.aivaras.terraria.adapters.HswordsListAdapter;
 import com.zevzikovas.aivaras.terraria.models.Hswords;
 import com.zevzikovas.aivaras.terraria.repositories.HSwordsRepository;
 
