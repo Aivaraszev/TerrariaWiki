@@ -10,11 +10,13 @@ import android.widget.ListView;
 import com.zevzikovas.aivaras.terraria.R;
 import com.zevzikovas.aivaras.terraria.adapters.ItemListAdapter;
 import com.zevzikovas.aivaras.terraria.models.Item;
+import com.zevzikovas.aivaras.terraria.repositories.ItemsRepository;
 import com.zevzikovas.aivaras.terraria.repositories.RepositoryManager;
 
+import java.util.ArrayList;
 import java.util.List;
 
-public class ItemsActivity extends Activity {
+public class HswordsActivity extends Activity {
 
     ListView itemListView;
     ItemListAdapter itemListAdapter;
@@ -26,18 +28,13 @@ public class ItemsActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_items);
 
-        public void HswordsList(View view) {
-            Intent intent = new Intent(getApplicationContext(), HswordsActivity.class);
-            startActivity(intent);
-        }
-
         repositoryManager = new RepositoryManager(this);
 
         items = repositoryManager.itemsRepository.getAllItems();
 
         itemListAdapter = new ItemListAdapter(this, R.layout.item_list_item, items);
 
-        itemListView = findViewById(R.id.ItemsList);
+        itemListView = findViewById(R.id.HswordList);
         itemListView.setAdapter(itemListAdapter);
         itemListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
