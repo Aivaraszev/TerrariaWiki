@@ -13,9 +13,16 @@
         android:layout_height="wrap_content"
         android:src="@drawable/items" />
 
-    <ListView
-        android:id="@+id/ItemsList"
+    <Button
+        android:id="@+id/Weapons"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="wrap_content"
+        android:text="Weapons" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pickaxes" />
 
 </LinearLayout>
