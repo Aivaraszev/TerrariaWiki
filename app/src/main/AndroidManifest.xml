@@ -25,7 +25,7 @@
         <activity android:name=".activities.CharactersActivity" />
         <activity android:name=".activities.ItemDescriptionActivity" />
         <activity
-            android:name=".activities.Hswords"
+            android:name=".activities.HswordsActivity"
             android:label="@string/title_activity_hswords"></activity>
     </application>
 

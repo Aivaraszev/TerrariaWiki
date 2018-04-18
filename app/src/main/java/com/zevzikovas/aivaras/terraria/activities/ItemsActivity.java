@@ -10,10 +10,8 @@ import android.widget.ListView;
 import com.zevzikovas.aivaras.terraria.R;
 import com.zevzikovas.aivaras.terraria.adapters.ItemListAdapter;
 import com.zevzikovas.aivaras.terraria.models.Item;
-import com.zevzikovas.aivaras.terraria.repositories.ItemsRepository;
 import com.zevzikovas.aivaras.terraria.repositories.RepositoryManager;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class ItemsActivity extends Activity {
@@ -29,7 +27,7 @@ public class ItemsActivity extends Activity {
         setContentView(R.layout.activity_items);
 
         public void HswordsList(View view) {
-            Intent intent = new Intent(getApplicationContext(), Hswords.class);
+            Intent intent = new Intent(getApplicationContext(), HswordsActivity.class);
             startActivity(intent);
         }
 
