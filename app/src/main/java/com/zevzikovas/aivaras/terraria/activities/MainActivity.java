@@ -35,8 +35,4 @@ public class MainActivity extends Activity {
         Intent intent = new Intent(getApplicationContext(), CharactersActivity.class);
         startActivity(intent);
     }
-    public void HswordsList(View view) {
-        Intent intent = new Intent(getApplicationContext(), HswordActivity.class);
-        startActivity(intent);
-    }
 }

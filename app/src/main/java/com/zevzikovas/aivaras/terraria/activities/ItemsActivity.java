@@ -28,6 +28,11 @@ public class ItemsActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_items);
 
+        public void HswordsList(View view) {
+            Intent intent = new Intent(getApplicationContext(), Hswords.class);
+            startActivity(intent);
+        }
+
         repositoryManager = new RepositoryManager(this);
 
         items = repositoryManager.itemsRepository.getAllItems();
@@ -47,5 +52,7 @@ public class ItemsActivity extends Activity {
                 startActivity(i);
             }
         });
+
+
     }
 }
