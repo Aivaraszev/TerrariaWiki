@@ -85,7 +85,7 @@ public class ItemsRepository {
         prepareItem(db, "Enchanted Sword", R.drawable.item_enchanted_sword, 24, "Green", 4000);
         prepareItem(db, "Purple Clubberfish", R.drawable.item_purple_clubberfish, 24, "Blue", 10000);
         prepareItem(db, "Bee Keeper", R.drawable.item_bee_keeper, 26, "Orange", 5400);
-        prepareItem(db, "Falcon Blade", R.drawable.item_falcon_blade, 30, "Light red", 2000);
+        prepareItem(db, "Falcon Blade", R.drawable.item_falcon_blade, 30, "Light Red", 2000);
         prepareItem(db, "Blade of Grass", R.drawable.item_blade_of_grass, 28, "Orange", 5000);
         prepareItem(db, "Fiery Greatsword", R.drawable.item_fiery_greatsword, 36, "Orange", 5400);
         prepareItem(db, "Night's Edge", R.drawable.item_nights_edge, 42, "Orange", 10800);
