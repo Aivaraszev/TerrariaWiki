@@ -9,11 +9,6 @@ import android.widget.ListView;
 
 
 import com.zevzikovas.aivaras.terraria.R;
-import com.zevzikovas.aivaras.terraria.R;
-import com.zevzikovas.aivaras.terraria.adapters.ItemListAdapter;
-import com.zevzikovas.aivaras.terraria.models.Item;
-import com.zevzikovas.aivaras.terraria.repositories.RepositoryManager;
-
 import java.util.List;
 
 public class ItemsActivity extends Activity {
@@ -22,10 +17,10 @@ public class ItemsActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_items);
     }
-        public void HswordsList (View view) {
-            Intent intent = new Intent(getApplicationContext(), HswordsActivity.class);
+        public void WeaponsList (View view) {
+            Intent intent = new Intent(getApplicationContext(), WeaponsActivity.class);
             startActivity(intent);
         }
     }

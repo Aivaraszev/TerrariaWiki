@@ -8,7 +8,9 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 
 import com.zevzikovas.aivaras.terraria.R;
+import com.zevzikovas.aivaras.terraria.adapters.HswordsListAdapter;
 import com.zevzikovas.aivaras.terraria.adapters.ItemListAdapter;
+import com.zevzikovas.aivaras.terraria.models.Hswords;
 import com.zevzikovas.aivaras.terraria.models.Item;
 import com.zevzikovas.aivaras.terraria.repositories.ItemsRepository;
 import com.zevzikovas.aivaras.terraria.repositories.RepositoryManager;
@@ -17,32 +19,30 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class HswordsActivity extends Activity {
-
-    ListView itemListView;
-    ItemListAdapter itemListAdapter;
-    List<Item> items;
+    ListView hswordsListView;
+    HswordsListAdapter hswordsListAdapter;
+    List<Hswords> hsword;
     RepositoryManager repositoryManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_items);
-
+        setContentView(R.layout.activity_hswords);
         repositoryManager = new RepositoryManager(this);
 
-        items = repositoryManager.itemsRepository.getAllItems();
+        hsword = repositoryManager.hSwordsRepository.getAllHsword();
 
-        itemListAdapter = new ItemListAdapter(this, R.layout.item_list_item, items);
+        hswordsListAdapter = new HswordsListAdapter(this, R.layout.hswords_list_item, hsword);
 
-        itemListView = findViewById(R.id.HswordList);
-        itemListView.setAdapter(itemListAdapter);
-        itemListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        hswordsListView = findViewById(R.id.HswordList);
+        hswordsListView.setAdapter(hswordsListAdapter);
+        hswordsListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
-                Intent i = new Intent(getApplicationContext(), ItemDescriptionActivity.class);
+                Intent i = new Intent(getApplicationContext(), HswordDescriptionActivity.class);
 
-                int itemId = items.get(position).id;
-                i.putExtra("itemId", itemId);
+                int hswordsId = hsword.get(position).id;
+                i.putExtra("hswordsId", hswordsId);
 
                 startActivity(i);
             }
