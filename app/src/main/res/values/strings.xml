@@ -3,4 +3,5 @@
     <string name="title_activity_hswords">Hswords</string>
     <string name="title_activity_weapons">WeaponsActivity</string>
     <string name="title_activity_hsword">HswordActivity</string>
+    <string name="title_activity_sword">SwordActivity</string>
 </resources>

@@ -6,13 +6,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
-
 import com.zevzikovas.aivaras.terraria.R;
 import com.zevzikovas.aivaras.terraria.adapters.HswordsListAdapter;
-import com.zevzikovas.aivaras.terraria.adapters.ItemListAdapter;
 import com.zevzikovas.aivaras.terraria.models.Hswords;
-import com.zevzikovas.aivaras.terraria.models.Item;
-import com.zevzikovas.aivaras.terraria.repositories.ItemsRepository;
 import com.zevzikovas.aivaras.terraria.repositories.RepositoryManager;
 
 import java.util.ArrayList;

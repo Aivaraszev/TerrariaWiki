@@ -5,19 +5,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".activities.WeaponsActivity">
+    tools:context=".activities.SwordActivity">
 
-    <Button
-        android:id="@+id/button2"
+    <ImageView
+        android:id="@+id/imageView9"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="SwordsList"
-        android:text="Pre-hardmode swords" />
+        android:src="@drawable/prehardmode_swords" />
 
-    <Button
-        android:id="@+id/button4"
+    <ListView
+        android:id="@+id/ItemsList"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="HswordsList"
-        android:text="Hardmode swords" />
+        android:layout_height="match_parent" />
 </LinearLayout>
