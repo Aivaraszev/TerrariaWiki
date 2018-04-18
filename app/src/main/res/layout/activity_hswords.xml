@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".activities.Hswords">
+    tools:context=".activities.HswordsActivity">
 
     <ImageView
         android:id="@+id/imageView7"
@@ -14,6 +14,7 @@
         android:src="@drawable/hardmode_swords" />
 
     <ListView
+        android:id="@+id/Hswords"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 </LinearLayout>
