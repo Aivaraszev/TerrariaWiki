@@ -9,14 +9,16 @@ import android.widget.ListView;
 
 import com.zevzikovas.aivaras.terraria.R;
 import com.zevzikovas.aivaras.terraria.adapters.HswordsListAdapter;
+import com.zevzikovas.aivaras.terraria.adapters.ItemListAdapter;
 import com.zevzikovas.aivaras.terraria.models.Hswords;
-import com.zevzikovas.aivaras.terraria.repositories.HSwordsRepository;
+import com.zevzikovas.aivaras.terraria.models.Item;
+import com.zevzikovas.aivaras.terraria.repositories.ItemsRepository;
 import com.zevzikovas.aivaras.terraria.repositories.RepositoryManager;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class HswordActivity extends Activity {
-
     ListView hswordsListView;
     HswordsListAdapter hswordsListAdapter;
     List<Hswords> hsword;
@@ -26,14 +28,13 @@ public class HswordActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hsword);
-
         repositoryManager = new RepositoryManager(this);
 
         hsword = repositoryManager.hSwordsRepository.getAllHsword();
 
         hswordsListAdapter = new HswordsListAdapter(this, R.layout.hswords_list_item, hsword);
 
-        hswordsListView = findViewById(R.id.HswordList);
+        hswordsListView = findViewById(R.id.HswordsList);
         hswordsListView.setAdapter(hswordsListAdapter);
         hswordsListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -46,5 +47,7 @@ public class HswordActivity extends Activity {
                 startActivity(i);
             }
         });
+
+
     }
 }

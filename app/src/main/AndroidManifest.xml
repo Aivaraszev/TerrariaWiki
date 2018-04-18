@@ -16,7 +16,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activities.HswordActivity" />
         <activity android:name=".activities.HswordDescriptionActivity" />
         <activity android:name=".activities.GameInfoActivity" />
         <activity android:name=".activities.ItemsActivity" />
@@ -29,7 +28,10 @@
             android:label="@string/title_activity_hswords" />
         <activity
             android:name=".activities.WeaponsActivity"
-            android:label="@string/title_activity_weapons"></activity>
+            android:label="@string/title_activity_weapons" />
+        <activity
+            android:name=".activities.HswordActivity"
+            android:label="@string/title_activity_hsword"></activity>
     </application>
 
 </manifest>
