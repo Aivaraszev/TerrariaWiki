@@ -15,7 +15,6 @@ import com.zevzikovas.aivaras.terraria.repositories.RepositoryManager;
 
 import java.util.List;
 
-
 public class HswordActivity extends Activity {
 
     ListView hswordsListView;
