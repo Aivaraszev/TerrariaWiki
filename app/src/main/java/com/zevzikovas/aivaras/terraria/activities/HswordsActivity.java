@@ -27,14 +27,14 @@ public class HswordsActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_hswords);
+        setContentView(R.layout.activity_hsword);
         repositoryManager = new RepositoryManager(this);
 
         hsword = repositoryManager.hSwordsRepository.getAllHsword();
 
         hswordsListAdapter = new HswordsListAdapter(this, R.layout.hswords_list_item, hsword);
 
-        hswordsListView = findViewById(R.id.HswordList);
+        hswordsListView = findViewById(R.id.HswordsList);
         hswordsListView.setAdapter(hswordsListAdapter);
         hswordsListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
