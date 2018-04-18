@@ -5,7 +5,6 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -24,7 +23,6 @@ public class PickaxesRepository  extends SQLiteOpenHelper {
         private static final String RARITY = "rarity";
         private static final String PRICE = "price";
 
-
         public PickaxesRepository(Context context) {
             super(context, DATABASE_NAME, null, DATABASE_VERSION);
         }
@@ -39,8 +37,7 @@ public class PickaxesRepository  extends SQLiteOpenHelper {
                             DAMAGE + " INTEGER," +
                             RARITY + " TEXT," +
                             PRICE + " INTEGER" +
-                            PICKAXE_POWER + " INTEGER" +
-                            PICKAXE_POWER + " INTEGER" +
+                            POWER + " INTEGER" +
                             ")"
             );
         }
@@ -58,6 +55,7 @@ public class PickaxesRepository  extends SQLiteOpenHelper {
             values.put(DAMAGE, damage);
             values.put(RARITY, rarity);
             values.put(PRICE, price);
+            values.put(POWER, power);
             db.insert(TABLE_NAME, null, values);
         }
 
