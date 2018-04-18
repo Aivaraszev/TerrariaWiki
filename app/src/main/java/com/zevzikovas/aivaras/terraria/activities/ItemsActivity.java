@@ -7,6 +7,8 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
+
+import com.zevzikovas.aivaras.terraria.R;
 import com.zevzikovas.aivaras.terraria.R;
 import com.zevzikovas.aivaras.terraria.adapters.ItemListAdapter;
 import com.zevzikovas.aivaras.terraria.models.Item;
@@ -16,41 +18,15 @@ import java.util.List;
 
 public class ItemsActivity extends Activity {
 
-    ListView itemListView;
-    ItemListAdapter itemListAdapter;
-    List<Item> items;
-    RepositoryManager repositoryManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_items);
-
-        public void HswordsList(View view) {
+        setContentView(R.layout.activity_main);
+    }
+        public void HswordsList (View view) {
             Intent intent = new Intent(getApplicationContext(), HswordsActivity.class);
             startActivity(intent);
         }
-
-        repositoryManager = new RepositoryManager(this);
-
-        items = repositoryManager.itemsRepository.getAllItems();
-
-        itemListAdapter = new ItemListAdapter(this, R.layout.item_list_item, items);
-
-        itemListView = findViewById(R.id.ItemsList);
-        itemListView.setAdapter(itemListAdapter);
-        itemListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
-                Intent i = new Intent(getApplicationContext(), ItemDescriptionActivity.class);
-
-                int itemId = items.get(position).id;
-                i.putExtra("itemId", itemId);
-
-                startActivity(i);
-            }
-        });
-
-
     }
-}
+
