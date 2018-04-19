@@ -48,7 +48,36 @@ public class PickaxesRepository {
     public void fill(SQLiteDatabase db) {
 
 
-        preparePickaxes(db, "Pearlwood sword", R.drawable.item_pearlwood_sword, 11, "White", 20 ,20);
+        preparePickaxes(db, "Copper Pickaxe", R.drawable.item_copper_pickaxe, 11, "White", 20 ,20);
+        preparePickaxes(db, "Tin Pickaxe", R.drawable.item_tin_pickaxe, 11, "White", 20 ,20);
+        preparePickaxes(db, "Cactus Pickaxe", R.drawable.item_cactus_pickaxe, 11, "White", 20 ,20);
+        preparePickaxes(db, "Iron Pickaxe", R.drawable.item_iron_pickaxe, 11, "White", 20 ,20);
+        preparePickaxes(db, "Lead Pickaxe", R.drawable.item_lead_pickaxe, 11, "White", 20 ,20);
+        preparePickaxes(db, "Silver Pickaxe", R.drawable.item_silver_pickaxe, 11, "White", 20 ,20);
+        preparePickaxes(db, "Tungsten Pickaxe", R.drawable.item_tungsten_pickaxe, 11, "White", 20 ,20);
+        preparePickaxes(db, "Bone Pickaxe", R.drawable.item_bone_pickaxe, 11, "White", 20 ,20);
+        preparePickaxes(db, "Gold Pickaxe", R.drawable.item_gold_pickaxe, 11, "White", 20 ,20);
+        preparePickaxes(db, "Candy Cane Pickaxe", R.drawable.item_candy_cane_pickaxe, 11, "White", 20 ,20);
+        preparePickaxes(db, "Platinum Pickaxe", R.drawable.item_platinum_pickaxe, 11, "White", 20 ,20);
+        preparePickaxes(db, "Nightmare Pickaxe", R.drawable.item_nightmare_pickaxe, 11, "White", 20 ,20);
+        preparePickaxes(db, "Deathbringer Pickaxe", R.drawable.item_deathbringer_pickaxe, 11, "White", 20 ,20);
+        preparePickaxes(db, "Reaver Shark", R.drawable.item_reaver_shark, 11, "White", 20 ,20);
+        preparePickaxes(db, "Molten Pickaxe", R.drawable.item_molten_pickaxe, 11, "White", 20 ,20);
+        preparePickaxes(db, "Cobalt Pickaxe", R.drawable.item_cobalt_pickaxe, 11, "White", 20 ,20);
+        preparePickaxes(db, "Palladium Pickaxe", R.drawable.item_palladium_pickaxe, 11, "White", 20 ,20);
+        preparePickaxes(db, "Mythril Pickaxe", R.drawable.item_mythril_pickaxe, 11, "White", 20 ,20);
+        preparePickaxes(db, "Orichalcum Pickaxe", R.drawable.item_orichalcum_pickaxe, 11, "White", 20 ,20);
+        preparePickaxes(db, "Adamantite Pickaxe", R.drawable.item_adamantite_pickaxe, 11, "White", 20 ,20);
+        preparePickaxes(db, "Titanium Pickaxe", R.drawable.item_titanium_pickaxe, 11, "White", 20 ,20);
+        preparePickaxes(db, "Pickaxe Axe", R.drawable.item_pickaxe_axe, 11, "White", 20 ,20);
+        preparePickaxes(db, "Chlorophyte Pickaxe", R.drawable.item_chlorophyte_pickaxe, 11, "White", 20 ,20);
+        preparePickaxes(db, "Spectre Pickaxe", R.drawable.item_spectre_pickaxe, 11, "White", 20 ,20);
+        preparePickaxes(db, "Shroomite Digging Claw", R.drawable.item_shroomite_digging_claw, 11, "White", 20 ,20);
+        preparePickaxes(db, "Picksaw", R.drawable.item_picksaw, 11, "White", 20 ,20);
+        preparePickaxes(db, "Solar Flare Pickaxe", R.drawable.item_solar_flare_pickaxe, 11, "White", 20 ,20);
+        preparePickaxes(db, "Vortex Pickaxe", R.drawable.item_vortex_pickaxe, 11, "White", 20 ,20);
+        preparePickaxes(db, "Nebula Pickaxe", R.drawable.item_nebula_pickaxe, 11, "White", 20 ,20);
+        preparePickaxes(db, "Stardust Pickaxe", R.drawable.item_stardust_pickaxe, 11, "White", 20 ,20);
     }
 
     private void preparePickaxes(SQLiteDatabase db, String name, int picture, int damage, String rarity, int price, int power) {
@@ -91,7 +120,7 @@ public class PickaxesRepository {
                         cursor.getInt(3),
                         cursor.getString(4),
                         cursor.getInt(5),
-                        cursor.getInt(5)
+                        cursor.getInt(6)
                 );
 
                 pickaxe.add(pickaxes);
