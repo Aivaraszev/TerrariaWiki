@@ -101,7 +101,7 @@ public class HSwordsRepository {
         values.put(NAME, hswords.name);
         values.put(PICTURE, hswords.picture);
         values.put(DAMAGE, hswords.damage);
-        values.put(KNOCKBACK, hswords.damage);
+        values.put(KNOCKBACK, hswords.knockback);
         values.put(RARITY, hswords.rarity);
         values.put(PRICE, hswords.price);
 
