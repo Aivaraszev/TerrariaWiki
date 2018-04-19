@@ -122,8 +122,9 @@ public class HSwordsRepository {
                         cursor.getString(1),
                         cursor.getInt(2),
                         cursor.getInt(3),
-                        cursor.getString(4),
-                        cursor.getInt(5)
+                        cursor.getInt(4),
+                        cursor.getString(5),
+                        cursor.getInt(6)
                 );
 
                 hsword.add(hswords);
