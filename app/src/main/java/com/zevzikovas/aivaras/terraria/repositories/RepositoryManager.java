@@ -11,6 +11,7 @@ public class RepositoryManager extends SQLiteOpenHelper {
 
     public ItemsRepository itemsRepository = new ItemsRepository(this);
     public HSwordsRepository hSwordsRepository = new HSwordsRepository(this);
+    public PickaxesRepository pickaxesRepository = new PickaxesRepository(this);
 
     public RepositoryManager(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
@@ -20,15 +21,18 @@ public class RepositoryManager extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase db) {
         itemsRepository.create(db);
         hSwordsRepository.create(db);
+        pickaxesRepository.create(db);
 
         itemsRepository.fill(db);
         hSwordsRepository.fill(db);
+        pickaxesRepository.fill(db);
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         itemsRepository.drop(db);
         hSwordsRepository.drop(db);
+        pickaxesRepository.drop(db);
 
         onCreate(db);
     }

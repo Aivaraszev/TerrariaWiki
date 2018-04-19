@@ -29,7 +29,7 @@ public class PickaxesActivity extends Activity {
 
         repositoryManager = new RepositoryManager(this);
 
-        pickaxe = repositoryManager.pickaxesRepository.getAllPickaxe();
+        pickaxe = repositoryManager.pickaxesRepository.getAllPickaxes();
 
         pickaxesListAdapter = new PickaxesListAdapter(this, R.layout.pickaxes_list_item, pickaxe);
 
