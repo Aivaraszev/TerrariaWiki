@@ -15,7 +15,7 @@ public class PickaxesDescriptionActivity extends Activity {
         setContentView(R.layout.activity_pickaxes_description);
 
         Intent i = getIntent();
-        TextView hswordsId = findViewById(R.id.pickaxesId);
-        hswordsId.setText(String.valueOf(i.getIntExtra("hswordsId", 0)));
+        TextView pickaxesId = findViewById(R.id.pickaxesId);
+        pickaxesId.setText(String.valueOf(i.getIntExtra("pickaxesId", 0)));
     }
 }

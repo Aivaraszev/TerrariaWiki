@@ -23,5 +23,10 @@ public class ItemsActivity extends Activity {
             Intent intent = new Intent(getApplicationContext(), WeaponsActivity.class);
             startActivity(intent);
         }
+      public void PickaxesList (View view) {
+            Intent intent = new Intent(getApplicationContext(), WeaponsActivity.class);
+            startActivity(intent);
+    }
+
     }
 

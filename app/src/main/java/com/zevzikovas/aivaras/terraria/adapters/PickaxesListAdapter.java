@@ -28,7 +28,6 @@ public class PickaxesListAdapter extends ArrayAdapter<Pickaxes> {
 
         if (pickaxes != null) {
             TextView pickaxesName = convertView.findViewById(R.id.pickaxesName);
-            TextView pickaxesDamage = convertView.findViewById(R.id.pickaxesDamage);
             ImageView pickaxesPicture = convertView.findViewById(R.id.pickaxesPicture);
 
             pickaxesName.setText(pickaxes.name);
