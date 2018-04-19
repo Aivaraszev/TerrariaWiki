@@ -15,12 +15,12 @@ import java.util.List;
 
 public class PickaxesListAdapter extends ArrayAdapter<Pickaxes> {
     public PickaxesListAdapter(Context context, int resource, List<Pickaxes> pickaxe) {
-        super(context, resource, pickaxes);
+        super(context, resource, pickaxe);
     }
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        Pickaxes pickaxes = getPickaxes(position);
+        Pickaxes pickaxes = getItem(position);
 
         if (convertView == null) {
             convertView = LayoutInflater.from(getContext()).inflate(R.layout.pickaxes_list_item, parent, false);
