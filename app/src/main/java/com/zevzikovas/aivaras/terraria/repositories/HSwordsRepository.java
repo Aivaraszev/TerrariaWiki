@@ -20,6 +20,8 @@ public class HSwordsRepository {
     private static final String PICTURE = "picture";
     private static final String DAMAGE = "damage";
     private static final String KNOCKBACK = "knockback";
+    private static final String CRITICAL_CHANCE = "critical chance";
+    private static final String USE_TIME = "use time";
     private static final String RARITY = "rarity";
     private static final String PRICE = "price";
     private SQLiteOpenHelper dbHelper;
@@ -31,13 +33,15 @@ public class HSwordsRepository {
     public void create(SQLiteDatabase db) {
         db.execSQL(
                 "CREATE TABLE " + TABLE_NAME + " (" +
-                        ID + " INTEGER PRIMARY KEY," +
-                        NAME + " TEXT," +
-                        PICTURE + " INTEGER," +
-                        DAMAGE + " INTEGER," +
-                        KNOCKBACK + " INTEGER," +
-                        RARITY + " TEXT," +
-                        PRICE + " INTEGER" +
+                        ID + "INTEGER PRIMARY KEY," +
+                        NAME + "TEXT," +
+                        PICTURE + "INTEGER," +
+                        DAMAGE + "INTEGER," +
+                        KNOCKBACK + "INTEGER," +
+                        CRITICAL_CHANCE + "TEXT," +
+                        USE_TIME + "INTEGER," +
+                        RARITY + "TEXT," +
+                        PRICE + "INTEGER" +
                         ")"
         );
     }
@@ -48,7 +52,7 @@ public class HSwordsRepository {
 
     public void fill(SQLiteDatabase db) {
         prepareHswords(db, "Pearlwood sword", R.drawable.item_pearlwood_sword, 11, "White", 20,);
-        prepareHswords(db, "Classy Cane", R.drawable.item_classy_cane, 16, "Green", 50000);
+        prepareHswords(db, "Classy Cane", R.drawable.item_classy_cane, 16, 3, 3, "Light Red", 3);
         prepareHswords(db, "Slap Hand", R.drawable.item_slap_hand, 35, "Light Red", 50000);
         prepareHswords(db, "Breaker Blade", R.drawable.item_breaker_blade, 39, "Light Red", 30000);
         prepareHswords(db, "Cobalt Sword", R.drawable.item_cobalt_sword, 39, "Light Red", 13800);
@@ -83,12 +87,14 @@ public class HSwordsRepository {
         prepareHswords(db, "Meowmere", R.drawable.item_meowmere, 11, "White", 20);
     }
 
-    private void prepareHswords(SQLiteDatabase db, String name, int picture, int damage, int knockback,  String rarity, int price) {
+    private void prepareHswords(SQLiteDatabase db, String name, int picture, int damage, int knockback, String critical_chance, int use_time, String rarity, int price) {
         ContentValues values = new ContentValues();
         values.put(NAME, name);
         values.put(PICTURE, picture);
         values.put(DAMAGE, damage);
         values.put(KNOCKBACK, knockback);
+        values.put(CRITICAL_CHANCE, critical_chance);
+        values.put(USE_TIME, use_time);
         values.put(RARITY, rarity);
         values.put(PRICE, price);
         db.insert(TABLE_NAME, null, values);
@@ -102,6 +108,8 @@ public class HSwordsRepository {
         values.put(PICTURE, hswords.picture);
         values.put(DAMAGE, hswords.damage);
         values.put(KNOCKBACK, hswords.knockback);
+        values.put(CRITICAL_CHANCE, hswords.critical_chance);
+        values.put(USE_TIME, hswords.use_time);
         values.put(RARITY, hswords.rarity);
         values.put(PRICE, hswords.price);
 
@@ -124,7 +132,9 @@ public class HSwordsRepository {
                         cursor.getInt(3),
                         cursor.getInt(4),
                         cursor.getString(5),
-                        cursor.getInt(6)
+                        cursor.getInt(6),
+                        cursor.getString(7),
+                        cursor.getInt(8)
                 );
 
                 hsword.add(hswords);
