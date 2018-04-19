@@ -83,12 +83,12 @@ public class HSwordsRepository {
         prepareHswords(db, "Meowmere", R.drawable.item_meowmere, 11, "White", 20);
     }
 
-    private void prepareHswords(SQLiteDatabase db, String name, int picture, int damage, int knockback, String rarity, int price) {
+    private void prepareHswords(SQLiteDatabase db, String name, int picture, int damage, String rarity, int price) {
         ContentValues values = new ContentValues();
         values.put(NAME, name);
         values.put(PICTURE, picture);
         values.put(DAMAGE, damage);
-        values.put(KNOCKBACK, damage);
+        values.put(KNOCKBACK, knockback);
         values.put(RARITY, rarity);
         values.put(PRICE, price);
         db.insert(TABLE_NAME, null, values);
@@ -101,7 +101,7 @@ public class HSwordsRepository {
         values.put(NAME, hswords.name);
         values.put(PICTURE, hswords.picture);
         values.put(DAMAGE, hswords.damage);
-        values.put(KNOCKBACK, hswords.damage);
+        values.put(KNOCKBACK, hswords.knockback);
         values.put(RARITY, hswords.rarity);
         values.put(PRICE, hswords.price);
 
