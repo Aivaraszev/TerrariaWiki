@@ -19,6 +19,7 @@ public class PickaxesRepository {
         private static final String NAME = "name";
         private static final String PICTURE = "picture";
         private static final String DAMAGE = "damage";
+        private static final String KNOCKBACK = "knockback";
         private static final String RARITY = "rarity";
         private static final String PRICE = "price";
         private static final String POWER = "power";
@@ -34,6 +35,7 @@ public class PickaxesRepository {
                         NAME + " TEXT," +
                         PICTURE + " INTEGER," +
                         DAMAGE + " INTEGER," +
+                        KNOCKBACK + " INTEGER," +
                         RARITY + " TEXT," +
                         PRICE + " INTEGER" +
                         POWER + "INTEGER" +
@@ -48,9 +50,9 @@ public class PickaxesRepository {
     public void fill(SQLiteDatabase db) {
 
 
-        preparePickaxes(db, "Copper Pickaxe", R.drawable.item_copper_pickaxe, 11, "White", 20 ,20);
-        preparePickaxes(db, "Tin Pickaxe", R.drawable.item_tin_pickaxe, 11, "White", 20 ,20);
-        preparePickaxes(db, "Cactus Pickaxe", R.drawable.item_cactus_pickaxe, 11, "White", 20 ,20);
+        preparePickaxes(db, "Copper Pickaxe", R.drawable.item_copper_pickaxe, 11, 2,"White", 20 ,20);
+        preparePickaxes(db, "Tin Pickaxe", R.drawable.item_tin_pickaxe, 11, 2,"White", 20 ,20);
+        preparePickaxes(db, "Cactus Pickaxe", R.drawable.item_cactus_pickaxe, 11, 2,"White", 20 ,20);
         preparePickaxes(db, "Iron Pickaxe", R.drawable.item_iron_pickaxe, 11, "White", 20 ,20);
         preparePickaxes(db, "Lead Pickaxe", R.drawable.item_lead_pickaxe, 11, "White", 20 ,20);
         preparePickaxes(db, "Silver Pickaxe", R.drawable.item_silver_pickaxe, 11, "White", 20 ,20);
@@ -80,11 +82,12 @@ public class PickaxesRepository {
         preparePickaxes(db, "Stardust Pickaxe", R.drawable.item_stardust_pickaxe, 11, "White", 20 ,20);
     }
 
-    private void preparePickaxes(SQLiteDatabase db, String name, int picture, int damage, String rarity, int price, int power) {
+    private void preparePickaxes(SQLiteDatabase db, String name, int picture, int damage, int knockback, String rarity, int price, int power) {
         ContentValues values = new ContentValues();
         values.put(NAME, name);
         values.put(PICTURE, picture);
         values.put(DAMAGE, damage);
+        values.put(KNOCKBACK, knockback);
         values.put(RARITY, rarity);
         values.put(PRICE, price);
         values.put(POWER, power);
@@ -97,6 +100,7 @@ public class PickaxesRepository {
             values.put(NAME, pickaxes.name);
             values.put(PICTURE, pickaxes.picture);
             values.put(DAMAGE, pickaxes.damage);
+            values.put(KNOCKBACK, pickaxes.knockback);
             values.put(RARITY, pickaxes.rarity);
             values.put(PRICE, pickaxes.price);
             values.put(POWER, pickaxes.power);
@@ -118,9 +122,10 @@ public class PickaxesRepository {
                         cursor.getString(1),
                         cursor.getInt(2),
                         cursor.getInt(3),
-                        cursor.getString(4),
-                        cursor.getInt(5),
-                        cursor.getInt(6)
+                        cursor.getInt(4),
+                        cursor.getString(5),
+                        cursor.getInt(6),
+                        cursor.getInt(7)
                 );
 
                 pickaxe.add(pickaxes);
