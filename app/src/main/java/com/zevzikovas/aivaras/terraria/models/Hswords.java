@@ -13,7 +13,7 @@ public class Hswords {
     public String buy_price;
     public String sell_price;
 
-    public Hswords (int id, String name, int picture, int damage,String knockback, String critical_chance, int use_time, String tooltip, String rarity, String buy_price, String sell_price) {
+    public Hswords (int id, String name, int picture, int damage, String knockback, String critical_chance, int use_time, String tooltip, String rarity, String buy_price, String sell_price) {
         this.id = id;
         this.name = name;
         this.picture = picture;
