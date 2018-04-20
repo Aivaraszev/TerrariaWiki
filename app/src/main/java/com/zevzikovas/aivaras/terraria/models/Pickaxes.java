@@ -8,7 +8,7 @@ public class Pickaxes {
           public String knockback;
           public String bonus;
           public String critical_chanse;
-          public int use_time;
+          public String use_time;
           public int tool_speed;
           public String rarity;
           public String buy_price;
@@ -16,7 +16,7 @@ public class Pickaxes {
           public String pickaxe_power;
           public String axe_power;
 
-    public Pickaxes (int id, String name, int picture, int damage, String knockback, String bonus, String critical_chanse, int use_time, int tool_speed, String rarity, String buy_price, String sell_price, String pickaxe_power, String axe_power) {
+    public Pickaxes (int id, String name, int picture, int damage, String knockback, String bonus, String critical_chanse, String use_time, int tool_speed, String rarity, String buy_price, String sell_price, String pickaxe_power, String axe_power) {
         this.id = id;
         this.name = name;
         this.picture = picture;
@@ -33,7 +33,7 @@ public class Pickaxes {
         this.axe_power = axe_power;
     }
 
-    public Pickaxes (String name, int picture, int damage, String knockback, String bonus, String critical_chanse, int use_time, int tool_speed, String rarity, String buy_price, String sell_price, String pickaxe_power, String axe_power) {
+    public Pickaxes (String name, int picture, int damage, String knockback, String bonus, String critical_chanse, String use_time, int tool_speed, String rarity, String buy_price, String sell_price, String pickaxe_power, String axe_power) {
         this.name = name;
         this.picture = picture;
         this.damage = damage;

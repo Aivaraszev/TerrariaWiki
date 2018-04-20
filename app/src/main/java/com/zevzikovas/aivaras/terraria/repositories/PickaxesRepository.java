@@ -1,5 +1,5 @@
 package com.zevzikovas.aivaras.terraria.repositories;
-
+//TODO make use time String
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
@@ -44,7 +44,7 @@ public class PickaxesRepository {
                         KNOCKBACK + " TEXT," +
                         BONUS + " TEXT," +
                         CRITICAL_CHANSE + " TEXT," +
-                        USE_TIME + " INTEGER," +
+                        USE_TIME + " TEXT," +
                         TOOL_SPEED + " INTEGER" +
                         RARITY + " TEXT," +
                         BUY_PRICE + " TEXT" +
@@ -61,40 +61,39 @@ public class PickaxesRepository {
 
     public void fill(SQLiteDatabase db) {
 
-
-        preparePickaxes(db, "Copper Pickaxe", R.drawable.item_copper_pickaxe, 4, "2","-1 range", "4%", 22,15, "White", "5 Silver" ,"1 Silver", "35%", "None");
-        preparePickaxes(db, "Tin Pickaxe", R.drawable.item_tin_pickaxe, 5, "2","None","4%",20,14,"White", "None","1 Silver 50 Copper", "35%", "None");
-        preparePickaxes(db, "Cactus Pickaxe", R.drawable.item_cactus_pickaxe, 5, "2","None", "4%",22,15,"White", "None" ,"4 Silver", "35%", "None");
-        preparePickaxes(db, "Iron Pickaxe", R.drawable.item_iron_pickaxe, 5, "2","None", "4%",19,13,"White", "20 Silver" ,"4 Silver", "40%", "None");
-        preparePickaxes(db, "Lead Pickaxe", R.drawable.item_lead_pickaxe, 6, "2","None", "4%",18,12,"White", "None" ,"6 Silver", "43%", "None");
-        preparePickaxes(db, "Silver Pickaxe", R.drawable.item_silver_pickaxe, 6, "2","None", "4%",18,11,"White", "None" ,"10 Silver", "45%", "None");
-        preparePickaxes(db, "Tungsten Pickaxe", R.drawable.item_tungsten_pickaxe, 6, "2","None", "4%",20,19,"White", "None" ,"15 Silver", "50%", "None");
-        preparePickaxes(db, "Bone Pickaxe", R.drawable.item_bone_pickaxe, 8, "3","None", "4%",18,11,"Blue", "None" ,"30 Silver", "50%", "None");
-        preparePickaxes(db, "Gold Pickaxe", R.drawable.item_gold_pickaxe, 6, "2","None", "4%",19,17,"White", "None" ,"20 Silver", "55%", "None");
-        preparePickaxes(db, "Candy Cane Pickaxe", R.drawable.item_candy_cane_pickaxe, 7, "2.5","None", "4%",19,16,"White", "None" ,"20 Silver", "55%", "None");
-        preparePickaxes(db, "Platinum Pickaxe", R.drawable.item_platinum_pickaxe, 7, "2","None", "4%",18,15,"White", "None" ,"30 Silver", "59%", "None");
-        preparePickaxes(db, "Nightmare Pickaxe", R.drawable.item_nightmare_pickaxe, 9, "3","None", "4%",19,15,"Blue", "None" ,"36 Silver", "65%", "None");
-        preparePickaxes(db, "Deathbringer Pickaxe", R.drawable.item_deathbringer_pickaxe, 12, "3.5","None", "4%",21,14,"Blue", "None" ,"36 Silver", "70%", "None");
-        preparePickaxes(db, "Reaver Shark", R.drawable.item_reaver_shark, 16, "3","None", "4%",21,18,"Orange", "None" ,"1 Gold 50 Silver", "100%", "None");
-        preparePickaxes(db, "Molten Pickaxe", R.drawable.item_molten_pickaxe, 12, "2","Inflicts Debuff On Fire!","4%",22,15,"Orange", "None" ,"54 Silver", "100%", "None");
-        preparePickaxes(db, "Cobalt Pickaxe", R.drawable.item_cobalt_pickaxe, 5, "5","None", "4%",24,13,"Light Red", "None" ,"1 Gold 8 Silver", "110%", "None");
-        preparePickaxes(db, "Palladium Pickaxe", R.drawable.item_palladium_pickaxe, 12, "5","None", "4%",24,11,"Light Red", "None" ,"1 Gold 44 Silver", "130%", "None");
-        preparePickaxes(db, "Mythril Pickaxe", R.drawable.item_mythril_pickaxe, 15, "2","None", "4%",22,15,"White", "None" ,"1 Gold 44 Silver", "35%", "None");
-        preparePickaxes(db, "Orichalcum Pickaxe", R.drawable.item_orichalcum_pickaxe, 5, "2","None", "4%",22,15,"White", "None" ,"4 Silver", "35%", "None");
-        preparePickaxes(db, "Adamantite Pickaxe", R.drawable.item_adamantite_pickaxe, 5, "2","None", "4%",22,15,"White", "None" ,"4 Silver", "35%", "None");
-        preparePickaxes(db, "Titanium Pickaxe", R.drawable.item_titanium_pickaxe, 5, "2","None", "4%",22,15,"White", "None" ,"4 Silver", "35%", "None");
-        preparePickaxes(db, "Pickaxe Axe", R.drawable.item_pickaxe_axe, 5, "2","None", "4%",22,15,"White", "None" ,"4 Silver", "35%", "None");
-        preparePickaxes(db, "Chlorophyte Pickaxe", R.drawable.item_chlorophyte_pickaxe, 5, "2","None", "4%",22,15,"White", "None" ,"4 Silver", "35%", "None");
-        preparePickaxes(db, "Spectre Pickaxe", R.drawable.item_spectre_pickaxe, 5, "2","None", "4%",22,15,"White", "None" ,"4 Silver", "35%", "None");
-        preparePickaxes(db, "Shroomite Digging Claw", R.drawable.item_shroomite_digging_claw,, 5, "2","None", "4%",22,15,"White", "None" ,"4 Silver", "35%", "None");
-        preparePickaxes(db, "Picksaw", R.drawable.item_picksaw, 5, "2","None", "4%",22,15,"White", "None" ,"4 Silver", "35%", "None");
-        preparePickaxes(db, "Solar Flare Pickaxe", R.drawable.item_solar_flare_pickaxe, 5, "2","None", "4%",22,15,"White", "None" ,"4 Silver", "35%", "None");
-        preparePickaxes(db, "Vortex Pickaxe", R.drawable.item_vortex_pickaxe, 5, "2","None", "4%",22,15,"White", "None" ,"4 Silver", "35%", "None");
-        preparePickaxes(db, "Nebula Pickaxe", R.drawable.item_nebula_pickaxe, 5, "2","None", "4%",22,15,"White", "None" ,"4 Silver", "35%", "None");
-        preparePickaxes(db, "Stardust Pickaxe", R.drawable.item_stardust_pickaxe, 5, "2","None", "4%",22,15,"White", "None" ,"4 Silver", "35%", "None");
+        preparePickaxes(db, "Copper Pickaxe", R.drawable.item_copper_pickaxe, 4, "2 (Very Weak)","-1 range", "4%", "22 (Fast)",15, "White", "5 Silver" ,"1 Silver", "35%", "None");
+        preparePickaxes(db, "Tin Pickaxe", R.drawable.item_tin_pickaxe, 5, "2 (Very Weak)","None","4%","20 (Very Fast)",14,"White", "None","1 Silver 50 Copper", "35%", "None");
+        preparePickaxes(db, "Cactus Pickaxe", R.drawable.item_cactus_pickaxe, 5, "2 (Very Weak)","None", "4%","22 (Fast)",15,"White", "None" ,"4 Silver", "35%", "None");
+        preparePickaxes(db, "Iron Pickaxe", R.drawable.item_iron_pickaxe, 5, "2 (Very Weak)","None", "4%","19 (Very Fast)",13,"White", "20 Silver" ,"4 Silver", "40%", "None");
+        preparePickaxes(db, "Lead Pickaxe", R.drawable.item_lead_pickaxe, 6, "2 (Very Weak)","None", "4%",18,12,"White", "None" ,"6 Silver", "43%", "None");
+        preparePickaxes(db, "Silver Pickaxe", R.drawable.item_silver_pickaxe, 6, "2 (Very Weak)","None", "4%",18,11,"White", "None" ,"10 Silver", "45%", "None");
+        preparePickaxes(db, "Tungsten Pickaxe", R.drawable.item_tungsten_pickaxe, 6, "2 (Very Weak)","None", "4%",20,19,"White", "None" ,"15 Silver", "50%", "None");
+        preparePickaxes(db, "Bone Pickaxe", R.drawable.item_bone_pickaxe, 8, "3 (Very Weak)","None", "4%",18,11,"Blue", "None" ,"30 Silver", "50%", "None");
+        preparePickaxes(db, "Gold Pickaxe", R.drawable.item_gold_pickaxe, 6, "2 (Very Weak)","None", "4%",19,17,"White", "None" ,"20 Silver", "55%", "None");
+        preparePickaxes(db, "Candy Cane Pickaxe", R.drawable.item_candy_cane_pickaxe, 7, "2.5 (Very Weak)","None", "4%",19,16,"White", "None" ,"20 Silver", "55%", "None");
+        preparePickaxes(db, "Platinum Pickaxe", R.drawable.item_platinum_pickaxe, 7, "2 (Very Weak)","None", "4%",18,15,"White", "None" ,"30 Silver", "59%", "None");
+        preparePickaxes(db, "Nightmare Pickaxe", R.drawable.item_nightmare_pickaxe, 9, "3 (Very Weak)","None", "4%",19,15,"Blue", "None" ,"36 Silver", "65%", "None");
+        preparePickaxes(db, "Deathbringer Pickaxe", R.drawable.item_deathbringer_pickaxe, 12, "3.5 (Weak)","None", "4%",21,14,"Blue", "None" ,"36 Silver", "70%", "None");
+        preparePickaxes(db, "Reaver Shark", R.drawable.item_reaver_shark, 16, "3 (Very Weak)","None", "4%",21,18,"Orange", "None" ,"1 Gold 50 Silver", "100%", "None");
+        preparePickaxes(db, "Molten Pickaxe", R.drawable.item_molten_pickaxe, 12, "2 (Very Weak)","Inflicts Debuff On Fire!","4%",22,15,"Orange", "None" ,"54 Silver", "100%", "None");
+        preparePickaxes(db, "Cobalt Pickaxe", R.drawable.item_cobalt_pickaxe, 5, "5 (Average)","None", "4%",24,13,"Light Red", "None" ,"1 Gold 8 Silver", "110%", "None");
+        preparePickaxes(db, "Palladium Pickaxe", R.drawable.item_palladium_pickaxe, 12, "5 (Average)","None", "4%",24,11,"Light Red", "None" ,"1 Gold 44 Silver", "130%", "None");
+        preparePickaxes(db, "Mythril Pickaxe", R.drawable.item_mythril_pickaxe, 15, "5 (Average)","None", "4%",24,10,"Light Red", "None" ,"1 Gold 62 Silver", "150%", "None");
+        preparePickaxes(db, "Orichalcum Pickaxe", R.drawable.item_orichalcum_pickaxe, 17, "5 (Average)","None", "4%",24,8,"Light Red", "None" ,"1 Gold 98 Silver", "165%", "None");
+        preparePickaxes(db, "Adamantite Pickaxe", R.drawable.item_adamantite_pickaxe, 20, "5 (Average)","None", "4%",24,24,"Light Red", "None" ,"2 Gold 16 Silver", "180%", "None");
+        preparePickaxes(db, "Titanium Pickaxe", R.drawable.item_titanium_pickaxe, 27, "5 (Average)","None", "4%",24,7,"Light Red", "None" ,"2 Gold 52 Silver", "190%", "None");
+        preparePickaxes(db, "Pickaxe Axe", R.drawable.item_pickaxe_axe, 35, "4.75 (Average)","None", "4%",24,7,"Light Red", "None" ,"4 Gold 40 Silver", "200%", "110%");
+        preparePickaxes(db, "Chlorophyte Pickaxe", R.drawable.item_chlorophyte_pickaxe, 40, "5 (Average)","+1 range", "4%",24,7,"Lime", "None" ,"4 Gold 32 Silver", "200%", "None");
+        preparePickaxes(db, "Spectre Pickaxe", R.drawable.item_spectre_pickaxe, 32, "5.25 (Average)","None", "4%",23,10,"Yellow", "None" ,"4 Gold 32 Silver", "200%", "None");
+        preparePickaxes(db, "Shroomite Digging Claw", R.drawable.item_shroomite_digging_claw, 45, "6 (Average)","-1 range", "4%",11,4,"Yellow", "None" ,"1 Gold", "200%", "125%");
+        preparePickaxes(db, "Picksaw", R.drawable.item_picksaw, 34, "5.5 (Average)","+1 range", "4%",15,6,"Lime", "None" ,"4 Gold 32 Silver", "210%", "125%");
+        preparePickaxes(db, "Solar Flare Pickaxe", R.drawable.item_solar_flare_pickaxe, 80, "5.5 (Average)","+4 range", "4%",11,6,"Red", "None" ,"5 Gold", "225%", "None");
+        preparePickaxes(db, "Vortex Pickaxe", R.drawable.item_vortex_pickaxe, 80, "5.5 (Average)","+4 range", "4%",11,6,"Red", "None" ,"5 Gold", "225%", "None");
+        preparePickaxes(db, "Nebula Pickaxe", R.drawable.item_nebula_pickaxe, 80, "5.5 (Average)","+4 range", "4%",11,6,"Red", "None" ,"5 Gold", "225%", "None");
+        preparePickaxes(db, "Stardust Pickaxe", R.drawable.item_stardust_pickaxe, 80, "5.5 (Average)","+4 range", "4%",11,6,"Red", "None" ,"5 Gold", "225%", "None");
     }
 
-    private void preparePickaxes(SQLiteDatabase db, String name, int picture, int damage, String knockback, String bonus, String critical_chanse, int use_time, int tool_speed, String rarity, String buy_price, String sell_price, String pickaxe_power, String axe_power) {
+    private void preparePickaxes(SQLiteDatabase db, String name, int picture, int damage, String knockback, String bonus, String critical_chanse, String use_time, int tool_speed, String rarity, String buy_price, String sell_price, String pickaxe_power, String axe_power) {
         ContentValues values = new ContentValues();
         values.put(NAME, name);
         values.put(PICTURE, picture);
@@ -148,7 +147,7 @@ public class PickaxesRepository {
                         cursor.getString(4),
                         cursor.getString(5),
                         cursor.getString(6),
-                        cursor.getInt(7),
+                        cursor.getString(7),
                         cursor.getInt(8),
                         cursor.getString(9),
                         cursor.getString(10),
