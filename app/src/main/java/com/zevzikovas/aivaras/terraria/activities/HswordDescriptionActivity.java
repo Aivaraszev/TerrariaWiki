@@ -22,7 +22,23 @@ public class HswordDescriptionActivity extends Activity {
         Hswords hsword = repositoryManager.hSwordsRepository.getSword(i.getIntExtra("hswordsId", 0));
 
         TextView hswordsDamage = findViewById(R.id.hswordsDamage);
+        TextView hswordsKnockback = findViewById(R.id.hswordsKnockback);
+        TextView hswordsCritical_chance = findViewById(R.id.hswordsCritical_chance);
+        TextView hswordsUse_time = findViewById(R.id.hswordsUse_time);
+        TextView hswordsVelocity = findViewById(R.id.hswordsVelocity);
+        TextView hswordsTooltip = findViewById(R.id.hswordsTooltip);
+        TextView hswordsGrants_buff = findViewById(R.id.hswordsGrants_buff);
+        TextView hswordsInflicts_debuff = findViewById(R.id.hswordsInflicts_debuff);
+        TextView hswordsRarity = findViewById(R.id.hswordsRarity);
 
         hswordsDamage.setText(Integer.toString(hsword.damage));
+        hswordsKnockback.setText((hsword.knockback));
+        hswordsCritical_chance.setText((hsword.critical_chance));
+        hswordsUse_time.setText(Integer.toString(hsword.use_time));
+        hswordsVelocity.setText((hsword.velocity));
+        hswordsTooltip.setText((hsword.tooltip));
+        hswordsGrants_buff.setText((hsword.grants_buff));
+        hswordsInflicts_debuff.setText((hsword.inflicts_debuff));
+        hswordsRarity.setText((hsword.rarity));
     }
 }
