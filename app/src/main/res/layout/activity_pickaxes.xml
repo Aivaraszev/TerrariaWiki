@@ -5,13 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".activities.HswordActivity">
+    tools:context=".activities.PickaxesActivity">
 
     <ImageView
         android:id="@+id/imageView7"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:src="@drawable/hardmode_swords" />
+        android:src="@drawable/pickaxes" />
 
     <ListView
         android:id="@+id/PickaxesList"
