@@ -13,23 +13,23 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class PickaxesRepository {
-        private static final String TABLE_NAME = "Pickaxes";
+    private static final String TABLE_NAME = "Pickaxes";
 
-        private static final String ID = "id";
-        private static final String NAME = "name";
-        private static final String PICTURE = "picture";
-        private static final String DAMAGE = "damage";
-        private static final String KNOCKBACK = "knockback";
-        private static final String BONUS = "bonus";
-        private static final String CRITICAL_CHANSE = "critical_chanse";
-        private static final String USE_TIME = "use time";
-        private static final String TOOL_SPEED = "tool_speed";
-        private static final String RARITY = "rarity";
-        private static final String BUY_PRICE = "buy_price";
-        private static final String SELL_PRICE = "sell_price";
-        private static final String PICKAXE_POWER = "pickaxe_power";
-        private static final String AXE_POWER = "axe_power";
-        private SQLiteOpenHelper dbHelper;
+    private static final String ID = "id";
+    private static final String NAME = "name";
+    private static final String PICTURE = "picture";
+    private static final String DAMAGE = "damage";
+    private static final String KNOCKBACK = "knockback";
+    private static final String BONUS = "bonus";
+    private static final String CRITICAL_CHANSE = "critical_chanse";
+    private static final String USE_TIME = "use_time";
+    private static final String TOOL_SPEED = "tool_speed";
+    private static final String RARITY = "rarity";
+    private static final String BUY_PRICE = "buy_price";
+    private static final String SELL_PRICE = "sell_price";
+    private static final String PICKAXE_POWER = "pickaxe_power";
+    private static final String AXE_POWER = "axe_power";
+    private SQLiteOpenHelper dbHelper;
 
 
     public PickaxesRepository(SQLiteOpenHelper dbHelper) {this.dbHelper = dbHelper; }
@@ -110,26 +110,26 @@ public class PickaxesRepository {
         values.put(AXE_POWER, axe_power);
         db.insert(TABLE_NAME, null, values);
     }
-        public void addPickaxes(Pickaxes pickaxes) {
-            SQLiteDatabase db = dbHelper.getWritableDatabase();
+    public void addPickaxes(Pickaxes pickaxes) {
+        SQLiteDatabase db = dbHelper.getWritableDatabase();
 
-            ContentValues values = new ContentValues();
-            values.put(NAME, pickaxes.name);
-            values.put(PICTURE, pickaxes.picture);
-            values.put(DAMAGE, pickaxes.damage);
-            values.put(KNOCKBACK, pickaxes.knockback);
-            values.put(BONUS, pickaxes.bonus);
-            values.put(CRITICAL_CHANSE, pickaxes.critical_chanse);
-            values.put(USE_TIME, pickaxes.use_time);
-            values.put(TOOL_SPEED, pickaxes.tool_speed);
-            values.put(RARITY, pickaxes.rarity);
-            values.put(BUY_PRICE, pickaxes.buy_price);
-            values.put(SELL_PRICE, pickaxes.sell_price);
-            values.put(PICKAXE_POWER, pickaxes.pickaxe_power);
-            values.put(AXE_POWER, pickaxes.axe_power);
-            db.insert(TABLE_NAME, null, values);
-            db.close();
-        }
+        ContentValues values = new ContentValues();
+        values.put(NAME, pickaxes.name);
+        values.put(PICTURE, pickaxes.picture);
+        values.put(DAMAGE, pickaxes.damage);
+        values.put(KNOCKBACK, pickaxes.knockback);
+        values.put(BONUS, pickaxes.bonus);
+        values.put(CRITICAL_CHANSE, pickaxes.critical_chanse);
+        values.put(USE_TIME, pickaxes.use_time);
+        values.put(TOOL_SPEED, pickaxes.tool_speed);
+        values.put(RARITY, pickaxes.rarity);
+        values.put(BUY_PRICE, pickaxes.buy_price);
+        values.put(SELL_PRICE, pickaxes.sell_price);
+        values.put(PICKAXE_POWER, pickaxes.pickaxe_power);
+        values.put(AXE_POWER, pickaxes.axe_power);
+        db.insert(TABLE_NAME, null, values);
+        db.close();
+    }
 
     public List<Pickaxes> getAllPickaxes() {
         List<Pickaxes> pickaxe = new ArrayList<>();

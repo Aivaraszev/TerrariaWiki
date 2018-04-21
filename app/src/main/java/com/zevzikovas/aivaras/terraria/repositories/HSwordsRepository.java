@@ -20,13 +20,13 @@ public class HSwordsRepository {
     private static final String PICTURE = "picture";
     private static final String DAMAGE = "damage";
     private static final String KNOCKBACK = "knockback";
-    private static final String CRITICAL_CHANCE = "critical chance";
-    private static final String USE_TIME = "use time";
+    private static final String CRITICAL_CHANCE = "critical_chance";
+    private static final String USE_TIME = "use_time";
     private static final String VELOCITY = "velocity";
     private static final String TOOLTIP = "tooltip";
     private static final String RARITY = "rarity";
-    private static final String BUY_PRICE = "buy price";
-    private static final String SELL_PRICE = "sell price";
+    private static final String BUY_PRICE = "buy_price";
+    private static final String SELL_PRICE = "sell_price";
 
     private SQLiteOpenHelper dbHelper;
 

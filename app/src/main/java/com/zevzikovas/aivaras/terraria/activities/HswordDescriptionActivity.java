@@ -18,6 +18,5 @@ public class HswordDescriptionActivity extends Activity {
         TextView hswordsId = findViewById(R.id.hswordsId);
         TextView hswordsDamage = findViewById(R.id.hswordsDamage);
         hswordsId.setText(String.valueOf(i.getIntExtra("hswordsId", 0)));
-        hswordsDamage.setText(String.valueOf(i.getIntExtra("hswordsDamage", 0)));
     }
 }

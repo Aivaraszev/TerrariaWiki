@@ -23,6 +23,7 @@
         <activity android:name=".activities.BiomesActivity" />
         <activity android:name=".activities.CharactersActivity" />
         <activity android:name=".activities.ItemDescriptionActivity" />
+        <activity android:name=".activities.PickaxesDescriptionActivity" />
         <activity
             android:name=".activities.HswordsActivity"
             android:label="@string/title_activity_hswords" />
@@ -37,7 +38,7 @@
             android:label="@string/title_activity_hsword" />
         <activity
             android:name=".activities.SwordActivity"
-            android:label="@string/title_activity_sword"></activity>
+            android:label="@string/title_activity_sword"/>
     </application>
 
 </manifest>
