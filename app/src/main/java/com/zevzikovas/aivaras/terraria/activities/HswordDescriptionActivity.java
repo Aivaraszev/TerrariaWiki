@@ -6,8 +6,12 @@ import android.os.Bundle;
 import android.widget.TextView;
 
 import com.zevzikovas.aivaras.terraria.R;
+import com.zevzikovas.aivaras.terraria.models.Hswords;
+import com.zevzikovas.aivaras.terraria.repositories.RepositoryManager;
 
 public class HswordDescriptionActivity extends Activity {
+
+    RepositoryManager repositoryManager = new RepositoryManager(this);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -15,8 +19,10 @@ public class HswordDescriptionActivity extends Activity {
         setContentView(R.layout.activity_hswords_description);
 
         Intent i = getIntent();
-        TextView hswordsId = findViewById(R.id.hswordsId);
+        Hswords hsword = repositoryManager.hSwordsRepository.getSword(i.getIntExtra("hswordsId", 0));
+
         TextView hswordsDamage = findViewById(R.id.hswordsDamage);
-        hswordsId.setText(String.valueOf(i.getIntExtra("hswordsId", 0)));
+
+        hswordsDamage.setText(Integer.toString(hsword.damage));
     }
 }

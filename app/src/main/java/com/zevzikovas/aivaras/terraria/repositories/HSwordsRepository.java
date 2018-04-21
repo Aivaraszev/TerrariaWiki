@@ -163,4 +163,33 @@ public class HSwordsRepository {
 
         return hsword;
     }
+
+    public Hswords getSword(int id) {
+        SQLiteDatabase db = dbHelper.getReadableDatabase();
+        String selectQuery = "SELECT * FROM " + TABLE_NAME + " WHERE ID = " + id;
+        Cursor cursor = db.rawQuery(selectQuery, null);
+        Hswords hswords = null;
+
+        if (cursor.moveToFirst()) {
+            hswords = new Hswords(
+                    cursor.getInt(0),
+                    cursor.getString(1),
+                    cursor.getInt(2),
+                    cursor.getInt(3),
+                    cursor.getString(4),
+                    cursor.getString(5),
+                    cursor.getInt(6),
+                    cursor.getString(7),
+                    cursor.getString(8),
+                    cursor.getString(9),
+                    cursor.getString(10),
+                    cursor.getString(11)
+            );
+        }
+
+        cursor.close();
+        db.close();
+
+        return hswords;
+    }
 }
