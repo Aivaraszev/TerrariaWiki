@@ -37,20 +37,20 @@ public class PickaxesRepository {
     public void create(SQLiteDatabase db) {
         db.execSQL(
                 "CREATE TABLE " + TABLE_NAME + " (" +
-                        ID + "INTEGER PRIMARY KEY," +
-                        NAME + "TEXT," +
-                        PICTURE + "INTEGER," +
-                        DAMAGE + "INTEGER," +
-                        KNOCKBACK + "TEXT," +
-                        BONUS + "TEXT," +
-                        CRITICAL_CHANSE + "TEXT," +
-                        USE_TIME + "TEXT," +
-                        TOOL_SPEED + "INTEGER," +
-                        RARITY + "TEXT," +
-                        BUY_PRICE + "TEXT," +
-                        SELL_PRICE + "TEXT," +
-                        PICKAXE_POWER + "TEXT," +
-                        AXE_POWER + "TEXT" +
+                        ID + " INTEGER PRIMARY KEY," +
+                        NAME + " TEXT," +
+                        PICTURE + " INTEGER," +
+                        DAMAGE + " INTEGER," +
+                        KNOCKBACK + " TEXT," +
+                        BONUS + " TEXT," +
+                        CRITICAL_CHANSE + " TEXT," +
+                        USE_TIME + " TEXT," +
+                        TOOL_SPEED + " INTEGER," +
+                        RARITY + " TEXT," +
+                        BUY_PRICE + " TEXT," +
+                        SELL_PRICE + " TEXT," +
+                        PICKAXE_POWER + " TEXT," +
+                        AXE_POWER + " TEXT" +
                         ")"
         );
     }

@@ -37,18 +37,18 @@ public class HSwordsRepository {
     public void create(SQLiteDatabase db) {
         db.execSQL(
                 "CREATE TABLE " + TABLE_NAME + " (" +
-                        ID + "INTEGER PRIMARY KEY," +
-                        NAME + "TEXT," +
-                        PICTURE + "INTEGER," +
-                        DAMAGE + "INTEGER," +
-                        KNOCKBACK + "TEXT," +
-                        CRITICAL_CHANCE + "TEXT," +
-                        USE_TIME + "INTEGER," +
-                        VELOCITY + "TEXT," +
-                        TOOLTIP + "TEXT," +
-                        RARITY + "TEXT," +
-                        BUY_PRICE + "TEXT," +
-                        SELL_PRICE + "TEXT" +
+                        ID + " INTEGER PRIMARY KEY," +
+                        NAME + " TEXT," +
+                        PICTURE + " INTEGER," +
+                        DAMAGE + " INTEGER," +
+                        KNOCKBACK + " TEXT," +
+                        CRITICAL_CHANCE + " TEXT," +
+                        USE_TIME + " INTEGER," +
+                        VELOCITY + " TEXT," +
+                        TOOLTIP + " TEXT," +
+                        RARITY + " TEXT," +
+                        BUY_PRICE + " TEXT," +
+                        SELL_PRICE + " TEXT" +
                         ")"
         );
     }
