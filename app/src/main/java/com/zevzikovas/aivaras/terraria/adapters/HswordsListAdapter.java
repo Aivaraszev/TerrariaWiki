@@ -28,11 +28,9 @@ public class HswordsListAdapter extends ArrayAdapter<Hswords> {
 
         if (hswords != null) {
             TextView hswordsName = convertView.findViewById(R.id.hswordsName);
-            TextView hswordsDamage = convertView.findViewById(R.id.hswordsDamage);
             ImageView hswordsPicture = convertView.findViewById(R.id.hswordsPicture);
 
             hswordsName.setText(hswords.name);
-            hswordsDamage.setText(hswords.damage);
             hswordsPicture.setImageResource(hswords.picture);
         }
 
