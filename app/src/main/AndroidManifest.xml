@@ -30,6 +30,9 @@
             android:name=".activities.WeaponsActivity"
             android:label="@string/title_activity_weapons" />
         <activity
+            android:name=".activities.PickaxesActivity"
+            android:label="PickaxesActivity" />
+        <activity
             android:name=".activities.HswordActivity"
             android:label="@string/title_activity_hsword" />
         <activity
