@@ -32,6 +32,7 @@ public class HswordsListAdapter extends ArrayAdapter<Hswords> {
             ImageView hswordsPicture = convertView.findViewById(R.id.hswordsPicture);
 
             hswordsName.setText(hswords.name);
+            hswordsDamage.setText(hswords.damage);
             hswordsPicture.setImageResource(hswords.picture);
         }
 
