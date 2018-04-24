@@ -151,7 +151,7 @@ public class SwordsRepository {
     }
 
     public List<Swords> getAllSword() {
-        List<Swords> sword = new ArrayLicst<>();
+        List<Swords> sword = new ArrayList<>();
         SQLiteDatabase db = dbHelper.getReadableDatabase();
         String selectQuery = "SELECT * FROM " + TABLE_NAME;
         Cursor cursor = db.rawQuery(selectQuery, null);
