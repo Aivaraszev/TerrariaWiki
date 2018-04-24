@@ -15,7 +15,7 @@ public class WeaponsActivity extends Activity {
         setContentView(R.layout.activity_weapons);
     }
     public void HswordsList (View view) {
-        Intent intent = new Intent(getApplicationContext(), HswordActivity.class);
+        Intent intent = new Intent(getApplicationContext(), HSwordsActivity.class);
         startActivity(intent);
     }
     public void SwordsList (View view) {

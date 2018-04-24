@@ -14,21 +14,21 @@ import com.zevzikovas.aivaras.terraria.repositories.RepositoryManager;
 import java.util.ArrayList;
 import java.util.List;
 
-public class HswordActivity extends Activity {
+public class HSwordsActivity extends Activity {
     ListView hswordsListView;
     HswordsListAdapter hswordsListAdapter;
-    List<Hswords> hsword;
+    List<Hswords> hswords;
     RepositoryManager repositoryManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_hsword);
+        setContentView(R.layout.activity_hswords);
         repositoryManager = new RepositoryManager(this);
 
-        hsword = repositoryManager.hSwordsRepository.getAllHsword();
+        hswords = repositoryManager.hSwordsRepository.getAllHsword();
 
-        hswordsListAdapter = new HswordsListAdapter(this, R.layout.hswords_list_item, hsword);
+        hswordsListAdapter = new HswordsListAdapter(this, R.layout.hswords_list_item, hswords);
 
         hswordsListView = findViewById(R.id.HswordsList);
         hswordsListView.setAdapter(hswordsListAdapter);
@@ -37,7 +37,7 @@ public class HswordActivity extends Activity {
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
                 Intent i = new Intent(getApplicationContext(), HswordDescriptionActivity.class);
 
-                int hswordsId = hsword.get(position).id;
+                int hswordsId = hswords.get(position).id;
                 i.putExtra("hswordsId", hswordsId);
 
                 startActivity(i);

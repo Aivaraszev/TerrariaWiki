@@ -6,7 +6,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
 import com.zevzikovas.aivaras.terraria.R;
-import com.zevzikovas.aivaras.terraria.models.Item;
+import com.zevzikovas.aivaras.terraria.models.Swords;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -101,7 +101,7 @@ public class ItemsRepository {
         db.insert(TABLE_NAME, null, values);
     }
 
-    public void addItem(Item item) {
+    public void addItem(Swords item) {
         SQLiteDatabase db = dbHelper.getWritableDatabase();
 
         ContentValues values = new ContentValues();
@@ -115,15 +115,15 @@ public class ItemsRepository {
         db.close();
     }
 
-    public List<Item> getAllItems() {
-        List<Item> items = new ArrayList<>();
+    public List<Swords> getAllItems() {
+        List<Swords> items = new ArrayList<>();
         SQLiteDatabase db = dbHelper.getReadableDatabase();
         String selectQuery = "SELECT * FROM " + TABLE_NAME;
         Cursor cursor = db.rawQuery(selectQuery, null);
 
         if (cursor.moveToFirst()) {
             do {
-                Item item = new Item(
+                Swords item = new Swords(
                         cursor.getInt(0),
                         cursor.getString(1),
                         cursor.getInt(2),
