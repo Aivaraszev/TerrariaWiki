@@ -1,8 +1,8 @@
 package com.zevzikovas.aivaras.terraria.activities;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.app.Activity;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
@@ -15,16 +15,15 @@ import com.zevzikovas.aivaras.terraria.repositories.RepositoryManager;
 import java.util.List;
 
 public class PickaxesActivity extends Activity {
+    ListView pickaxesListView;
+    PickaxesListAdapter pickaxesListAdapter;
+    List<Pickaxes> pickaxes;
+    RepositoryManager repositoryManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pickaxes);
-
-        ListView pickaxesListView;
-        PickaxesListAdapter pickaxesListAdapter;
-        final List<Pickaxes> pickaxes;
-        RepositoryManager repositoryManager;
         repositoryManager = new RepositoryManager(this);
 
         pickaxes = repositoryManager.pickaxesRepository.getAllPickaxes();
