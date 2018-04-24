@@ -19,19 +19,19 @@ public class PickaxesDescriptionActivity extends Activity {
         setContentView(R.layout.activity_pickaxes_description);
 
         Intent i = getIntent();
-        Pickaxes pickaxes = repositoryManager.PickaxesRepository.getSword(i.getIntExtra("hswordsId", 0));
+        Pickaxes pickaxes = repositoryManager.pickaxesRepository.getPickaxe(i.getIntExtra("pickaxesId", 0));
 
-        TextView pickaxesDamage = findViewById(R.id.hswordsDamage);
-        TextView pickaxesKnockback = findViewById(R.id.hswordsKnockback);
-        TextView pickaxesBonus = findViewById(R.id.hswordsKnockback);
-        TextView pickaxesCritical_chance = findViewById(R.id.hswordsCritical_chance);
-        TextView pickaxesUse_time = findViewById(R.id.hswordsUse_time);
-        TextView pickaxesTool_speed = findViewById(R.id.hswordsUse_time);
-        TextView pickaxesRarity = findViewById(R.id.hswordsRarity);
-        TextView pickaxesBuy_price = findViewById(R.id.hswordsBuy_price);
-        TextView pickaxesSell_price = findViewById(R.id.hswordsSell_price);
-        TextView pickaxesPickaxe_power = findViewById(R.id.hswordsSell_price);
-        TextView pickaxesAxe_power = findViewById(R.id.hswordsSell_price);
+        TextView pickaxesDamage = findViewById(R.id.pickaxesDamage);
+        TextView pickaxesKnockback = findViewById(R.id.pickaxesKnockback);
+        TextView pickaxesBonus = findViewById(R.id.pickaxesBonus);
+        TextView pickaxesCritical_chance = findViewById(R.id.pickaxesCritical_chance);
+        TextView pickaxesUse_time = findViewById(R.id.pickaxesUse_time);
+        TextView pickaxesTool_speed = findViewById(R.id.pickaxesTool_speed);
+        TextView pickaxesRarity = findViewById(R.id.pickaxesRarity);
+        TextView pickaxesBuy_price = findViewById(R.id.pickaxesBuy_price);
+        TextView pickaxesSell_price = findViewById(R.id.pickaxesSell_price);
+        TextView pickaxesPickaxe_power = findViewById(R.id.pickaxesPickaxe_power);
+        TextView pickaxesAxe_power = findViewById(R.id.pickaxesAxe_power);
 
         pickaxesDamage.setText(Integer.toString(pickaxes.damage));
         pickaxesKnockback.setText((pickaxes.knockback));
