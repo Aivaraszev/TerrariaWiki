@@ -14,33 +14,33 @@ import com.zevzikovas.aivaras.terraria.repositories.RepositoryManager;
 
 import java.util.List;
 
-public class SwordActivity extends Activity {
+public class SwordsActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sword);
+        setContentView(R.layout.activity_swords);
 
-        ListView itemListView;
+        ListView swordsListView;
         ItemListAdapter itemListAdapter;
-        final List<Swords> items;
+        final List<Swords> Swords;
         RepositoryManager repositoryManager;
 
         repositoryManager = new RepositoryManager(this);
 
-        items = repositoryManager.itemsRepository.getAllItems();
+        Swords = repositoryManager.SwordsRepository.getAllItems();
 
-        itemListAdapter = new ItemListAdapter(this, R.layout.item_list_item, items);
+        itemListAdapter = new ItemListAdapter(this, R.layout.swords_list_item, Swords);
 
-        itemListView = findViewById(R.id.ItemsList);
-        itemListView.setAdapter(itemListAdapter);
-        itemListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        SwordsListView = findViewById(R.id.SwordsList);
+        SwordsListView.setAdapter(SwordsListAdapter);
+        SwordsListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
-                Intent i = new Intent(getApplicationContext(), ItemDescriptionActivity.class);
+                Intent i = new Intent(getApplicationContext(), SwordsDescriptionActivity.class);
 
-                int itemId = items.get(position).id;
-                i.putExtra("itemId", itemId);
+                int swordId = Swords.get(position).id;
+                i.putExtra("swordId", swordId);
 
                 startActivity(i);
             }

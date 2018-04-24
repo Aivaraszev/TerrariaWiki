@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.zevzikovas.aivaras.terraria.activities.ItemDescriptionActivity">
+    tools:context="com.zevzikovas.aivaras.terraria.activities.SwordsDescriptionActivity">
 
     <TextView
         android:id="@+id/hswordsId"

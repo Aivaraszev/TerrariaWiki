@@ -7,7 +7,7 @@ import android.widget.TextView;
 
 import com.zevzikovas.aivaras.terraria.R;
 
-public class ItemDescriptionActivity extends Activity {
+public class SwordsDescriptionActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

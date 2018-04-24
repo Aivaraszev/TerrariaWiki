@@ -19,7 +19,7 @@ public class WeaponsActivity extends Activity {
         startActivity(intent);
     }
     public void SwordsList (View view) {
-        Intent intent = new Intent(getApplicationContext(), SwordActivity.class);
+        Intent intent = new Intent(getApplicationContext(), SwordsActivity.class);
         startActivity(intent);
     }
 }
