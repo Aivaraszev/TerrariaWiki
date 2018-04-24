@@ -26,16 +26,16 @@ public class SwordsActivity extends Activity {
         setContentView(R.layout.activity_swords);
         repositoryManager = new RepositoryManager(this);
 
-        swords = repositoryManager.swordsRepository.getAllSwords();
+        swords = repositoryManager.swordsRepository.getAllSword();
 
-        swordsListAdapter = new SwordsListAdapter(this, R.layout.Swords_list_item, swords);
+        swordsListAdapter = new SwordsListAdapter(this, R.layout.swords_list_item, swords);
 
         swordsListView = findViewById(R.id.SwordsList);
         swordsListView.setAdapter(swordsListAdapter);
         swordsListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
-                Intent i = new Intent(getApplicationContext(), SwordDescriptionActivity.class);
+                Intent i = new Intent(getApplicationContext(), SwordsDescriptionActivity.class);
 
                 int swordsId = swords.get(position).id;
                 i.putExtra("swordsId", swordsId);
