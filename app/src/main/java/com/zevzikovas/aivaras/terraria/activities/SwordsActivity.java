@@ -8,39 +8,37 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 
 import com.zevzikovas.aivaras.terraria.R;
-import com.zevzikovas.aivaras.terraria.adapters.ItemListAdapter;
+import com.zevzikovas.aivaras.terraria.adapters.SwordsListAdapter;
 import com.zevzikovas.aivaras.terraria.models.Swords;
 import com.zevzikovas.aivaras.terraria.repositories.RepositoryManager;
 
 import java.util.List;
 
 public class SwordsActivity extends Activity {
+    ListView swordsListView;
+    SwordsListAdapter swordsListAdapter;
+    List<Swords> swords;
+    RepositoryManager repositoryManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_swords);
-
-        ListView swordsListView;
-        ItemListAdapter itemListAdapter;
-        final List<Swords> Swords;
-        RepositoryManager repositoryManager;
-
         repositoryManager = new RepositoryManager(this);
 
-        Swords = repositoryManager.SwordsRepository.getAllItems();
+        swords = repositoryManager.swordsRepository.getAllSwords();
 
-        itemListAdapter = new ItemListAdapter(this, R.layout.swords_list_item, Swords);
+        swordsListAdapter = new SwordsListAdapter(this, R.layout.Swords_list_item, swords);
 
-        SwordsListView = findViewById(R.id.SwordsList);
-        SwordsListView.setAdapter(SwordsListAdapter);
-        SwordsListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        swordsListView = findViewById(R.id.SwordsList);
+        swordsListView.setAdapter(swordsListAdapter);
+        swordsListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
-                Intent i = new Intent(getApplicationContext(), SwordsDescriptionActivity.class);
+                Intent i = new Intent(getApplicationContext(), SwordDescriptionActivity.class);
 
-                int swordId = Swords.get(position).id;
-                i.putExtra("swordId", swordId);
+                int swordsId = swords.get(position).id;
+                i.putExtra("swordsId", swordsId);
 
                 startActivity(i);
             }
