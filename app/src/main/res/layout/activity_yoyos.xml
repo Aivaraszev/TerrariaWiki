@@ -5,16 +5,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".activities.SwordsActivity">
+    tools:context=".activities.YoyosActivity">
 
     <ImageView
-        android:id="@+id/imageView9"
+        android:id="@+id/imageView8"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:src="@drawable/prehardmode_swords" />
+        android:src="@drawable/hardmode_swords" />
 
     <ListView
-        android:id="@+id/SwordsList"
+        android:id="@+id/YoyosList"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 </LinearLayout>

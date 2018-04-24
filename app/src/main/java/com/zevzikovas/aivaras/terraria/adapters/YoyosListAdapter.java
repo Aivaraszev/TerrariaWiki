@@ -28,11 +28,11 @@ public class YoyosListAdapter extends ArrayAdapter<Yoyos> {
         }
 
         if (yoyos != null) {
-            TextView hswordsName = convertView.findViewById(R.id.hswordsName);
-            ImageView hswordsPicture = convertView.findViewById(R.id.hswordsPicture);
+            TextView yoyosName = convertView.findViewById(R.id.yoyosName);
+            ImageView yoyosPicture = convertView.findViewById(R.id.yoyosPicture);
 
-            hswordsName.setText(yoyos.name);
-            hswordsPicture.setImageResource(yoyos.picture);
+            yoyosName.setText(yoyos.name);
+            yoyosPicture.setImageResource(yoyos.picture);
         }
 
         return convertView;
