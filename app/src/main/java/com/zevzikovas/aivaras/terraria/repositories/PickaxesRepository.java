@@ -20,7 +20,7 @@ public class PickaxesRepository {
     private static final String DAMAGE = "damage";
     private static final String KNOCKBACK = "knockback";
     private static final String BONUS = "bonus";
-    private static final String CRITICAL_CHANSE = "critical_chanse";
+    private static final String CRITICAL_CHANCE = "critical_chance";
     private static final String USE_TIME = "use_time";
     private static final String TOOL_SPEED = "tool_speed";
     private static final String RARITY = "rarity";
@@ -42,7 +42,7 @@ public class PickaxesRepository {
                         DAMAGE + " INTEGER," +
                         KNOCKBACK + " TEXT," +
                         BONUS + " TEXT," +
-                        CRITICAL_CHANSE + " TEXT," +
+                        CRITICAL_CHANCE + " TEXT," +
                         USE_TIME + " TEXT," +
                         TOOL_SPEED + " INTEGER," +
                         RARITY + " TEXT," +
@@ -92,14 +92,14 @@ public class PickaxesRepository {
         preparePickaxes(db, "Stardust Pickaxe", R.drawable.item_stardust_pickaxe, 80, "5.5 (Average)","+4 range", "4%","11 (Very Fast)",6,"Red", "None" ,"5 Gold", "225%", "None");
     }
 
-    private void preparePickaxes(SQLiteDatabase db, String name, int picture, int damage, String knockback, String bonus, String critical_chanse, String use_time, int tool_speed, String rarity, String buy_price, String sell_price, String pickaxe_power, String axe_power) {
+    private void preparePickaxes(SQLiteDatabase db, String name, int picture, int damage, String knockback, String bonus, String critical_chance, String use_time, int tool_speed, String rarity, String buy_price, String sell_price, String pickaxe_power, String axe_power) {
         ContentValues values = new ContentValues();
         values.put(NAME, name);
         values.put(PICTURE, picture);
         values.put(DAMAGE, damage);
         values.put(KNOCKBACK, knockback);
         values.put(BONUS, bonus);
-        values.put(CRITICAL_CHANSE, critical_chanse);
+        values.put(CRITICAL_CHANCE, critical_chance);
         values.put(USE_TIME, use_time);
         values.put(TOOL_SPEED, tool_speed);
         values.put(RARITY, rarity);
@@ -118,7 +118,7 @@ public class PickaxesRepository {
         values.put(DAMAGE, pickaxes.damage);
         values.put(KNOCKBACK, pickaxes.knockback);
         values.put(BONUS, pickaxes.bonus);
-        values.put(CRITICAL_CHANSE, pickaxes.critical_chanse);
+        values.put(CRITICAL_CHANCE, pickaxes.critical_chance);
         values.put(USE_TIME, pickaxes.use_time);
         values.put(TOOL_SPEED, pickaxes.tool_speed);
         values.put(RARITY, pickaxes.rarity);
@@ -163,5 +163,34 @@ public class PickaxesRepository {
         db.close();
 
         return pickaxe;
+    }
+    public Pickaxes getPickaxe(int id) {
+        SQLiteDatabase db = dbHelper.getReadableDatabase();
+        String selectQuery = "SELECT * FROM " + TABLE_NAME + " WHERE ID = " + id;
+        Cursor cursor = db.rawQuery(selectQuery, null);
+        Pickaxes pickaxes = null;
+
+        if (cursor.moveToFirst()) {
+            pickaxes = new Pickaxes(
+                    cursor.getInt(0),
+                    cursor.getString(1),
+                    cursor.getInt(2),
+                    cursor.getInt(3),
+                    cursor.getString(4),
+                    cursor.getString(5),
+                    cursor.getString(6),
+                    cursor.getString(7),
+                    cursor.getInt(8),
+                    cursor.getString(9),
+                    cursor.getString(10),
+                    cursor.getString(11),
+                    cursor.getString(12),
+                    cursor.getString(13)
+            );
+        }
+        cursor.close();
+        db.close();
+
+        return pickaxes;
     }
 }
