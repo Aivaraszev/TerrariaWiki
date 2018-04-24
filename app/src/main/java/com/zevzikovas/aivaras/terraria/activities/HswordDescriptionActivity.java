@@ -30,6 +30,8 @@ public class HswordDescriptionActivity extends Activity {
         TextView hswordsGrants_buff = findViewById(R.id.hswordsGrants_buff);
         TextView hswordsInflicts_debuff = findViewById(R.id.hswordsInflicts_debuff);
         TextView hswordsRarity = findViewById(R.id.hswordsRarity);
+        TextView hswordsBuy_price = findViewById(R.id.hswordsBuy_price);
+        TextView hswordsSell_price = findViewById(R.id.hswordsSell_price);
 
         hswordsDamage.setText(Integer.toString(hsword.damage));
         hswordsKnockback.setText((hsword.knockback));
@@ -40,5 +42,7 @@ public class HswordDescriptionActivity extends Activity {
         hswordsGrants_buff.setText((hsword.grants_buff));
         hswordsInflicts_debuff.setText((hsword.inflicts_debuff));
         hswordsRarity.setText((hsword.rarity));
+        hswordsBuy_price.setText((hsword.buy_price));
+        hswordsSell_price.setText((hsword.sell_price));
     }
 }
