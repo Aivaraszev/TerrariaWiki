@@ -1,6 +1,6 @@
 package com.zevzikovas.aivaras.terraria.models;
 
-public class Item {
+public class Swords {
     public int id;
     public String name;
     public int picture;
@@ -8,7 +8,7 @@ public class Item {
     public String rarity;
     public int price;
 
-    public Item(int id, String name, int picture, int damage, String rarity, int price) {
+    public Swords(int id, String name, int picture, int damage, String rarity, int price) {
         this.id = id;
         this.name = name;
         this.picture = picture;
@@ -17,7 +17,7 @@ public class Item {
         this.price = price;
     }
 
-    public Item(String name, int picture, int damage, String rarity, int price) {
+    public Swords(String name, int picture, int damage, String rarity, int price) {
         this.name = name;
         this.picture = picture;
         this.damage = damage;

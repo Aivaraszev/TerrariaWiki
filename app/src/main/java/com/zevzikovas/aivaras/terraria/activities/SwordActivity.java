@@ -9,7 +9,7 @@ import android.widget.ListView;
 
 import com.zevzikovas.aivaras.terraria.R;
 import com.zevzikovas.aivaras.terraria.adapters.ItemListAdapter;
-import com.zevzikovas.aivaras.terraria.models.Item;
+import com.zevzikovas.aivaras.terraria.models.Swords;
 import com.zevzikovas.aivaras.terraria.repositories.RepositoryManager;
 
 import java.util.List;
@@ -23,7 +23,7 @@ public class SwordActivity extends Activity {
 
         ListView itemListView;
         ItemListAdapter itemListAdapter;
-        final List<Item> items;
+        final List<Swords> items;
         RepositoryManager repositoryManager;
 
         repositoryManager = new RepositoryManager(this);
@@ -49,4 +49,3 @@ public class SwordActivity extends Activity {
 
     }
 }
-

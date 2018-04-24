@@ -9,18 +9,18 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.zevzikovas.aivaras.terraria.R;
-import com.zevzikovas.aivaras.terraria.models.Item;
+import com.zevzikovas.aivaras.terraria.models.Swords;
 
 import java.util.List;
 
-public class ItemListAdapter extends ArrayAdapter<Item> {
-    public ItemListAdapter(Context context, int resource, List<Item> items) {
+public class ItemListAdapter extends ArrayAdapter<Swords> {
+    public ItemListAdapter(Context context, int resource, List<Swords> items) {
         super(context, resource, items);
     }
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        Item item = getItem(position);
+        Swords item = getItem(position);
 
         if (convertView == null) {
             convertView = LayoutInflater.from(getContext()).inflate(R.layout.item_list_item, parent, false);
