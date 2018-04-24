@@ -4,4 +4,6 @@
     <string name="title_activity_weapons">WeaponsActivity</string>
     <string name="title_activity_hsword">HswordActivity</string>
     <string name="title_activity_sword">SwordActivity</string>
+    <string name="title_activity_yoyos">YoyosActivity</string>
+    <string name="title_activity_yoyos_description">YoyosDescriptionActivity</string>
 </resources>

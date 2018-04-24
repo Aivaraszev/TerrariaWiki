@@ -35,7 +35,13 @@
             android:label="@string/title_activity_hsword" />
         <activity
             android:name=".activities.SwordsActivity"
-            android:label="@string/title_activity_sword"/>
+            android:label="@string/title_activity_sword" />
+        <activity
+            android:name=".activities.YoyosActivity"
+            android:label="@string/title_activity_yoyos" />
+        <activity
+            android:name=".activities.YoyosDescriptionActivity"
+            android:label="@string/title_activity_yoyos_description"></activity>
     </application>
 
 </manifest>

@@ -11,7 +11,6 @@ import com.zevzikovas.aivaras.terraria.adapters.HswordsListAdapter;
 import com.zevzikovas.aivaras.terraria.models.Hswords;
 import com.zevzikovas.aivaras.terraria.repositories.RepositoryManager;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class HSwordsActivity extends Activity {

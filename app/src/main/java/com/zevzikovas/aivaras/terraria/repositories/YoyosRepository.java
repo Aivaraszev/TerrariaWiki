@@ -64,14 +64,14 @@ public class YoyosRepository {
     }
 
     public void fill(SQLiteDatabase db) {
-        prepareYoyos(db, "Pearlwood Sword", R.drawable.item_pearlwood_sword, 11, "5", "4%", 20, "None", "None", "None", "None", "White", "None", "20 Copper");
-        prepareYoyos(db, "Classy Cane", R.drawable.item_classy_cane, 16, "3.5", "4%", 14, "None", "None", "None","None", "Green", "None", "50 Silver");
-        prepareYoyos(db, "Slap Hand", R.drawable.item_slap_hand, 35, "20", "19%", 20, "None", "None", "None", "None", "Light Red", "25 Gold", "5 Gold");
-        prepareYoyos(db, "Breaker Blade", R.drawable.item_breaker_blade, 39, "8", "4%", 29, "None", "None", "None", "None", "Light Red", "None", "3 Gold");
-        prepareYoyos(db, "Cobalt Sword", R.drawable.item_cobalt_sword, 39, "3.85", "4%", 22, "None", "None", "None", "None", "Light Red", "None", "1 Gold 50 Silver");
-        prepareYoyos(db, "Palladium Sword", R.drawable.item_palladium_sword, 41, "4.75", "4%", 24, "None", "None", "None", "None", "Light Red", "None","1 Gold 84 Silver");
-        prepareYoyos(db, "Phasesaber", R.drawable.item_phasesaber, 41, "3", "4%", 24, "None", "None", "None", "None", "Light Red", "None", "54 Silver");
-        prepareYoyos(db, "Ice Sickle", R.drawable.item_ice_sickle, 42, "5.5", "4%", 24, "8", "Shoots an icy sickle", "None", "None", "Pink", "None", "5 Gold");
+        prepareYoyos(db, "Wooden Yoyo", R.drawable.item_wooden_yoyo, 11, "5", "4%", 20, "None", "None", "None", "None", "White", "None", "20 Copper");
+        prepareYoyos(db, "Rally", R.drawable.item_rally, 16, "3.5", "4%", 14, "None", "None", "None","None", "Green", "None", "50 Silver");
+        prepareYoyos(db, "Malaise", R.drawable.item_malaise, 35, "20", "19%", 20, "None", "None", "None", "None", "Light Red", "25 Gold", "5 Gold");
+        prepareYoyos(db, "Artery", R.drawable.item_artery, 39, "8", "4%", 29, "None", "None", "None", "None", "Light Red", "None", "3 Gold");
+        prepareYoyos(db, "Amazon", R.drawable.item_amazon, 39, "3.85", "4%", 22, "None", "None", "None", "None", "Light Red", "None", "1 Gold 50 Silver");
+        prepareYoyos(db, "Code 1", R.drawable.item_code_1, 41, "4.75", "4%", 24, "None", "None", "None", "None", "Light Red", "None","1 Gold 84 Silver");
+        prepareYoyos(db, "Valor", R.drawable.item_valor, 41, "3", "4%", 24, "None", "None", "None", "None", "Light Red", "None", "54 Silver");
+        prepareYoyos(db, "Cascade", R.drawable.item_cascade, 42, "5.5", "4%", 24, "8", "Shoots an icy sickle", "None", "None", "Pink", "None", "5 Gold");
 
     }
 
