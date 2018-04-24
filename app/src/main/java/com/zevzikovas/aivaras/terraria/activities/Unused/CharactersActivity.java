@@ -1,4 +1,4 @@
-package com.zevzikovas.aivaras.terraria.activities;
+package com.zevzikovas.aivaras.terraria.activities.Unused;
 
 import android.app.Activity;
 import android.os.Bundle;

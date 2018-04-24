@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.zevzikovas.aivaras.terraria.activities.MechanicsActivity">
+    tools:context="com.zevzikovas.aivaras.terraria.activities.Unused.MechanicsActivity">
 
     <ImageView
         android:id="@+id/imageView6"

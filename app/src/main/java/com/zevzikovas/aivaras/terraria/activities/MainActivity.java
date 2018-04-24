@@ -6,6 +6,9 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.zevzikovas.aivaras.terraria.R;
+import com.zevzikovas.aivaras.terraria.activities.Unused.BiomesActivity;
+import com.zevzikovas.aivaras.terraria.activities.Unused.CharactersActivity;
+import com.zevzikovas.aivaras.terraria.activities.Unused.MechanicsActivity;
 
 public class MainActivity extends Activity {
 
