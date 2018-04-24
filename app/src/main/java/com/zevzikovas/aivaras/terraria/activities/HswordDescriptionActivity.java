@@ -19,7 +19,7 @@ public class HswordDescriptionActivity extends Activity {
         setContentView(R.layout.activity_hswords_description);
 
         Intent i = getIntent();
-        Hswords hsword = repositoryManager.hSwordsRepository.getSword(i.getIntExtra("hswordsId", 0));
+        Hswords hsword = repositoryManager.hSwordsRepository.getHsword(i.getIntExtra("hswordsId", 0));
 
         TextView hswordsDamage = findViewById(R.id.hswordsDamage);
         TextView hswordsKnockback = findViewById(R.id.hswordsKnockback);

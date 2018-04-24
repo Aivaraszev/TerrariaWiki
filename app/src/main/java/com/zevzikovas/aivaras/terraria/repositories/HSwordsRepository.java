@@ -174,7 +174,7 @@ public class HSwordsRepository {
         return hsword;
     }
 
-    public Hswords getSword(int id) {
+    public Hswords getHsword(int id) {
         SQLiteDatabase db = dbHelper.getReadableDatabase();
         String selectQuery = "SELECT * FROM " + TABLE_NAME + " WHERE ID = " + id;
         Cursor cursor = db.rawQuery(selectQuery, null);
