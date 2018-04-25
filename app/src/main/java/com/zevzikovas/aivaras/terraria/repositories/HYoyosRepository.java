@@ -60,17 +60,17 @@ public class HYoyosRepository {
 
     public void fill(SQLiteDatabase db) {
         prepareYoyos(db, "Format:C", R.drawable.item_format_c, 29, "3.25 (Weak)", "4%", "24 (Fast)", "16",  "None", "None", "Orange", "20 Gold", "4 Gold");
-        prepareYoyos(db, "Gradient", R.drawable.item_gradient, 14, "3.5 (Weak)", "4%", "24 (Fast)", "16",  "None","None", "Blue", "20 Gold", "4 Gold");
-        prepareYoyos(db, "Chik", R.drawable.item_chik, 16, "4.5 (Average)", "4%", "24 (Fast)", "16",  "None", "None", "Blue", "None", "1 Gold");
-        prepareYoyos(db, "Hel-Fire", R.drawable.item_hel_fire, 17, "4 (Weak)", "4%", "24 (Fast)", "16",  "None", "None", "Blue", "None", "1 Gold");
-        prepareYoyos(db, "Amarok", R.drawable.item_amarok, 20, "3.75 (Weak)", "4%", "24", "16",  "None", "None", "Orange", "None", "1 Gold 30 Silver");
-        prepareYoyos(db, "Code 2", R.drawable.item_code_2, 21, "3.25 (Weak)", "4%", "24 (Fast)", "16",  "None", "None", "Green", "5 Gold","1 Gold");
-        prepareYoyos(db, "Yelets", R.drawable.item_yelets, 22, "3.85 (Weak)", "4%", "24 (Fast)", "16",  "None", "None", "Orange", "None", "1 Gold 50 Silver");
-        prepareYoyos(db, "Red's Throw", R.drawable.item_reds_throw, 27, "4.3 (Average)", "4%", "24 (Fast)", "16", "None", "On Fire!", "Orange", "None", "1 Gold 80 Silver");
-        prepareYoyos(db, "Valkyrie Yoyo", R.drawable.item_valkyrie_yoyo, 20, "3.75 (Weak)", "4%", "24", "16",  "None", "None", "Orange", "None", "1 Gold 30 Silver");
-        prepareYoyos(db, "Kraken", R.drawable.item_kraken, 21, "3.25 (Weak)", "4%", "24 (Fast)", "16",  "None", "None", "Green", "5 Gold","1 Gold");
-        prepareYoyos(db, "The Eye of Cthulhu", R.drawable.item_the_eye_of_cthulhu, 22, "3.85 (Weak)", "4%", "24 (Fast)", "16",  "None", "None", "Orange", "None", "1 Gold 50 Silver");
-        prepareYoyos(db, "Terrarian", R.drawable.item_terrarian, 27, "4.3 (Average)", "4%", "24 (Fast)", "16", "None", "On Fire!", "Orange", "None", "1 Gold 80 Silver");
+        prepareYoyos(db, "Gradient", R.drawable.item_gradient, 34, "3.8 (Weak)", "4%", "24 (Fast)", "16",  "None","None", "Orange", "20 Gold", "4 Gold");
+        prepareYoyos(db, "Chik", R.drawable.item_chik, 39, "3.15 (Weak)", "4%", "24 (Fast)", "16",  "None", "None", "Light Red", "None", "4 Gold");
+        prepareYoyos(db, "Hel-Fire", R.drawable.item_hel_fire, 41, "4.5 (Average)", "4%", "24 (Fast)", "16",  "None", "On Fire!", "Light Red", "None", "4 Gold");
+        prepareYoyos(db, "Amarok", R.drawable.item_amarok, 43, "2.8 (Very Weak)", "4%", "24", "16",  "None", "Frostburn", "Light Red", "None", "4 Gold");
+        prepareYoyos(db, "Code 2", R.drawable.item_code_2, 47, "3.8 (Weak)", "4%", "24 (Fast)", "16",  "None", "None", "Pink", "25 Gold","5 Gold");
+        prepareYoyos(db, "Yelets", R.drawable.item_yelets, 60, "3.1 (Weak)", "4%", "24 (Fast)", "16",  "None", "None", "Lime", "None", "5 Gold");
+        prepareYoyos(db, "Red's Throw", R.drawable.item_reds_throw, 70, "8.5 (Very Strong)", "4%", "24 (Fast)", "16", "None", "None", "Cyan", "None", "4 Gold");
+        prepareYoyos(db, "Valkyrie Yoyo", R.drawable.item_valkyrie_yoyo, 70, "8.5 (Very Strong)", "4%", "24 (Fast)", "16",  "None", "None", "Cyan", "None", "4 Gold");
+        prepareYoyos(db, "Kraken", R.drawable.item_kraken, 90, "4.3 (Average)", "4%", "24 (Fast)", "16",  "None", "None", "Yellow", "None","11 Gold");
+        prepareYoyos(db, "The Eye of Cthulhu", R.drawable.item_the_eye_of_cthulhu, 115, "3.5 (Weak)", "4%", "24 (Fast)", "16",  "None", "None", "Yellow", "None", "11 Gold 50 Silver");
+        prepareYoyos(db, "Terrarian", R.drawable.item_terrarian, 190, "6.5 (Strong)", "14%", "25 (Fast)", "16", "None", "None", "Red", "None", "10 Gold");
 
     }
 
