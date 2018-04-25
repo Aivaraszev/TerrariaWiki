@@ -7,7 +7,7 @@ public class Swords {
     public int damage;
     public String knockback;
     public String critical_chance;
-    public int use_time;
+    public String  use_time;
     public String velocity;
     public String tooltip;
     public String grants_buff;
@@ -16,7 +16,7 @@ public class Swords {
     public String buy_price;
     public String sell_price;
 
-    public Swords (int id, String name, int picture, int damage, String knockback, String critical_chance, int use_time, String velocity, String tooltip, String grants_buff, String inflicts_debuff, String rarity, String buy_price, String sell_price) {
+    public Swords (int id, String name, int picture, int damage, String knockback, String critical_chance, String use_time, String velocity, String tooltip, String grants_buff, String inflicts_debuff, String rarity, String buy_price, String sell_price) {
         this.id = id;
         this.name = name;
         this.picture = picture;
@@ -33,7 +33,7 @@ public class Swords {
         this.sell_price = sell_price;
     }
 
-    public Swords (String name, int picture, int damage, String knockback, String critical_chance, int use_time, String velocity, String tooltip, String grants_buff, String inflicts_debuff, String rarity, String buy_price, String sell_price) {
+    public Swords (String name, int picture, int damage, String knockback, String critical_chance, String use_time, String velocity, String tooltip, String grants_buff, String inflicts_debuff, String rarity, String buy_price, String sell_price) {
         this.name = name;
         this.picture = picture;
         this.damage = damage;

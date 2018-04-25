@@ -45,7 +45,7 @@ public class SwordsRepository {
                         DAMAGE + " INTEGER," +
                         KNOCKBACK + " TEXT," +
                         CRITICAL_CHANCE + " TEXT," +
-                        USE_TIME + " INTEGER," +
+                        USE_TIME + " TEXT," +
                         VELOCITY + " TEXT," +
                         TOOLTIP + " TEXT," +
                         GRANTS_BUFF + " TEXT," +
@@ -62,30 +62,30 @@ public class SwordsRepository {
     }
     //TODO: make "crafting"
     public void fill(SQLiteDatabase db) {
-        prepareSwords(db, "Copper Shortsword", R.drawable.item_copper_shortsword, 5, "4", "4%", 12, "None", "None", "None", "None", "White", "None", "70 Copper");
-        prepareSwords(db, "Tin Shortsword", R.drawable.item_tin_shortsword, 7, "4", "4%", 11, "None", "None", "None", "None", "White", "None", "1 Silver 5 Copper");
-        prepareSwords(db, "Wooden Sword", R.drawable.item_wooden_sword, 7, "4", "4%", 24, "None", "None", "None", "None", "White", "None", "20 Copper");
-        prepareSwords(db, "Boreal Wood Sword", R.drawable.item_boreal_wood_sword, 8, "5", "4%", 22, "None", "None", "None", "None", "White", "None", "20 Copper");
-        prepareSwords(db, "Copper Broadsword", R.drawable.item_copper_broadsword, 8, "5", "4%", 22, "None", "None", "None", "None", "White", "None", "90 Copper");
-        prepareSwords(db, "Iron Shortsword", R.drawable.item_iron_shortsword, );
-        prepareSwords(db, "Palm Wood Sword", R.drawable.item_palm_wood_sword, );
-        prepareSwords(db, "Rich Mahogany Sword", R.drawable.item_rich_mahogany_sword, );
-        prepareSwords(db, "Cactus Sword", R.drawable.item_cactus_sword, );
-        prepareSwords(db, "Lead Shortsword", R.drawable.item_lead_shortsword, );
-        prepareSwords(db, "Silver Shortsword", R.drawable.item_silver_shortsword, );
-        prepareSwords(db, "Tin BroadSword", R.drawable.item_tin_broadsword, );
-        prepareSwords(db, "Ebonwood Sword", R.drawable.item_ebonwood_sword, );
-        prepareSwords(db, "Iron Broadsword", R.drawable.item_iron_broadsword, );
-        prepareSwords(db, "Shadewood Sword", R.drawable.item_shadewood_sword, );
-        prepareSwords(db, "Tungsten Shortsword", R.drawable.item_tungsten_shortsword, );
-        prepareSwords(db, "Gold Shortsword", R.drawable.item_gold_short_sword, );
-        prepareSwords(db, "Lead Broadsword", R.drawable.item_lead_broadsword, );
-        prepareSwords(db, "Silver Broadsword", R.drawable.item_silver_broadsword, );
-        prepareSwords(db, "Bladed Glove", R.drawable.item_bladed_glove, );
-        prepareSwords(db, "Tungsten Broadsword", R.drawable.item_tungsten_broadsword, );
-        prepareSwords(db, "Zombie Arm", R.drawable.item_zombie_arm, );
-        prepareSwords(db, "Gold Broadsword", R.drawable.item_gold_broadsword, );
-        prepareSwords(db, "Platinum Shortsword", R.drawable.item_platinum_shortsword, );
+        prepareSwords(db, "Copper Shortsword", R.drawable.item_copper_shortsword, 5, "4 (Weak)", "4%", "12 (Very Fast)", "None", "None", "None", "None", "White", "None", "70 Copper");
+        prepareSwords(db, "Tin Shortsword", R.drawable.item_tin_shortsword, 7, "4 (Weak)", "4%", "11 (Very Fast)", "None", "None", "None", "None", "White", "None", "1 Silver 5 Copper");
+        prepareSwords(db, "Wooden Sword", R.drawable.item_wooden_sword, 7, "4 (Weak)", "4%", "24 (Fast)", "None", "None", "None", "None", "White", "None", "20 Copper");
+        prepareSwords(db, "Boreal Wood Sword", R.drawable.item_boreal_wood_sword, 8, "5 (Average)", "4%", "22 (Fast)", "None", "None", "None", "None", "White", "None", "20 Copper");
+        prepareSwords(db, "Copper Broadsword", R.drawable.item_copper_broadsword, 8, "5 (Average)", "4%", "22 (Fast)", "None", "None", "None", "None", "White", "None", "90 Copper");
+        prepareSwords(db, "Iron Shortsword", R.drawable.item_iron_shortsword, 8, "4 (Weak)", "4%", "11 (Very Fast)", "None", "None", "None", "None", "White", "None", "2 Silver 80 Copper");
+        prepareSwords(db, "Palm Wood Sword", R.drawable.item_palm_wood_sword, 8, "5 (Average)", "4%", "22 (Fast)", "None", "None", "None", "None", "White", "None", "20 Copper");
+        prepareSwords(db, "Rich Mahogany Sword", R.drawable.item_rich_mahogany_sword, 8, "5 (Average)", "4%", "22 (Fast)", "None", "None", "None", "None", "White", "None", "20 Copper");
+        prepareSwords(db, "Cactus Sword", R.drawable.item_cactus_sword, 9, "5 (Average)", "4%", "24 (Fast)", "None", "None", "None", "None", "White", "None", "3 Silver 60 Copper");
+        prepareSwords(db, "Lead Shortsword", R.drawable.item_lead_shortsword, 9, "4 (Weak)", "4%", "11 (Very Fast)", "None", "None", "None", "None", "White", "None", "4 Silver 20 Copper");
+        prepareSwords(db, "Silver Shortsword", R.drawable.item_silver_shortsword, 9, "4 (Weak)", "4%", "11 (Very Fast)", "None", "None", "None", "None", "White", "None", "7 Silver");
+        prepareSwords(db, "Tin BroadSword", R.drawable.item_tin_broadsword, 9, "5 (Average)", "4%", "21 (Fast)", "None", "None", "None", "None", "White", "None", "1 Silver 35 Copper");
+        prepareSwords(db, "Ebonwood Sword", R.drawable.item_ebonwood_sword, 10, "5 (Average)", "4%", "20 (Very Fast)", "None", "None", "None", "None", "White", "None", "20 Copper");
+        prepareSwords(db, "Iron Broadsword", R.drawable.item_iron_broadsword, 10, "5 (Average)", "4%", "20(Very Fast)", "None", "None", "None", "None", "White", "None", "3 Silver 60 Copper");
+        prepareSwords(db, "Shadewood Sword", R.drawable.item_shadewood_sword, 10, "5 (Average)", "4%", "20(Very Fast)", "None", "None", "None", "None", "White", "None", "20 Copper");
+        prepareSwords(db, "Tungsten Shortsword", R.drawable.item_tungsten_shortsword, 10, "4 (Weak)", "4%", "10(Very Fast)", "None", "None", "None", "None", "White", "None", "10 Silver 50 Copper");
+        prepareSwords(db, "Gold Shortsword", R.drawable.item_gold_short_sword, 11, "4 (Weak)", "4%", "10(Very Fast)","None", "None", "None", "None", "White", "None", "14 Silver");
+        prepareSwords(db, "Lead Broadsword", R.drawable.item_lead_broadsword, 11, "5 (Average)", "4%", "20(Very Fast)", "None", "None", "None", "None", "White", "None", "5 Silver 40 Copper");
+        prepareSwords(db, "Silver Broadsword", R.drawable.item_silver_broadsword, 11, "5 (Average)", "4%", "20 (Very Fast)", "None", "None", "None", "None", "White", "None", "9 Silver");
+        prepareSwords(db, "Bladed Glove", R.drawable.item_bladed_glove, 12, "4 (Weak)", "4%", "6 (Insanely Fast)", "None", "None", "None", "None", "Green", "None", "1 Gold");
+        prepareSwords(db, "Tungsten Broadsword", R.drawable.item_tungsten_broadsword, 12, "5 (Average)", "4%", "19 (Very Fast)", "None", "None", "None", "None", "White", "None", "13 Silver 50 Copper");
+        prepareSwords(db, "Zombie Arm", R.drawable.item_zombie_arm, 12, "4.25 (Average)", "4%", "22 (Fast)", "None", "None", "None", "None", "White", "None", "4 Silver");
+        prepareSwords(db, "Gold Broadsword", R.drawable.item_gold_broadsword, 13, "5 (Average)", "4%", "19 (Very Fast)", "None", "None", "None", "None", "None", "None", "18 Silver");
+        prepareSwords(db, "Platinum Shortsword", R.drawable.item_platinum_shortsword, 13, "4 (Weak)", "4%", "9 (Very Fast)", "None", "None", "None", "None", "White", "None", "21 Silver");
         prepareSwords(db, "Mandible Blade", R.drawable.item_mandible_blade, );
         prepareSwords(db, "Stylish Scissors", R.drawable.item_stylish_scissors, );
         prepareSwords(db, "Platinum Broadsword", R.drawable.item_platinum_broadsword, );
@@ -109,7 +109,7 @@ public class SwordsRepository {
         prepareSwords(db, "Night's Edge", R.drawable.item_nights_edge, );
     }
 
-    private void prepareSwords(SQLiteDatabase db, String name, int picture, int damage, String knockback, String critical_chance, int use_time, String velocity, String tooltip, String grants_buff, String inflicts_debuff, String rarity, String buy_price, String sell_price) {
+    private void prepareSwords(SQLiteDatabase db, String name, int picture, int damage, String knockback, String critical_chance, String use_time, String velocity, String tooltip, String grants_buff, String inflicts_debuff, String rarity, String buy_price, String sell_price) {
         ContentValues values = new ContentValues();
         values.put(NAME, name);
         values.put(PICTURE, picture);
@@ -165,7 +165,7 @@ public class SwordsRepository {
                         cursor.getInt(3),
                         cursor.getString(4),
                         cursor.getString(5),
-                        cursor.getInt(6),
+                        cursor.getString(6),
                         cursor.getString(7),
                         cursor.getString(8),
                         cursor.getString(9),
@@ -199,7 +199,7 @@ public class SwordsRepository {
                     cursor.getInt(3),
                     cursor.getString(4),
                     cursor.getString(5),
-                    cursor.getInt(6),
+                    cursor.getString(6),
                     cursor.getString(7),
                     cursor.getString(8),
                     cursor.getString(9),
