@@ -5,19 +5,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".activities.WeaponsActivity">
+    tools:context=".activities.BothYoyosActivity">
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/button5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="BothSwordsActivity"
-        android:text="Swords" />
+        android:onClick="YoyosList"
+        android:text="Pre-hardmode yoyos" />
 
     <Button
-        android:id="@+id/Yoyos"
+        android:id="@+id/button6"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="BothYoyosActivity"
-        android:text="Yoyos" />
+        android:text="Hardmode yoyos" />
 </LinearLayout>
