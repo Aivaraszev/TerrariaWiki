@@ -8,4 +8,6 @@
     <string name="title_activity_yoyos_description">YoyosDescriptionActivity</string>
     <string name="title_activity_both_swords">BothSwordsActivity</string>
     <string name="title_activity_both_yoyos">BothYoyosActivity</string>
+    <string name="title_activity_hyoyos">HYoyosActivity</string>
+    <string name="title_activity_hyoyos_description">HYoyosDescriptionActivity</string>
 </resources>

@@ -18,4 +18,8 @@ public class BothYoyosActivity extends Activity {
         Intent intent = new Intent(getApplicationContext(), YoyosActivity.class);
         startActivity(intent);
     }
+    public void HYoyosList (View view) {
+        Intent intent = new Intent(getApplicationContext(), HYoyosActivity.class);
+        startActivity(intent);
+    }
 }

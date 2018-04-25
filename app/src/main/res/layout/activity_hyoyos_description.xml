@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.zevzikovas.aivaras.terraria.activities.YoyosDescriptionActivity">
+    tools:context="com.zevzikovas.aivaras.terraria.activities.HYoyosDescriptionActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -19,7 +19,7 @@
             android:text="Damage:" />
 
         <TextView
-            android:id="@+id/yoyosDamage"
+            android:id="@+id/hyoyosDamage"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="6dp"
@@ -43,7 +43,7 @@
             android:text="Knockback:" />
 
         <TextView
-            android:id="@+id/yoyosKnockback"
+            android:id="@+id/hyoyosKnockback"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="6dp"
@@ -67,7 +67,7 @@
             android:text="Critical chance:" />
 
         <TextView
-            android:id="@+id/yoyosCritical_chance"
+            android:id="@+id/hyoyosCritical_chance"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="6dp"
@@ -91,7 +91,7 @@
             android:text="Use time:" />
 
         <TextView
-            android:id="@+id/yoyosUse_time"
+            android:id="@+id/hyoyosUse_time"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="6dp"
@@ -115,7 +115,7 @@
             android:text="Velocity:" />
 
         <TextView
-            android:id="@+id/yoyosVelocity"
+            android:id="@+id/hyoyosVelocity"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="6dp"
@@ -140,7 +140,7 @@
             android:text="Grants buff:" />
 
         <TextView
-            android:id="@+id/yoyosGrants_buff"
+            android:id="@+id/hyoyosGrants_buff"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="6dp"
@@ -164,7 +164,7 @@
             android:text="Inflicts debuff:" />
 
         <TextView
-            android:id="@+id/yoyosInflicts_debuff"
+            android:id="@+id/hyoyosInflicts_debuff"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="6dp"
@@ -188,7 +188,7 @@
             android:text="Rarity:" />
 
         <TextView
-            android:id="@+id/yoyosRarity"
+            android:id="@+id/hyoyosRarity"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="6dp"
@@ -212,7 +212,7 @@
             android:text="Buy price:" />
 
         <TextView
-            android:id="@+id/yoyosBuy_price"
+            android:id="@+id/hyoyosBuy_price"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="6dp"
@@ -235,7 +235,7 @@
             android:text="Sell price:" />
 
         <TextView
-            android:id="@+id/yoyosSell_price"
+            android:id="@+id/hyoyosSell_price"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="6dp"

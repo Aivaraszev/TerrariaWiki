@@ -47,7 +47,13 @@
             android:label="@string/title_activity_both_swords" />
         <activity
             android:name=".activities.BothYoyosActivity"
-            android:label="@string/title_activity_both_yoyos"></activity>
+            android:label="@string/title_activity_both_yoyos" />
+        <activity
+            android:name=".activities.HYoyosActivity"
+            android:label="@string/title_activity_hyoyos" />
+        <activity
+            android:name=".activities.HYoyosDescriptionActivity"
+            android:label="@string/title_activity_hyoyos_description"></activity>
     </application>
 
 </manifest>
