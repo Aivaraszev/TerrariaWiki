@@ -86,7 +86,6 @@ public class SwordsRepository {
         prepareSwords(db, "Zombie Arm", R.drawable.item_zombie_arm, 12, "4.25 (Average)", "4%", "22 (Fast)", "None", "None", "None", "None", "White", "None", "4 Silver");
         prepareSwords(db, "Gold Broadsword", R.drawable.item_gold_broadsword, 13, "5 (Average)", "4%", "19 (Very Fast)", "None", "None", "None", "None", "None", "None", "18 Silver");
         prepareSwords(db, "Platinum Shortsword", R.drawable.item_platinum_shortsword, 13, "4 (Weak)", "4%", "9 (Very Fast)", "None", "None", "None", "None", "White", "None", "21 Silver");
-<<<<<<< HEAD
         prepareSwords(db, "Mandible Blade", R.drawable.item_mandible_blade, 14, "4.5 (Average)", "4%", "17 (Very Fast)", "None", "None", "None", "None", "Green", "None", "10 Silver");
         prepareSwords(db, "Stylish Scissors", R.drawable.item_stylish_scissors, 14, "5 (Average)", "4%", "11 (Very Fast)", "None", "None", "None", "None", "Green", "None", "50 Silver");
         prepareSwords(db, "Platinum Broadsword", R.drawable.item_platinum_broadsword, 15, "5 (Average)", "4%", "18 (Very Fast)", "None", "None", "None", "None", "White", "None", "17 Silver");
@@ -99,38 +98,15 @@ public class SwordsRepository {
         prepareSwords(db, "Arkhalis", R.drawable.item_arkhalis, 20, "4 (Weak)", "4%", "24 (Fast)", "15", "'I didn't get this off of a Schmoo'", "None", "None", "Green", "None", "80 Silver");
         prepareSwords(db, "Exotic Scimitar", R.drawable.item_exotic_scimitar, 20, "4.25 (Average)", "4%", "17 (Very Fast)", "None", "None", "None", "None", "Green", "None", "50 Silver");
         prepareSwords(db, "Phaseblade", R.drawable.item_phaseblade, 21, "3 (Very Weak)", "4%", "24 (Fast)", "None", "None", "None", "None", "Blue", "None", "54 Silver");
-        prepareSwords(db, "Blood Butcherer", R.drawable.item_blood_butcherer, );
-        prepareSwords(db, "Starfury", R.drawable.item_starfury, );
-        prepareSwords(db, "Enchanted Sword", R.drawable.item_enchanted_sword, );
-        prepareSwords(db, "Purple Clubberfish", R.drawable.item_purple_clubberfish, );
-        prepareSwords(db, "Bee Keeper", R.drawable.item_bee_keeper, );
-        prepareSwords(db, "Falcon Blade", R.drawable.item_falcon_blade, );
-        prepareSwords(db, "Blade of Grass", R.drawable.item_blade_of_grass, );
-        prepareSwords(db, "Fiery Greatsword", R.drawable.item_fiery_greatsword, );
-        prepareSwords(db, "Night's Edge", R.drawable.item_nights_edge, );
-=======
-//        prepareSwords(db, "Mandible Blade", R.drawable.item_mandible_blade, );
-//        prepareSwords(db, "Stylish Scissors", R.drawable.item_stylish_scissors, );
-//        prepareSwords(db, "Platinum Broadsword", R.drawable.item_platinum_broadsword, );
-//        prepareSwords(db, "Bone Sword", R.drawable.item_bone_sword, );
-//        prepareSwords(db, "Candy Cane Sword", R.drawable.item_candy_cane_sword, );
-//        prepareSwords(db, "Katana", R.drawable.item_katana, );
-//        prepareSwords(db, "Ice Blade", R.drawable.item_ice_blade, );
-//        prepareSwords(db, "Light's Bane", R.drawable.item_lights_bane, );
-//        prepareSwords(db, "Muramasa", R.drawable.item_muramasa, );
-//        prepareSwords(db, "Arkhalis", R.drawable.item_arkhalis, );
-//        prepareSwords(db, "Exotic Scimitar", R.drawable.item_exotic_scimitar, );
-//        prepareSwords(db, "Phaseblade", R.drawable.item_phaseblade, );
-//        prepareSwords(db, "Blood Butcherer", R.drawable.item_blood_butcherer, );
-//        prepareSwords(db, "Starfury", R.drawable.item_starfury, );
-//        prepareSwords(db, "Enchanted Sword", R.drawable.item_enchanted_sword, );
-//        prepareSwords(db, "Purple Clubberfish", R.drawable.item_purple_clubberfish, );
-//        prepareSwords(db, "Bee Keeper", R.drawable.item_bee_keeper, );
-//        prepareSwords(db, "Falcon Blade", R.drawable.item_falcon_blade, );
-//        prepareSwords(db, "Blade of Grass", R.drawable.item_blade_of_grass, );
-//        prepareSwords(db, "Fiery Greatsword", R.drawable.item_fiery_greatsword, );
-//        prepareSwords(db, "Night's Edge", R.drawable.item_nights_edge, );
->>>>>>> f4757f0e3beee41c1971c73692ef782ee325b68c
+        prepareSwords(db, "Blood Butcherer", R.drawable.item_blood_butcherer, 22, "5 (Average)", "4%", "24 (Fast)", "None", "None", "None","None", "Blue", "None", "27");
+        prepareSwords(db, "Starfury", R.drawable.item_starfury, 22, "5 (Average)", "4%", "19 (Very Fast)", "20", "Causes stars to rain from the sky. 'Forged with the fury of heaven'", "None", "None", "Green", "None", "1 Gold");
+        prepareSwords(db, "Enchanted Sword", R.drawable.item_enchanted_sword, 24, "5.25 (Average)", "4%", "17 (Very Fast)", "9.5", "Shoots an enchanted beam", "None", "None", "Green", "None", "40 Silver");
+        prepareSwords(db, "Purple Clubberfish", R.drawable.item_purple_clubberfish, 24, "7 (Strong)", "4%", "34 (Slow)", "None", "None", "None", "None", "Blue", "None", "1 Gold");
+        prepareSwords(db, "Bee Keeper", R.drawable.item_bee_keeper, 26, "5.3 (Average)", "4%", "19 (Very Fast)", "None", "Summons killer bees after striking your foe. Small chance to cause confusion", "None", "Confused (Movement is reversed)", "Orange", "None", "54 Silver");
+        prepareSwords(db, "Falcon Blade", R.drawable.item_falcon_blade, 30, "6 (Average)", "4%", "14 (Very Fast)", "None", "None", "None", "None", "Light Red", "None", "20 Silver");
+        prepareSwords(db, "Blade of Grass", R.drawable.item_blade_of_grass, 28, "3 (Very Weak)", "4%", "29 (Average)", "None", "Has a chance to poison enemies", "None", "Poisoned (Slowly losing life)", "Orange", "None", "54 Silver");
+        prepareSwords(db, "Fiery Greatsword", R.drawable.item_fiery_greatsword, 36, "6.5 (Strong)", "4%", "33 (Slow)", "None", "'It's made out of fire!'", "None", "On fire! (Slowly losing life)", "Orange", "None", "54 Silver");
+        prepareSwords(db, "Night's Edge", R.drawable.item_nights_edge, 42, "4.5 (Average)", "4%", "26 (Average)", "None", "None", "None", "None", "Orange", "None", "1 Gold 8 Silver");
     }
 
     private void prepareSwords(SQLiteDatabase db, String name, int picture, int damage, String knockback, String critical_chance, String use_time, String velocity, String tooltip, String grants_buff, String inflicts_debuff, String rarity, String buy_price, String sell_price) {
