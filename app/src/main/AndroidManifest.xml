@@ -19,9 +19,9 @@
         <activity android:name=".activities.HswordDescriptionActivity" />
         <activity android:name=".activities.GameInfoActivity" />
         <activity android:name=".activities.ItemsActivity" />
-        <activity android:name=".activities.MechanicsActivity" />
-        <activity android:name=".activities.BiomesActivity" />
-        <activity android:name=".activities.CharactersActivity" />
+        <!--<activity android:name=".activities.MechanicsActivity" />-->
+        <!--<activity android:name=".activities.BiomesActivity" />-->
+        <!--<activity android:name=".activities.CharactersActivity" />-->
         <activity android:name=".activities.SwordsDescriptionActivity" />
         <activity android:name=".activities.PickaxesDescriptionActivity" />
         <activity

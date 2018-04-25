@@ -19,7 +19,7 @@ public class YoyosDescriptionActivity extends Activity {
         setContentView(R.layout.activity_yoyos_description);
 
         Intent i = getIntent();
-        Yoyos yoyos = repositoryManager.YoyosRepository.getYoyos(i.getIntExtra("yoyosId", 0));
+        Yoyos yoyos = repositoryManager.YoyosRepository.getYoyo(i.getIntExtra("yoyosId", 0));
 
         TextView yoyosDamage = findViewById(R.id.yoyosDamage);
         TextView yoyosKnockback = findViewById(R.id.yoyosKnockback);

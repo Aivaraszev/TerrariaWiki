@@ -12,9 +12,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class YoyosRepository {
-
-
-
     private static final String TABLE_NAME = "yoyos";
 
     private static final String ID = "id";
@@ -151,7 +148,7 @@ public class YoyosRepository {
         return yoyo;
     }
 
-    public Yoyos getYoyos(int id) {
+    public Yoyos getYoyo(int id) {
         SQLiteDatabase db = dbHelper.getReadableDatabase();
         String selectQuery = "SELECT * FROM " + TABLE_NAME + " WHERE ID = " + id;
         Cursor cursor = db.rawQuery(selectQuery, null);

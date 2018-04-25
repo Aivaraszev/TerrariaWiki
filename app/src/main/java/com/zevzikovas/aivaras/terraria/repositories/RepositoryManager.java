@@ -12,7 +12,7 @@ public class RepositoryManager extends SQLiteOpenHelper {
     public SwordsRepository swordsRepository = new SwordsRepository(this);
     public HSwordsRepository hSwordsRepository = new HSwordsRepository(this);
     public PickaxesRepository pickaxesRepository = new PickaxesRepository(this);
-    public PickaxesRepository YoyosRepository = new PickaxesRepository(this);
+    public YoyosRepository YoyosRepository = new YoyosRepository(this);
 
     public RepositoryManager(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
