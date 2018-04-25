@@ -19,7 +19,7 @@ public class SwordsDescriptionActivity extends Activity {
         setContentView(R.layout.activity_swords_description);
 
         Intent i = getIntent();
-        Swords sword = repositoryManager.SwordsRepository.getHsword(i.getIntExtra("swordsId", 0));
+        Swords sword = repositoryManager.swordsRepository.getSword(i.getIntExtra("swordsId", 0));
 
         TextView swordsDamage = findViewById(R.id.swordsDamage);
         TextView swordsKnockback = findViewById(R.id.swordsKnockback);
@@ -36,7 +36,7 @@ public class SwordsDescriptionActivity extends Activity {
         swordsDamage.setText(Integer.toString(sword.damage));
         swordsKnockback.setText((sword.knockback));
         swordsCritical_chance.setText((sword.critical_chance));
-        swordsUse_time.setText(Integer.toString(sword.use_time));
+        swordsUse_time.setText((sword.use_time));
         swordsVelocity.setText((sword.velocity));
         swordsTooltip.setText((sword.tooltip));
         swordsGrants_buff.setText((sword.grants_buff));
