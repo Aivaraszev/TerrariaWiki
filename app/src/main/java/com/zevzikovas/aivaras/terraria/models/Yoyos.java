@@ -7,16 +7,15 @@ public class Yoyos {
     public int damage;
     public String knockback;
     public String critical_chance;
-    public int use_time;
+    public String use_time;
     public String velocity;
-    public String tooltip;
     public String grants_buff;
     public String inflicts_debuff;
     public String rarity;
     public String buy_price;
     public String sell_price;
 
-    public Yoyos (int id, String name, int picture, int damage, String knockback, String critical_chance, int use_time, String velocity, String tooltip, String grants_buff, String inflicts_debuff, String rarity, String buy_price, String sell_price) {
+    public Yoyos (int id, String name, int picture, int damage, String knockback, String critical_chance, String use_time, String velocity, String grants_buff, String inflicts_debuff, String rarity, String buy_price, String sell_price) {
         this.id = id;
         this.name = name;
         this.picture = picture;
@@ -25,7 +24,6 @@ public class Yoyos {
         this.critical_chance = critical_chance;
         this.use_time = use_time;
         this.velocity = velocity;
-        this.tooltip = tooltip;
         this.grants_buff = grants_buff;
         this.inflicts_debuff = inflicts_debuff;
         this.rarity = rarity;
@@ -33,7 +31,7 @@ public class Yoyos {
         this.sell_price = sell_price;
     }
 
-    public Yoyos (String name, int picture, int damage, String knockback, String critical_chance, int use_time, String velocity, String tooltip, String grants_buff, String inflicts_debuff, String rarity, String buy_price, String sell_price) {
+    public Yoyos (String name, int picture, int damage, String knockback, String critical_chance, String use_time, String velocity, String grants_buff, String inflicts_debuff, String rarity, String buy_price, String sell_price) {
         this.name = name;
         this.picture = picture;
         this.damage = damage;
@@ -41,7 +39,6 @@ public class Yoyos {
         this.critical_chance = critical_chance;
         this.use_time = use_time;
         this.velocity = velocity;
-        this.tooltip = tooltip;
         this.grants_buff = grants_buff;
         this.inflicts_debuff = inflicts_debuff;
         this.rarity = rarity;

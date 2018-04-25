@@ -19,14 +19,13 @@ public class YoyosDescriptionActivity extends Activity {
         setContentView(R.layout.activity_yoyos_description);
 
         Intent i = getIntent();
-        Yoyos yoyos = repositoryManager.YoyosRepository.getYoyos(i.getIntExtra("yoyosId", 0));
+        Yoyos yoyos = repositoryManager.YoyosRepository.getYoyo(i.getIntExtra("yoyosId", 0));
 
         TextView yoyosDamage = findViewById(R.id.yoyosDamage);
         TextView yoyosKnockback = findViewById(R.id.yoyosKnockback);
         TextView yoyosCritical_chance = findViewById(R.id.yoyosCritical_chance);
         TextView yoyosUse_time = findViewById(R.id.yoyosUse_time);
         TextView yoyosVelocity = findViewById(R.id.yoyosVelocity);
-        TextView yoyosTooltip = findViewById(R.id.yoyosTooltip);
         TextView yoyosGrants_buff = findViewById(R.id.yoyosGrants_buff);
         TextView yoyosInflicts_debuff = findViewById(R.id.yoyosInflicts_debuff);
         TextView yoyosRarity = findViewById(R.id.yoyosRarity);
@@ -36,9 +35,8 @@ public class YoyosDescriptionActivity extends Activity {
         yoyosDamage.setText(Integer.toString(yoyos.damage));
         yoyosKnockback.setText((yoyos.knockback));
         yoyosCritical_chance.setText((yoyos.critical_chance));
-        yoyosUse_time.setText(Integer.toString(yoyos.use_time));
+        yoyosUse_time.setText((yoyos.use_time));
         yoyosVelocity.setText((yoyos.velocity));
-        yoyosTooltip.setText((yoyos.tooltip));
         yoyosGrants_buff.setText((yoyos.grants_buff));
         yoyosInflicts_debuff.setText((yoyos.inflicts_debuff));
         yoyosRarity.setText((yoyos.rarity));
