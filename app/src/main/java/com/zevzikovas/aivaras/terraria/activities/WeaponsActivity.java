@@ -22,4 +22,8 @@ public class WeaponsActivity extends Activity {
         Intent intent = new Intent(getApplicationContext(), SwordsActivity.class);
         startActivity(intent);
     }
+    public void YoyosList (View view) {
+        Intent intent = new Intent(getApplicationContext(), YoyosActivity.class);
+        startActivity(intent);
+    }
 }

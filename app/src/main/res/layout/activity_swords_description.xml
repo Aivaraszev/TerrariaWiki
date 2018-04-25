@@ -19,7 +19,7 @@
             android:text="Damage:" />
 
         <TextView
-            android:id="@+id/hswordsDamage"
+            android:id="@+id/swordsDamage"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="6dp"
@@ -43,7 +43,7 @@
             android:text="Knockback:" />
 
         <TextView
-            android:id="@+id/hswordsKnockback"
+            android:id="@+id/swordsKnockback"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="6dp"
@@ -67,7 +67,7 @@
             android:text="Critical chance:" />
 
         <TextView
-            android:id="@+id/hswordsCritical_chance"
+            android:id="@+id/swordsCritical_chance"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="6dp"
@@ -91,7 +91,7 @@
             android:text="Use time:" />
 
         <TextView
-            android:id="@+id/hswordsUse_time"
+            android:id="@+id/swordsUse_time"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="6dp"
@@ -115,7 +115,7 @@
             android:text="Velocity:" />
 
         <TextView
-            android:id="@+id/hswordsVelocity"
+            android:id="@+id/swordsVelocity"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="6dp"
@@ -139,7 +139,7 @@
             android:text="Tooltip:" />
 
         <TextView
-            android:id="@+id/hswordsTooltip"
+            android:id="@+id/swordsTooltip"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="6dp"
@@ -163,7 +163,7 @@
             android:text="Grants buff:" />
 
         <TextView
-            android:id="@+id/hswordsGrants_buff"
+            android:id="@+id/swordsGrants_buff"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="6dp"
@@ -187,7 +187,7 @@
             android:text="Inflicts debuff:" />
 
         <TextView
-            android:id="@+id/hswordsInflicts_debuff"
+            android:id="@+id/swordsInflicts_debuff"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="6dp"
@@ -211,7 +211,7 @@
             android:text="Rarity:" />
 
         <TextView
-            android:id="@+id/hswordsRarity"
+            android:id="@+id/swordsRarity"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="6dp"
@@ -235,7 +235,7 @@
             android:text="Buy price:" />
 
         <TextView
-            android:id="@+id/hswordsBuy_price"
+            android:id="@+id/swordsBuy_price"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="6dp"
@@ -258,7 +258,7 @@
             android:text="Sell price:" />
 
         <TextView
-            android:id="@+id/hswordsSell_price"
+            android:id="@+id/swordsSell_price"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="6dp"

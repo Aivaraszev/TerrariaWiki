@@ -20,4 +20,11 @@
         android:layout_height="wrap_content"
         android:onClick="HswordsList"
         android:text="Hardmode swords" />
+
+    <Button
+        android:id="@+id/Yoyos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="YoyosList"
+        android:text="Yoyos" />
 </LinearLayout>
