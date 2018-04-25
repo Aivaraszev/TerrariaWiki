@@ -86,27 +86,27 @@ public class SwordsRepository {
         prepareSwords(db, "Zombie Arm", R.drawable.item_zombie_arm, 12, "4.25 (Average)", "4%", "22 (Fast)", "None", "None", "None", "None", "White", "None", "4 Silver");
         prepareSwords(db, "Gold Broadsword", R.drawable.item_gold_broadsword, 13, "5 (Average)", "4%", "19 (Very Fast)", "None", "None", "None", "None", "None", "None", "18 Silver");
         prepareSwords(db, "Platinum Shortsword", R.drawable.item_platinum_shortsword, 13, "4 (Weak)", "4%", "9 (Very Fast)", "None", "None", "None", "None", "White", "None", "21 Silver");
-//        prepareSwords(db, "Mandible Blade", R.drawable.item_mandible_blade, );
-//        prepareSwords(db, "Stylish Scissors", R.drawable.item_stylish_scissors, );
-//        prepareSwords(db, "Platinum Broadsword", R.drawable.item_platinum_broadsword, );
-//        prepareSwords(db, "Bone Sword", R.drawable.item_bone_sword, );
-//        prepareSwords(db, "Candy Cane Sword", R.drawable.item_candy_cane_sword, );
-//        prepareSwords(db, "Katana", R.drawable.item_katana, );
-//        prepareSwords(db, "Ice Blade", R.drawable.item_ice_blade, );
-//        prepareSwords(db, "Light's Bane", R.drawable.item_lights_bane, );
-//        prepareSwords(db, "Muramasa", R.drawable.item_muramasa, );
-//        prepareSwords(db, "Arkhalis", R.drawable.item_arkhalis, );
-//        prepareSwords(db, "Exotic Scimitar", R.drawable.item_exotic_scimitar, );
-//        prepareSwords(db, "Phaseblade", R.drawable.item_phaseblade, );
-//        prepareSwords(db, "Blood Butcherer", R.drawable.item_blood_butcherer, );
-//        prepareSwords(db, "Starfury", R.drawable.item_starfury, );
-//        prepareSwords(db, "Enchanted Sword", R.drawable.item_enchanted_sword, );
-//        prepareSwords(db, "Purple Clubberfish", R.drawable.item_purple_clubberfish, );
-//        prepareSwords(db, "Bee Keeper", R.drawable.item_bee_keeper, );
-//        prepareSwords(db, "Falcon Blade", R.drawable.item_falcon_blade, );
-//        prepareSwords(db, "Blade of Grass", R.drawable.item_blade_of_grass, );
-//        prepareSwords(db, "Fiery Greatsword", R.drawable.item_fiery_greatsword, );
-//        prepareSwords(db, "Night's Edge", R.drawable.item_nights_edge, );
+        prepareSwords(db, "Mandible Blade", R.drawable.item_mandible_blade, );
+        prepareSwords(db, "Stylish Scissors", R.drawable.item_stylish_scissors, );
+        prepareSwords(db, "Platinum Broadsword", R.drawable.item_platinum_broadsword, );
+        prepareSwords(db, "Bone Sword", R.drawable.item_bone_sword, );
+        prepareSwords(db, "Candy Cane Sword", R.drawable.item_candy_cane_sword, );
+        prepareSwords(db, "Katana", R.drawable.item_katana, );
+        prepareSwords(db, "Ice Blade", R.drawable.item_ice_blade, );
+        prepareSwords(db, "Light's Bane", R.drawable.item_lights_bane, );
+        prepareSwords(db, "Muramasa", R.drawable.item_muramasa, );
+        prepareSwords(db, "Arkhalis", R.drawable.item_arkhalis, );
+        prepareSwords(db, "Exotic Scimitar", R.drawable.item_exotic_scimitar, );
+        prepareSwords(db, "Phaseblade", R.drawable.item_phaseblade, );
+        prepareSwords(db, "Blood Butcherer", R.drawable.item_blood_butcherer, );
+        prepareSwords(db, "Starfury", R.drawable.item_starfury, );
+        prepareSwords(db, "Enchanted Sword", R.drawable.item_enchanted_sword, );
+        prepareSwords(db, "Purple Clubberfish", R.drawable.item_purple_clubberfish, );
+        prepareSwords(db, "Bee Keeper", R.drawable.item_bee_keeper, );
+        prepareSwords(db, "Falcon Blade", R.drawable.item_falcon_blade, );
+        prepareSwords(db, "Blade of Grass", R.drawable.item_blade_of_grass, );
+        prepareSwords(db, "Fiery Greatsword", R.drawable.item_fiery_greatsword, );
+        prepareSwords(db, "Night's Edge", R.drawable.item_nights_edge, );
     }
 
     private void prepareSwords(SQLiteDatabase db, String name, int picture, int damage, String knockback, String critical_chance, String use_time, String velocity, String tooltip, String grants_buff, String inflicts_debuff, String rarity, String buy_price, String sell_price) {

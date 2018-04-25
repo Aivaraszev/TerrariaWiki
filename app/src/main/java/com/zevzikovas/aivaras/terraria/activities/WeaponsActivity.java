@@ -14,12 +14,16 @@ public class WeaponsActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_weapons);
     }
-    public void BothSwordsActivity (View view) {
-        Intent intent = new Intent(getApplicationContext(), BothSwordsActivity.class);
+    public void HswordsList (View view) {
+        Intent intent = new Intent(getApplicationContext(), HSwordsActivity.class);
         startActivity(intent);
     }
-    public void BothYoyosActivity (View view) {
-        Intent intent = new Intent(getApplicationContext(), BothYoyosActivity.class);
+    public void SwordsList (View view) {
+        Intent intent = new Intent(getApplicationContext(), SwordsActivity.class);
+        startActivity(intent);
+    }
+    public void YoyosList (View view) {
+        Intent intent = new Intent(getApplicationContext(), YoyosActivity.class);
         startActivity(intent);
     }
 }
