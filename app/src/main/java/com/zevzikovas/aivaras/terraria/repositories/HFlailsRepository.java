@@ -61,13 +61,14 @@ public class HFlailsRepository {
     }
     //TODO: make "crafting"
     public void fill(SQLiteDatabase db) {
-        prepareHFlails(db, "Wooden Boomerang", R.drawable.item_wooden_boomerang, 8, "5 (Average)", "4%", "15 (Very Fast)", "6.5", "None", "None", "None", "White", "None", "10 Silver");
-        prepareHFlails(db, "Enchanted Boomerang", R.drawable.item_enchanted_boomerang, 13, "8 (Very Strong)", "4%", "14 (Very Fast)", "10", "None", "None","None", "Blue", "None", "1 Gold");
-        prepareHFlails(db, "Fruit Chakram", R.drawable.item_fruitcake_chakram, 14, "8 (Very Strong)", "4%", "14 (Very Fast)", "11", "None", "None", "None", "Blue", "None", "1 Gold");
-        prepareHFlails(db, "Bloody Machete", R.drawable.item_bloody_machete, 15, "5 (Average)", "4%", "14 (Very Fast)", "15", "None", "None", "None", "Green", "None", "1 Gold");
-        prepareHFlails(db, "Ice Boomerang", R.drawable.item_ice_boomerang, 16, "8.5 (Very Strong)", "6%", "14 (Very Fast)", "11.5", "None", "None", "None", "Blue", "None", "1 Gold");
-        prepareHFlails(db, "Thorn Chakram", R.drawable.item_thorn_chakram, 25, "8 (Very Strong)", "4%", "14 (Very Fast)", "11", "None", "None", "Poisoned (Slowly losing life)", "Orange", "None","1 Gold");
-        prepareHFlails(db, "Flamarang", R.drawable.item_flamarang, 32, "8 (Very Strong)", "4%", "14 (Very Fast)", "11", "None", "None", "On Fire! (Slowly losing life)", "Orange", "None", "2 Gold");
+        prepareHFlails(db, "Anchor", R.drawable.item_anchor, 30, "5 (Average)", "4%", "29 (Average)", "20", "None", "None", "None", "Orange", "None", "1 Gold");
+        prepareHFlails(db, "KO Cannon", R.drawable.item_ko_cannon, 40, "6.5 (Very Strong)", "4%", "27 (Average)", "15", "Shoots a boxing glove", "None","None", "Light Red", "None", "2 Gold 70 Silver");
+        prepareHFlails(db, "Chain Guillotines", R.drawable.item_chain_guillotines, 43, "3.25 (Weak)", "4%", "13 (Very Fast)", "14", "None", "None", "None", "Pink", "None", "2 Silver");
+        prepareHFlails(db, "Dao of Pow", R.drawable.item_dao_of_pow, 15, "5 (Average)", "4%", "14 (Very Fast)", "15", "Has a chance to confuse", "None", "Confused (Movement is reversed)", "Pink", "None", "2 Gold 88 Silver");
+        prepareHFlails(db, "Flower Pow", R.drawable.item_flower_pow, 65, "7.5 (Very Strong)", "4%", "39 (Very Slow)", "15,9", "Shoots razor sharp flower petals at nearby enemies", "None", "None", "Lime", "None", "6 Gold");
+        prepareHFlails(db, "Flairon", R.drawable.item_flairon, 66, "4.5 (Average)", "4%", "19 (Very Fast)", "14", "None", "None", "None", "Yellow", "None","5 Gold");
+        prepareHFlails(db, "Golem Fist", R.drawable.item_golem_fist, 76, "12 (Insane)", "4%", "23 (Fast)", "14", "Punches with the force of a golem", "None", "None", "Lime", "None", "5 Gold");
+        prepareHFlails(db, "Solar Eruption", R.drawable.item_solar_eruption, 105, "2 (Very Weak)", "4%", "19 (Very Fast)", "24", "'Strike with the fury of the sun'", "None", "Daybroken (Incinerated by solar rays)", "Red", "None", "10 Gold");
 
     }
 
