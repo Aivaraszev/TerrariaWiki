@@ -61,18 +61,11 @@ public class HBoomerangsRepository {
     }
     //TODO: make "crafting"
     public void fill(SQLiteDatabase db) {
-        prepareHboomerangs(db, "Cobalt Naginata", R.drawable.item_cobalt_naginata, 29, "4 (Weak)", "4%", "27 (Average)", "4.3", "None", "None", "None", "Light Red", "None", "90 Silver");
-        prepareHboomerangs(db, "Palladium Pike", R.drawable.item_palladium_pike, 32, "4.5 (Average)", "4%", "26 (Average)", "4.4", "None", "None","None", "Light Red", "None", "1 Gold 20 Silver");
-        prepareHboomerangs(db, "Mythril Halberd", R.drawable.item_mythril_halberd, 35, "5 (Average", "4%", "25 (Fast)", "None", "None", "None", "None", "Light Red", "None", "1 Gold 35 Silver");
-        prepareHboomerangs(db, "Oricha;cum Halberd", R.drawable.item_orichalcum_halberd, 36, "5.5 (Average)", "4%", "24 (Fast)", "4.5", "None", "None", "None", "Light Red", "None", "1 Gold 65 Silver");
-        prepareHboomerangs(db, "Adamantite Glaive", R.drawable.item_adamantite_glaive, 38, "6 (Average)", "4%", "24 (Fast)", "5", "None", "None", "None", "Light Red", "None", "1 Gold 80 Silver");
-        prepareHboomerangs(db, "Titanium Trident", R.drawable.item_titanium_trident, 40, "6.2 (Strong)", "4%", "22 (Fast)", "5", "None", "None", "None", "Light Red", "None","2 Gold 10 Silver");
-        prepareHboomerangs(db, "Gungnir", R.drawable.item_gungnir, 42, "6.4 (Strong)", "4%", "21 (Fast)", "5.6", "None", "None", "None", "Pink", "None", "4 Gold 60 Silver");
-        prepareHboomerangs(db, "Ghastly Glaive", R.drawable.item_ghastly_glaive, 45, "7 (Strong)", "4%", "27 (Average)", "42", "Summons ghosts as it hits enemies", "None", "None", "Pink", "None", "1 Gold");
-        prepareHboomerangs(db, "Chlorophyte PArtisan", R.drawable.item_chlorophyte_partisan, 49, "6.2 (Strong)", "4%", "22 (Fast)", "5", "Shoots a spore cloud", "None", "None", "Lime", "None", "3 Gold 60 Silver");
-        prepareHboomerangs(db, "Mushroom Spear", R.drawable.item_mushroom_spear, 60, "6.2 (Strong)", "4%", "39 (Very Slow)", "5.5", "None", "None", "None", "Lime", "70 Gold", "14 Gold");
-        prepareHboomerangs(db, "Obsidian Swordfish", R.drawable.item_obsidian_swordfish, 70, "6.5 (Strong)", "24%", "19 (Very Fast)", "4", "None", "None", "None", "Lime", "None", "1 Gold");
-        prepareHboomerangs(db, "North Pole", R.drawable.item_north_pole, 73, "6.7 (Strong)", "4%", "24 (Fast)", "4.75", "None", "None", "None", "Lime", "None", "3 Gold 60 Silver");
+        prepareHboomerangs(db, "Flying Knife", R.drawable.item_flying_knife, 40, "4.5 (Average)", "4%", "14 (Very Fast)", "17", "Throws a controllable flying knife", "None", "None", "Light Purple", "None", "8 Gold");
+        prepareHboomerangs(db, "Palladium Pike", R.drawable.item_light_disc, 57, "8 (Very Strong)", "4%", "14 (Very Fast)", "13", "Stacks up to 5 ", "None","None", "Pink", "None", "10 Gold");
+        prepareHboomerangs(db, "Mythril Halberd", R.drawable.item_bananarang, 55, "6.5 (Strong)", "4%", "13 (Very Fast)", "14", "None", "None", "None", "Pink", "None", "1 Gold 50 Silver");
+        prepareHboomerangs(db, "Oricha;cum Halberd", R.drawable.item_possessed_hatchet, 80, "5 (Average)", "4%", "13 (Very Fast)", "12", "Chases after your enemy", "None", "None", "Lime", "None", "10 Gold");
+        prepareHboomerangs(db, "Adamantite Glaive", R.drawable.item_paladins_hammer, 90, "9 (Very Strong)", "4%", "14 (Very Fast)", "14", "None", "None", "None", "Yellow", "None", "10 Gold");
     }
 
     private void prepareHboomerangs(SQLiteDatabase db, String name, int picture, int damage, String knockback, String critical_chance, String use_time, String velocity, String tooltip, String grants_buff, String inflicts_debuff, String rarity, String buy_price, String sell_price) {

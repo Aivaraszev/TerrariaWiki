@@ -21,7 +21,7 @@ public class HBoomerangsDescriptionActivity extends Activity {
         setContentView(R.layout.activity_hboomerangs_description);
 
         Intent i = getIntent();
-        HBoomerangs hboomerangs = repositoryManager.HBoomerangsRepository.getHboomerang(i.getIntExtra("hboomerangsId", 0));
+        HBoomerangs hboomerangs = repositoryManager.HBoomerangsRepository.getHBoomerang(i.getIntExtra("hboomerangsId", 0));
 
         TextView hboomerangsDamage = findViewById(R.id.hboomerangsDamage);
         TextView hboomerangsKnockback = findViewById(R.id.hboomerangsKnockback);

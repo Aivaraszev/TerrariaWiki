@@ -63,8 +63,8 @@ public class HSpearsRepository {
     public void fill(SQLiteDatabase db) {
         prepareHspears(db, "Cobalt Naginata", R.drawable.item_cobalt_naginata, 29, "4 (Weak)", "4%", "27 (Average)", "4.3", "None", "None", "None", "Light Red", "None", "90 Silver");
         prepareHspears(db, "Palladium Pike", R.drawable.item_palladium_pike, 32, "4.5 (Average)", "4%", "26 (Average)", "4.4", "None", "None","None", "Light Red", "None", "1 Gold 20 Silver");
-        prepareHspears(db, "Mythril Halberd", R.drawable.item_mythril_halberd, 35, "5 (Average", "4%", "25 (Fast)", "None", "None", "None", "None", "Light Red", "None", "1 Gold 35 Silver");
-        prepareHspears(db, "Oricha;cum Halberd", R.drawable.item_orichalcum_halberd, 36, "5.5 (Average)", "4%", "24 (Fast)", "4.5", "None", "None", "None", "Light Red", "None", "1 Gold 65 Silver");
+        prepareHspears(db, "Mythril Halberd", R.drawable.item_mythril_halberd, 35, "5 (Average)", "4%", "25 (Fast)", "None", "None", "None", "None", "Light Red", "None", "1 Gold 35 Silver");
+        prepareHspears(db, "Orichalcum Halberd", R.drawable.item_orichalcum_halberd, 36, "5.5 (Average)", "4%", "24 (Fast)", "4.5", "None", "None", "None", "Light Red", "None", "1 Gold 65 Silver");
         prepareHspears(db, "Adamantite Glaive", R.drawable.item_adamantite_glaive, 38, "6 (Average)", "4%", "24 (Fast)", "5", "None", "None", "None", "Light Red", "None", "1 Gold 80 Silver");
         prepareHspears(db, "Titanium Trident", R.drawable.item_titanium_trident, 40, "6.2 (Strong)", "4%", "22 (Fast)", "5", "None", "None", "None", "Light Red", "None","2 Gold 10 Silver");
         prepareHspears(db, "Gungnir", R.drawable.item_gungnir, 42, "6.4 (Strong)", "4%", "21 (Fast)", "5.6", "None", "None", "None", "Pink", "None", "4 Gold 60 Silver");

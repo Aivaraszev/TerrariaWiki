@@ -8,8 +8,6 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 import com.zevzikovas.aivaras.terraria.R;
 import com.zevzikovas.aivaras.terraria.adapters.HBoomerangsListAdapter;
-import com.zevzikovas.aivaras.terraria.adapters.HSpearsListAdapter;
-import com.zevzikovas.aivaras.terraria.models.HBoomerangs;
 import com.zevzikovas.aivaras.terraria.models.HBoomerangs;
 import com.zevzikovas.aivaras.terraria.repositories.RepositoryManager;
 
@@ -17,7 +15,7 @@ import java.util.List;
 
 public class HBoomerangsActivity extends Activity {
     ListView hboomerangsListView;
-    HSpearsListAdapter hboomerangsListAdapter;
+    HBoomerangsListAdapter hboomerangsListAdapter;
     List<HBoomerangs> hboomerangs;
     RepositoryManager repositoryManager;
 
@@ -27,7 +25,7 @@ public class HBoomerangsActivity extends Activity {
         setContentView(R.layout.activity_hspears);
         repositoryManager = new RepositoryManager(this);
 
-        hboomerangs = repositoryManager.HSpearsRepository.getAllHSpear();
+        hboomerangs = repositoryManager.HBoomerangsRepository.getAllHBoomerang();
 
         hboomerangsListAdapter = new HBoomerangsListAdapter(this, R.layout.hboomerangs_list_item, hboomerangs);
 
@@ -38,7 +36,7 @@ public class HBoomerangsActivity extends Activity {
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
                 Intent i = new Intent(getApplicationContext(), HSpearsDescriptionActivity.class);
 
-                int hspearsId = hboomerangs.get(position).id;
+                int hboomerangsId = hboomerangs.get(position).id;
                 i.putExtra("hboomerangsId", hboomerangsId);
 
                 startActivity(i);
