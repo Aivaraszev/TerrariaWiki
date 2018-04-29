@@ -43,7 +43,5 @@ public class SwordsActivity extends Activity {
                 startActivity(i);
             }
         });
-
-
     }
 }
