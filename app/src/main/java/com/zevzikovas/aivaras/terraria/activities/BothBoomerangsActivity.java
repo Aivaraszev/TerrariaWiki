@@ -12,7 +12,7 @@ public class BothBoomerangsActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_both_yoyos);
+        setContentView(R.layout.activity_both_boomernags);
     }
     public void BoomerangsList (View view) {
         Intent intent = new Intent(getApplicationContext(), BoomerangsActivity.class);

@@ -22,7 +22,7 @@ public class BoomerangsActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_hswords);
+        setContentView(R.layout.activity_boomerangs);
         repositoryManager = new RepositoryManager(this);
 
         boomerangs = repositoryManager.BoomerangsRepository.getAllBoomerang();

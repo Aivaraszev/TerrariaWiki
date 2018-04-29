@@ -22,7 +22,7 @@ public class SpearsActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_hspears);
+        setContentView(R.layout.activity_spears);
         repositoryManager = new RepositoryManager(this);
 
         spears = repositoryManager.SpearsRepository.getAllSpear();

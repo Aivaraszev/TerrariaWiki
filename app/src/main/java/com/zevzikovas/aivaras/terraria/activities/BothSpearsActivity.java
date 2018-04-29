@@ -12,7 +12,7 @@ public class BothSpearsActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_both_yoyos);
+        setContentView(R.layout.activity_both_spears);
     }
     public void SpearsList (View view) {
         Intent intent = new Intent(getApplicationContext(), SpearsActivity.class);
