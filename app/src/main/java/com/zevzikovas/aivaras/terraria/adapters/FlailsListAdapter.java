@@ -15,7 +15,7 @@ import java.util.List;
 
 public class FlailsListAdapter extends ArrayAdapter<Flails> {
     public FlailsListAdapter(Context context, int resource, List<Flails> flails) {
-        super(context, resource, flail);
+        super(context, resource, flails);
     }
 
     @Override

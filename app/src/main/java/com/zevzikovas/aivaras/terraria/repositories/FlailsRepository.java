@@ -113,7 +113,7 @@ public class FlailsRepository {
     }
 
     public List<Flails> getAllFlails() {
-        List<Flails> flails = new ArrayList<>();
+        List<Flails> flail = new ArrayList<>();
         SQLiteDatabase db = dbHelper.getReadableDatabase();
         String selectQuery = "SELECT * FROM " + TABLE_NAME;
         Cursor cursor = db.rawQuery(selectQuery, null);

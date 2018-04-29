@@ -16,33 +16,33 @@ public class FlailsDescriptionActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_boomerangs_description);
+        setContentView(R.layout.activity_flails_description);
 
         Intent i = getIntent();
-        Boomerangs boomerang = repositoryManager.BoomerangsRepository.getBoomerang(i.getIntExtra("boomerangsId", 0));
+        Flails flail = repositoryManager.FlailsRepository.getFlail(i.getIntExtra("flailsId", 0));
 
-        TextView boomerangDamage = findViewById(R.id.boomerangDamage);
-        TextView boomerangKnockback = findViewById(R.id.boomerangKnockback);
-        TextView boomerangCritical_chance = findViewById(R.id.boomerangCritical_chance);
-        TextView boomerangUse_time = findViewById(R.id.boomerangUse_time);
-        TextView boomerangVelocity = findViewById(R.id.boomerangVelocity);
-        TextView boomerangTooltip = findViewById(R.id.boomerangTooltip);
-        TextView boomerangGrants_buff = findViewById(R.id.boomerangGrants_buff);
-        TextView boomerangInflicts_debuff = findViewById(R.id.boomerangInflicts_debuff);
-        TextView boomerangRarity = findViewById(R.id.boomerangRarity);
-        TextView boomerangBuy_price = findViewById(R.id.boomerangBuy_price);
-        TextView boomerangSell_price = findViewById(R.id.boomerangSell_price);
+        TextView flailDamage = findViewById(R.id.flailDamage);
+        TextView flailKnockback = findViewById(R.id.flailKnockback);
+        TextView flailCritical_chance = findViewById(R.id.flailCritical_chance);
+        TextView flailUse_time = findViewById(R.id.flailUse_time);
+        TextView flailVelocity = findViewById(R.id.flailVelocity);
+        TextView flailTooltip = findViewById(R.id.flailTooltip);
+        TextView flailGrants_buff = findViewById(R.id.flailGrants_buff);
+        TextView flailInflicts_debuff = findViewById(R.id.flailInflicts_debuff);
+        TextView flailRarity = findViewById(R.id.flailRarity);
+        TextView flailBuy_price = findViewById(R.id.flailBuy_price);
+        TextView flailSell_price = findViewById(R.id.flailSell_price);
 
-        boomerangDamage.setText(Integer.toString(boomerang.damage));
-        boomerangKnockback.setText((boomerang.knockback));
-        boomerangCritical_chance.setText((boomerang.critical_chance));
-        boomerangUse_time.setText((boomerang.use_time));
-        boomerangVelocity.setText((boomerang.velocity));
-        boomerangTooltip.setText((boomerang.tooltip));
-        boomerangGrants_buff.setText((boomerang.grants_buff));
-        boomerangInflicts_debuff.setText((boomerang.inflicts_debuff));
-        boomerangRarity.setText((boomerang.rarity));
-        boomerangBuy_price.setText((boomerang.buy_price));
-        boomerangSell_price.setText((boomerang.sell_price));
+        flailDamage.setText(Integer.toString(flail.damage));
+        flailKnockback.setText((flail.knockback));
+        flailCritical_chance.setText((flail.critical_chance));
+        flailUse_time.setText((flail.use_time));
+        flailVelocity.setText((flail.velocity));
+        flailTooltip.setText((flail.tooltip));
+        flailGrants_buff.setText((flail.grants_buff));
+        flailInflicts_debuff.setText((flail.inflicts_debuff));
+        flailRarity.setText((flail.rarity));
+        flailBuy_price.setText((flail.buy_price));
+        flailSell_price.setText((flail.sell_price));
     }
 }
