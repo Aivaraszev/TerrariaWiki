@@ -5,7 +5,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
 public class RepositoryManager extends SQLiteOpenHelper {
-    private static final int DATABASE_VERSION = 12;
+    private static final int DATABASE_VERSION = 13;
 
     private static final String DATABASE_NAME = "terraria_wiki_db";
 
@@ -15,6 +15,7 @@ public class RepositoryManager extends SQLiteOpenHelper {
     public YoyosRepository YoyosRepository = new YoyosRepository(this);
     public HYoyosRepository HYoyosRepository = new HYoyosRepository(this);
     public HSpearsRepository HSpearsRepository = new HSpearsRepository(this);
+    public SpearsRepository SpearsRepository = new SpearsRepository(this);
 
     public RepositoryManager(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
@@ -28,6 +29,7 @@ public class RepositoryManager extends SQLiteOpenHelper {
         YoyosRepository.create(db);
         HYoyosRepository.create(db);
         HSpearsRepository.create(db);
+        SpearsRepository.create(db);
 
         swordsRepository.fill(db);
         hSwordsRepository.fill(db);
@@ -35,6 +37,7 @@ public class RepositoryManager extends SQLiteOpenHelper {
         YoyosRepository.fill(db);
         HYoyosRepository.fill(db);
         HSpearsRepository.fill(db);
+        SpearsRepository.fill(db);
     }
 
     @Override
@@ -45,6 +48,7 @@ public class RepositoryManager extends SQLiteOpenHelper {
         YoyosRepository.drop(db);
         HYoyosRepository.drop(db);
         HSpearsRepository.drop(db);
+        SpearsRepository.drop(db);
 
         onCreate(db);
     }

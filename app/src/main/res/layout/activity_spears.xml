@@ -5,16 +5,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".activities.HSpearsActivity">
+    tools:context=".activities.SpearsActivity">
 
     <ImageView
         android:id="@+id/imageView8"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:src="@drawable/hardmode_spears" />
+        android:src="@drawable/pre_hardmode_spears" />
 
     <ListView
-        android:id="@+id/HSpearsList"
+        android:id="@+id/SpearsList"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 </LinearLayout>
