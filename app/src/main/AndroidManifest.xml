@@ -53,7 +53,16 @@
             android:label="@string/title_activity_hyoyos" />
         <activity
             android:name=".activities.HYoyosDescriptionActivity"
-            android:label="@string/title_activity_hyoyos_description"></activity>
+            android:label="@string/title_activity_hyoyos_description" />
+        <activity
+            android:name=".activities.HSpearsActivity"
+            android:label="@string/title_activity_hspears" />
+        <activity
+            android:name=".activities.HSpearsDescriptionActivity"
+            android:label="@string/title_activity_hspears_description" />
+        <activity
+            android:name=".activities.BothSpearsActivity"
+            android:label="@string/title_activity_both_spears"></activity>
     </application>
 
 </manifest>

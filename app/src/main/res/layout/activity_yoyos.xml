@@ -11,7 +11,7 @@
         android:id="@+id/imageView8"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:src="@drawable/hardmode_swords" />
+        android:src="@drawable/pre_hardmode_yoyos" />
 
     <ListView
         android:id="@+id/YoyosList"
