@@ -19,13 +19,13 @@ public class BoomerangsDescriptionActivity extends Activity {
         setContentView(R.layout.activity_boomerangs_description);
 
         Intent i = getIntent();
-        Boomerangs boomerang = repositoryManager.hSwordsRepository.getBoomerang(i.getIntExtra("boomerangsId", 0));
+        Boomerangs boomerang = repositoryManager.BoomerangsRepository.getBoomerang(i.getIntExtra("boomerangsId", 0));
 
         TextView boomerangDamage = findViewById(R.id.boomerangDamage);
         TextView boomerangKnockback = findViewById(R.id.boomerangKnockback);
         TextView boomerangCritical_chance = findViewById(R.id.boomerangCritical_chance);
         TextView boomerangUse_time = findViewById(R.id.boomerangUse_time);
-        TextView boomerangelocity = findViewById(R.id.boomerangVelocity);
+        TextView boomerangVelocity = findViewById(R.id.boomerangVelocity);
         TextView boomerangTooltip = findViewById(R.id.boomerangTooltip);
         TextView boomerangGrants_buff = findViewById(R.id.boomerangGrants_buff);
         TextView boomerangInflicts_debuff = findViewById(R.id.boomerangInflicts_debuff);
@@ -37,7 +37,7 @@ public class BoomerangsDescriptionActivity extends Activity {
         boomerangKnockback.setText((boomerang.knockback));
         boomerangCritical_chance.setText((boomerang.critical_chance));
         boomerangUse_time.setText((boomerang.use_time));
-        boomerangelocity.setText((boomerang.velocity));
+        boomerangVelocity.setText((boomerang.velocity));
         boomerangTooltip.setText((boomerang.tooltip));
         boomerangGrants_buff.setText((boomerang.grants_buff));
         boomerangInflicts_debuff.setText((boomerang.inflicts_debuff));
