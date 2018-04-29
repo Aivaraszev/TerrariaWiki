@@ -19,4 +19,7 @@
     <string name="title_activity_both_boomernags">BothBoomernagsActivity</string>
     <string name="title_activity_flails">FlailsActivity</string>
     <string name="title_activity_flails_description">FlailsDescriptionActivity</string>
+    <string name="title_activity_hflails">HFlailsActivity</string>
+    <string name="title_activity_hflails_description">HFlailsDescriptionActivity</string>
+    <string name="title_activity_both_flails">BothFlailsActivity</string>
 </resources>
