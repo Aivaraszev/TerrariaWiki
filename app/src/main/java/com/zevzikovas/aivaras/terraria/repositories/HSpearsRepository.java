@@ -44,7 +44,7 @@ public class HSpearsRepository {
                         DAMAGE + " INTEGER," +
                         KNOCKBACK + " TEXT," +
                         CRITICAL_CHANCE + " TEXT," +
-                        USE_TIME + " INTEGER," +
+                        USE_TIME + " TEXT," +
                         VELOCITY + " TEXT," +
                         TOOLTIP + " TEXT," +
                         GRANTS_BUFF + " TEXT," +
@@ -61,43 +61,21 @@ public class HSpearsRepository {
     }
     //TODO: make "crafting"
     public void fill(SQLiteDatabase db) {
-        prepareHspears(db, "Pearlwood Sword", R.drawable.item_pearlwood_sword, 11, "5", "4%", 20, "None", "None", "None", "None", "White", "None", "20 Copper");
-        prepareHspears(db, "Classy Cane", R.drawable.item_classy_cane, 16, "3.5", "4%", 14, "None", "None", "None","None", "Green", "None", "50 Silver");
-        prepareHspears(db, "Slap Hand", R.drawable.item_slap_hand, 35, "20", "19%", 20, "None", "None", "None", "None", "Light Red", "25 Gold", "5 Gold");
-        prepareHspears(db, "Breaker Blade", R.drawable.item_breaker_blade, 39, "8", "4%", 29, "None", "None", "None", "None", "Light Red", "None", "3 Gold");
-        prepareHspears(db, "Cobalt Sword", R.drawable.item_cobalt_sword, 39, "3.85", "4%", 22, "None", "None", "None", "None", "Light Red", "None", "1 Gold 50 Silver");
-        prepareHspears(db, "Palladium Sword", R.drawable.item_palladium_sword, 41, "4.75", "4%", 24, "None", "None", "None", "None", "Light Red", "None","1 Gold 84 Silver");
-        prepareHspears(db, "Phasesaber", R.drawable.item_phasesaber, 41, "3", "4%", 24, "None", "None", "None", "None", "Light Red", "None", "54 Silver");
-        prepareHspears(db, "Ice Sickle", R.drawable.item_ice_sickle, 42, "5.5", "4%", 24, "8", "Shoots an icy sickle", "None", "None", "Pink", "None", "5 Gold");
-        prepareHspears(db, "Brand of the Inferno", R.drawable.item_brand_of_the_inferno, 44, "6.5", "4%", 24, "24", "Right Click to guard with a shield", "Striking Moment", "None", "Pink", "None", "1 Gold");
-        prepareHspears(db, "Mythril Sword", R.drawable.item_mythril_sword, 44, "6", "4%", 25, "None", "None", "None", "None", "Light Red", "None", "2 Gold 7 Silver");
-        prepareHspears(db, "Orichalcum Sword", R.drawable.item_orichalcum_sword, 47, "6", "4%", 25, "None", "None", "None", "None", "Light Red", "None", "2 Gold 53 Silver");
-        prepareHspears(db, "Chlorophyte Saber", R.drawable.item_chlorophyte_saber, 48, "4", "4%", 15, "8", "Shoots a spore cloud", "None", "None", "Lime", "None", "5 Gold 52 Silver");
-        prepareHspears(db, "Cutlass", R.drawable.item_cutlass, 49, "4", "4%", 17, "None", "None", "None", "None", "Light Red", "None", "3 Gold 60 Silver");
-        prepareHspears(db, "Frostbrand", R.drawable.item_frostbrand, 49, "4.5", "4%", 22, "12", "Shoots an icy bolt", "None", "None", "Pink", "None", "5 Gold");
-        prepareHspears(db, "Adamantite Sword", R.drawable.item_adamantite_sword, 50, "6", "4%", 26, "None", "None", "None", "None", "Light Red", "None", "2 Gold 76 Silver");
-        prepareHspears(db, "Seedler", R.drawable.item_seedler, 50, "6", "4%", 22, "12", "None", "None", "None", "Pink", "None", "10 Gold");
-        prepareHspears(db, "Beam Sword", R.drawable.item_beam_sword, 52, "6.5", "4%", 14, "11", "Shoots a beam of light", "None", "None", "Light Red", "None", "10 Gold");
-        prepareHspears(db, "Titanium Sword", R.drawable.item_titanium_sword, 52, "6", "4%", 25, "None", "None", "None", "None", "Light Red", "None", "3 Gold 22 Silver");
-        prepareHspears(db, "Bladetongue", R.drawable.item_bladetongue, 55, "5.75", "4%", 27, "None", "Spits an Ichor stream on contact", "None", "Ichor", "Pink", "None", "4 Gold");
-        prepareHspears(db, "Death Sickle", R.drawable.item_death_sickle, 57, "7", "4%", 24, "9", "Shoots a deathly sickle", "None", "None", "Light Purple", "None", "5 Gold");
-        prepareHspears(db, "Excalibur", R.drawable.item_excalibur, 57, "4.5", "4%", 24, "None", "None", "None", "None", "Pink", "None", "4 Gold 60 Silver");
-        prepareHspears(db, "True Excalibur", R.drawable.item_true_excalibur, 66, "4.5", "4%", 15, "11", "None", "None", "None", "Yellow", "None", "10 Gold");
-        prepareHspears(db, "Fetid Baghnakhs", R.drawable.item_fetid_baghnakhs, 70, "6", "4%",6, "None", "None", "None", "None", "Pink", "None", "8 Gold");
-        prepareHspears(db, "Keybrand", R.drawable.item_keybrand, 70, "6.5", "17%", 19, "None", "None", "None", "None", "Yellow", "None", "2 Gold 76 Silver");
-        prepareHspears(db, "Psycho Knife", R.drawable.item_psycho_knife, 70, "3.5", "4%", 19, "None", "Allows you to go into stealth mode", "None", "None", "Yellow", "None", "5 Gold");
-        prepareHspears(db, "Chlorophyte Claymore", R.drawable.item_chlorophyte_claymore, 75, "6", "4%", 25, "8", "Shoots a powerful orb", "None", "None", "Lime", "None", "5 Gold 52 Silver");
-        prepareHspears(db, "The Horseman's Blade", R.drawable.item_the_horsemans_blade, 75, "7.5", "4%", 25, "12", "Summons Pumpkin heads to attack your enemies", "None", "None", "Yellow", "None", "10 Gold");
-        prepareHspears(db, "Christmas Tree Sword", R.drawable.item_christmas_tree_sword, 86, "7", "4%", 22, "None", "None", "None", "None", "Yellow", "None", "10 Gold");
-        prepareHspears(db, "True Night's Edge", R.drawable.item_true_nights_edge, 90, "4.75", "4%", 25, "10", "None", "None", "None", "Yellow", "None", "10 Gold");
-        prepareHspears(db, "Terra Blade", R.drawable.item_terra_blade, 95, "6.5", "4%", 15, "12", "None", "None", "None", "Yellow", "None", "20 Gold");
-        prepareHspears(db, "Flying Dragon", R.drawable.item_flying_dragon, 90, "5.5", "4%", 24, "17", "Unleashes the heart's energy forward", "None", "None", "Yellow", "None", "5 Gold");
-        prepareHspears(db, "Influx Waver", R.drawable.item_influx_waver, 110, "4.5","4%", 19, "11", "None", "None", "None", "Yellow", "None", "10 Gold");
-        prepareHspears(db, "Star Wrath", R.drawable.item_star_wrath, 110, "6.5", "4%", 15, "8", "None", "None", "None", "Cyan","None", "20 Gold");
-        prepareHspears(db, "Meowmere", R.drawable.item_meowmere, 200, "6.5", "4%", 15, "12", "None", "None", "None", "Red", "None", "20 Gold");
+        prepareHspears(db, "Cobalt Naginata", R.drawable.item_cobalt_naginata, 29, "4 (Weak)", "4%", "27 (Average)", "4.3", "None", "None", "None", "Light Red", "None", "90 Silver");
+        prepareHspears(db, "Palladium Pike", R.drawable.item_palladium_pike, 32, "4.5 (Average)", "4%", "26 (Average)", "4.4", "None", "None","None", "Light Red", "None", "1 Gold 20 Silver");
+        prepareHspears(db, "Mythril Halberd", R.drawable.item_mythril_halberd, 35, "5 (Average", "4%", "25 (Fast)", "None", "None", "None", "None", "Light Red", "None", "1 Gold 35 Silver");
+        prepareHspears(db, "Oricha;cum Halberd", R.drawable.item_orichalcum_halberd, 36, "5.5 (Average)", "4%", "24 (Fast)", "4.5", "None", "None", "None", "Light Red", "None", "1 Gold 65 Silver");
+        prepareHspears(db, "Adamantite Glaive", R.drawable.item_adamantite_glaive, 38, "6 (Average)", "4%", "24 (Fast)", "5", "None", "None", "None", "Light Red", "None", "1 Gold 80 Silver");
+        prepareHspears(db, "Titanium Trident", R.drawable.item_titanium_trident, 40, "6.2 (Strong)", "4%", "22 (Fast)", "5", "None", "None", "None", "Light Red", "None","2 Gold 10 Silver");
+        prepareHspears(db, "Gungnir", R.drawable.item_gungnir, 42, "6.4 (Strong)", "4%", "21 (Fast)", "5.6", "None", "None", "None", "Pink", "None", "4 Gold 60 Silver");
+        prepareHspears(db, "Ghastly Glaive", R.drawable.item_ghastly_glaive, 45, "7 (Strong)", "4%", "27 (Average)", "42", "Summons ghosts as it hits enemies", "None", "None", "Pink", "None", "1 Gold");
+        prepareHspears(db, "Chlorophyte PArtisan", R.drawable.item_chlorophyte_partisan, 49, "6.2 (Strong)", "4%", "22 (Fast)", "24", "Right Click to guard with a shield", "Striking Moment", "None", "Pink", "None", "1 Gold");
+        prepareHspears(db, "Mushroom Spear", R.drawable.item_mushroom_spear, 44, "6", "4%", 25, "None", "None", "None", "None", "Light Red", "None", "2 Gold 7 Silver");
+        prepareHspears(db, "Obsidian Swordfish", R.drawable.item_obsidian_swordfish, 47, "6", "4%", 25, "None", "None", "None", "None", "Light Red", "None", "2 Gold 53 Silver");
+        prepareHspears(db, "North Pole", R.drawable.item_north_pole, 48, "4", "4%", 15, "8", "Shoots a spore cloud", "None", "None", "Lime", "None", "5 Gold 52 Silver");
     }
 
-    private void prepareHspears(SQLiteDatabase db, String name, int picture, int damage, String knockback, String critical_chance, int use_time, String velocity, String tooltip, String grants_buff, String inflicts_debuff, String rarity, String buy_price, String sell_price) {
+    private void prepareHspears(SQLiteDatabase db, String name, int picture, int damage, String knockback, String critical_chance, String use_time, String velocity, String tooltip, String grants_buff, String inflicts_debuff, String rarity, String buy_price, String sell_price) {
         ContentValues values = new ContentValues();
         values.put(NAME, name);
         values.put(PICTURE, picture);
@@ -153,7 +131,7 @@ public class HSpearsRepository {
                         cursor.getInt(3),
                         cursor.getString(4),
                         cursor.getString(5),
-                        cursor.getInt(6),
+                        cursor.getString(6),
                         cursor.getString(7),
                         cursor.getString(8),
                         cursor.getString(9),
@@ -187,7 +165,7 @@ public class HSpearsRepository {
                     cursor.getInt(3),
                     cursor.getString(4),
                     cursor.getString(5),
-                    cursor.getInt(6),
+                    cursor.getString(6),
                     cursor.getString(7),
                     cursor.getString(8),
                     cursor.getString(9),

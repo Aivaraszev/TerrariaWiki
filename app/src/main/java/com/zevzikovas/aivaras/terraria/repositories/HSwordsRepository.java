@@ -59,7 +59,7 @@ public class HSwordsRepository {
     public void drop(SQLiteDatabase db) {
         db.execSQL("DROP TABLE IF EXISTS " + TABLE_NAME);
     }
-//TODO: make "crafting"
+//TODO: make "crafting", add String to use time and add text to Knockback
     public void fill(SQLiteDatabase db) {
         prepareHswords(db, "Pearlwood Sword", R.drawable.item_pearlwood_sword, 11, "5", "4%", 20, "None", "None", "None", "None", "White", "None", "20 Copper");
         prepareHswords(db, "Classy Cane", R.drawable.item_classy_cane, 16, "3.5", "4%", 14, "None", "None", "None","None", "Green", "None", "50 Silver");
