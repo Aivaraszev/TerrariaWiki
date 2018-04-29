@@ -62,13 +62,11 @@ public class FlailsRepository {
     //TODO: make "crafting"
     public void fill(SQLiteDatabase db) {
         prepareFlails(db, "Wooden Boomerang", R.drawable.item_wooden_boomerang, 8, "5 (Average)", "4%", "15 (Very Fast)", "6.5", "None", "None", "None", "White", "None", "10 Silver");
-        prepareFlails(db, "Enchanted Boomerang", R.drawable.item_enchanted_boomerang, 13, "8 (Very Strong)", "4%", "14 (Very Fast)", "10", "None", "None","None", "Blue", "None", "1 Gold");
-        prepareFlails(db, "Fruit Chakram", R.drawable.item_fruitcake_chakram, 14, "8 (Very Strong)", "4%", "14 (Very Fast)", "11", "None", "None", "None", "Blue", "None", "1 Gold");
-        prepareFlails(db, "Bloody Machete", R.drawable.item_bloody_machete, 15, "5 (Average)", "4%", "14 (Very Fast)", "15", "None", "None", "None", "Green", "None", "1 Gold");
-        prepareFlails(db, "Ice Boomerang", R.drawable.item_ice_boomerang, 16, "8.5 (Very Strong)", "6%", "14 (Very Fast)", "11.5", "None", "None", "None", "Blue", "None", "1 Gold");
-        prepareFlails(db, "Thorn Chakram", R.drawable.item_thorn_chakram, 25, "8 (Very Strong)", "4%", "14 (Very Fast)", "11", "None", "None", "Poisoned (Slowly losing life)", "Orange", "None","1 Gold");
-        prepareFlails(db, "Flamarang", R.drawable.item_flamarang, 32, "8 (Very Strong)", "4%", "14 (Very Fast)", "11", "None", "None", "On Fire! (Slowly losing life)", "Orange", "None", "2 Gold");
-
+        prepareFlails(db, "Chain Knife", R.drawable.item_chain_knife, 11, "3.5 (Weak)", "4%", "19 (Very Fast)", "12", "None", "None", "None", "Green", "None", "2 Silver");
+        prepareFlails(db, "Ball O' Hurt", R.drawable.item_ball_o_hurt, 15, "6.5 (Strong)", "4%", "44 (Very Slow)", "12", "None", "None", "None", "Blue", "None", "54 Silver");
+        prepareFlails(db, "The Meatball", R.drawable.item_the_meatball, 16, "6.5 (Strong)", "4%", "44 (Very Slow)", "12", "None", "None", "None", "Blue", "none", "54 Silver");
+        prepareFlails(db, "Blue Moon", R.drawable.item_blue_moon, 23, "7 (Strong)", "4%", "44 (Very Slow)", "12", "None", "None", "None", "Green", "None", "54 Silver");
+        prepareFlails(db, "Sunfury", R.drawable.item_sunfury, 35, "7.75 (Very Strong)", "11%", "44 (Very Slow)", "12", "None", "None", "On Fire (Slowly losing life)", "Orange", "None", "54 Silver");
     }
 
     private void prepareFlails(SQLiteDatabase db, String name, int picture, int damage, String knockback, String critical_chance, String use_time, String velocity, String tooltip, String grants_buff, String inflicts_debuff, String rarity, String buy_price, String sell_price) {
