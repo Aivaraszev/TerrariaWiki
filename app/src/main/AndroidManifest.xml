@@ -68,7 +68,16 @@
             android:label="@string/title_activity_both_spears" />
         <activity
             android:name=".activities.SpearsActivity"
-            android:label="@string/title_activity_spears"></activity>
+            android:label="@string/title_activity_spears" />
+        <activity
+            android:name=".activities.BoomerangsActivity"
+            android:label="@string/title_activity_boomerangs" />
+        <activity
+            android:name=".activities.BoomerangsDescriptionActivity"
+            android:label="@string/title_activity_boomerangs_description" />
+        <activity
+            android:name=".activities.BothBoomernagsActivity"
+            android:label="@string/title_activity_both_boomernags"></activity>
     </application>
 
 </manifest>

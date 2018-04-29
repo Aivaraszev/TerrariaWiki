@@ -14,4 +14,7 @@
     <string name="title_activity_hspears_description">HSpearsDescriptionActivity</string>
     <string name="title_activity_both_spears">BothSpearsActivity</string>
     <string name="title_activity_spears">SpearsActivity</string>
+    <string name="title_activity_boomerangs">BoomerangsActivity</string>
+    <string name="title_activity_boomerangs_description">BoomerangsDescriptionActivity</string>
+    <string name="title_activity_both_boomernags">BothBoomernagsActivity</string>
 </resources>

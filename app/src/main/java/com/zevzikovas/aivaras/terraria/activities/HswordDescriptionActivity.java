@@ -36,7 +36,7 @@ public class HswordDescriptionActivity extends Activity {
         hswordsDamage.setText(Integer.toString(hsword.damage));
         hswordsKnockback.setText((hsword.knockback));
         hswordsCritical_chance.setText((hsword.critical_chance));
-        hswordsUse_time.setText(Integer.toString(hsword.use_time));
+        hswordsUse_time.setText((hsword.use_time));
         hswordsVelocity.setText((hsword.velocity));
         hswordsTooltip.setText((hsword.tooltip));
         hswordsGrants_buff.setText((hsword.grants_buff));
