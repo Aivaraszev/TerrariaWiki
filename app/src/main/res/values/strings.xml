@@ -13,4 +13,5 @@
     <string name="title_activity_hspears">HSpearsActivity</string>
     <string name="title_activity_hspears_description">HSpearsDescriptionActivity</string>
     <string name="title_activity_both_spears">BothSpearsActivity</string>
+    <string name="title_activity_spears">SpearsActivity</string>
 </resources>

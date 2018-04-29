@@ -61,8 +61,14 @@
             android:name=".activities.HSpearsDescriptionActivity"
             android:label="@string/title_activity_hspears_description" />
         <activity
+            android:name=".activities.SpearsDescriptionActivity"
+            android:label="@string/title_activity_hspears_description" />
+        <activity
             android:name=".activities.BothSpearsActivity"
-            android:label="@string/title_activity_both_spears"></activity>
+            android:label="@string/title_activity_both_spears" />
+        <activity
+            android:name=".activities.SpearsActivity"
+            android:label="@string/title_activity_spears"></activity>
     </application>
 
 </manifest>

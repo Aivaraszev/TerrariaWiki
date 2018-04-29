@@ -150,7 +150,7 @@ public class SpearsRepository {
         db.close();
     }
 
-    public List<Spears> getAllSpears() {
+    public List<Spears> getAllSpear() {
         List<Spears> spear = new ArrayList<>();
         SQLiteDatabase db = dbHelper.getReadableDatabase();
         String selectQuery = "SELECT * FROM " + TABLE_NAME;
