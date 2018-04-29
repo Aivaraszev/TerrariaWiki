@@ -29,7 +29,7 @@ public class HBoomerangsActivity extends Activity {
 
         hboomerangsListAdapter = new HBoomerangsListAdapter(this, R.layout.hboomerangs_list_item, hboomerangs);
 
-        hboomerangsListView = findViewById(R.id.HSpearsList);
+        hboomerangsListView = findViewById(R.id.HBoomerangsList);
         hboomerangsListView.setAdapter(hboomerangsListAdapter);
         hboomerangsListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override

@@ -5,16 +5,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".activities.FlailsActivity">
+    tools:context=".activities.BothFlailsActivity">
 
-    <ImageView
-        android:id="@+id/imageView8"
+    <Button
+        android:id="@+id/button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:src="@drawable/pre_hardmode_flails" />
+        android:onClick="FlailsList"
+        android:text="Pre-hardmode flails" />
 
-    <ListView
-        android:id="@+id/FlailsList"
+    <Button
+        android:id="@+id/button4"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="wrap_content"
+        android:onClick="HFlailsList"
+        android:text="Hardmode flails" />
 </LinearLayout>

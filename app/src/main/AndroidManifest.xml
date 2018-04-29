@@ -83,7 +83,16 @@
             android:label="@string/title_activity_flails" />
         <activity
             android:name=".activities.FlailsDescriptionActivity"
-            android:label="@string/title_activity_flails_description"></activity>
+            android:label="@string/title_activity_flails_description" />
+        <activity
+            android:name=".activities.HFlailsActivity"
+            android:label="@string/title_activity_hflails" />
+        <activity
+            android:name=".activities.HFlailsDescriptionActivity"
+            android:label="@string/title_activity_hflails_description" />
+        <activity
+            android:name=".activities.BothFlailsActivity"
+            android:label="@string/title_activity_both_flails"></activity>
     </application>
 
 </manifest>

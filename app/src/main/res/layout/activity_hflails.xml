@@ -5,16 +5,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".activities.FlailsActivity">
+    tools:context=".activities.HFlailsActivity">
 
     <ImageView
         android:id="@+id/imageView8"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:src="@drawable/pre_hardmode_flails" />
+        android:src="@drawable/hardmode_flails" />
 
     <ListView
-        android:id="@+id/FlailsList"
+        android:id="@+id/HFlailsList"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 </LinearLayout>
