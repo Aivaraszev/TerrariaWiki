@@ -61,7 +61,6 @@ public class FlailsRepository {
     }
     //TODO: make "crafting"
     public void fill(SQLiteDatabase db) {
-        prepareFlails(db, "Wooden Boomerang", R.drawable.item_wooden_boomerang, 8, "5 (Average)", "4%", "15 (Very Fast)", "6.5", "None", "None", "None", "White", "None", "10 Silver");
         prepareFlails(db, "Chain Knife", R.drawable.item_chain_knife, 11, "3.5 (Weak)", "4%", "19 (Very Fast)", "12", "None", "None", "None", "Green", "None", "2 Silver");
         prepareFlails(db, "Ball O' Hurt", R.drawable.item_ball_o_hurt, 15, "6.5 (Strong)", "4%", "44 (Very Slow)", "12", "None", "None", "None", "Blue", "None", "54 Silver");
         prepareFlails(db, "The Meatball", R.drawable.item_the_meatball, 16, "6.5 (Strong)", "4%", "44 (Very Slow)", "12", "None", "None", "None", "Blue", "none", "54 Silver");
