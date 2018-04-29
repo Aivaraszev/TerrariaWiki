@@ -37,7 +37,7 @@ public class HSpearsDescriptionActivity extends Activity {
         hspearsDamage.setText(Integer.toString(hspear.damage));
         hspearsKnockback.setText((hspear.knockback));
         hspearsCritical_chance.setText((hspear.critical_chance));
-        hspearsUse_time.setText(Integer.toString(hspear.use_time));
+        hspearsUse_time.setText((hspear.use_time));
         hspearsVelocity.setText((hspear.velocity));
         hspearsTooltip.setText((hspear.tooltip));
         hspearsGrants_buff.setText((hspear.grants_buff));

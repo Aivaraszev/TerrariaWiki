@@ -15,7 +15,7 @@ import com.zevzikovas.aivaras.terraria.models.HSpears;
 import java.util.List;
 
 public class HBoomerangsListAdapter extends ArrayAdapter<HBoomerangs> {
-    public HSBoomerangsListAdapter(Context context, int resource, List<HBoomerangs> hboomerangs) {
+    public HBoomerangsListAdapter(Context context, int resource, List<HBoomerangs> hboomerangs) {
         super(context, resource, hboomerangs);
     }
 

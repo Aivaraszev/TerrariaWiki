@@ -7,7 +7,7 @@ import android.widget.TextView;
 
 import com.zevzikovas.aivaras.terraria.R;
 import com.zevzikovas.aivaras.terraria.models.HBoomerangs;
-import com.zevzikovas.aivaras.terraria.models.HSpears;
+import com.zevzikovas.aivaras.terraria.models.HBoomerangs;
 
 import com.zevzikovas.aivaras.terraria.repositories.RepositoryManager;
 
@@ -23,28 +23,28 @@ public class HBoomerangsDescriptionActivity extends Activity {
         Intent i = getIntent();
         HBoomerangs hboomerangs = repositoryManager.HBoomerangsRepository.getHboomerang(i.getIntExtra("hboomerangsId", 0));
 
-        TextView hspearsDamage = findViewById(R.id.hspearsDamage);
-        TextView hspearsKnockback = findViewById(R.id.hspearsKnockback);
-        TextView hspearsCritical_chance = findViewById(R.id.hspearsCritical_chance);
-        TextView hspearsUse_time = findViewById(R.id.hspearsUse_time);
-        TextView hspearsVelocity = findViewById(R.id.hspearsVelocity);
-        TextView hspearsTooltip = findViewById(R.id.hspearsTooltip);
-        TextView hspearsGrants_buff = findViewById(R.id.hspearsGrants_buff);
-        TextView hspearsInflicts_debuff = findViewById(R.id.hspearsInflicts_debuff);
-        TextView hspearsRarity = findViewById(R.id.hspearsRarity);
-        TextView hspearsBuy_price = findViewById(R.id.hspearsBuy_price);
-        TextView hspearsSell_price = findViewById(R.id.hspearsSell_price);
+        TextView hboomerangsDamage = findViewById(R.id.hboomerangsDamage);
+        TextView hboomerangsKnockback = findViewById(R.id.hboomerangsKnockback);
+        TextView hboomerangsCritical_chance = findViewById(R.id.hboomerangsCritical_chance);
+        TextView hboomerangsUse_time = findViewById(R.id.hboomerangsUse_time);
+        TextView hboomerangsVelocity = findViewById(R.id.hboomerangsVelocity);
+        TextView hboomerangsTooltip = findViewById(R.id.hboomerangsTooltip);
+        TextView hboomerangsGrants_buff = findViewById(R.id.hboomerangsGrants_buff);
+        TextView hboomerangsInflicts_debuff = findViewById(R.id.hboomerangsInflicts_debuff);
+        TextView hboomerangsRarity = findViewById(R.id.hboomerangsRarity);
+        TextView hboomerangsBuy_price = findViewById(R.id.hboomerangsBuy_price);
+        TextView hboomerangsSell_price = findViewById(R.id.hboomerangsSell_price);
 
-        hspearsDamage.setText(Integer.toString(hspear.damage));
-        hspearsKnockback.setText((hspear.knockback));
-        hspearsCritical_chance.setText((hspear.critical_chance));
-        hspearsUse_time.setText(Integer.toString(hspear.use_time));
-        hspearsVelocity.setText((hspear.velocity));
-        hspearsTooltip.setText((hspear.tooltip));
-        hspearsGrants_buff.setText((hspear.grants_buff));
-        hspearsInflicts_debuff.setText((hspear.inflicts_debuff));
-        hspearsRarity.setText((hspear.rarity));
-        hspearsBuy_price.setText((hspear.buy_price));
-        hspearsSell_price.setText((hspear.sell_price));
+        hboomerangsDamage.setText(Integer.toString(hboomerangs.damage));
+        hboomerangsKnockback.setText((hboomerangs.knockback));
+        hboomerangsCritical_chance.setText((hboomerangs.critical_chance));
+        hboomerangsUse_time.setText((hboomerangs.use_time));
+        hboomerangsVelocity.setText((hboomerangs.velocity));
+        hboomerangsTooltip.setText((hboomerangs.tooltip));
+        hboomerangsGrants_buff.setText((hboomerangs.grants_buff));
+        hboomerangsInflicts_debuff.setText((hboomerangs.inflicts_debuff));
+        hboomerangsRarity.setText((hboomerangs.rarity));
+        hboomerangsBuy_price.setText((hboomerangs.buy_price));
+        hboomerangsSell_price.setText((hboomerangs.sell_price));
     }
 }
