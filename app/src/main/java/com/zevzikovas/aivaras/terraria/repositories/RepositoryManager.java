@@ -16,6 +16,7 @@ public class RepositoryManager extends SQLiteOpenHelper {
     public HYoyosRepository HYoyosRepository = new HYoyosRepository(this);
     public HSpearsRepository HSpearsRepository = new HSpearsRepository(this);
     public SpearsRepository SpearsRepository = new SpearsRepository(this);
+    public BoomerangsRepository BoomerangsRepository = new BoomerangsRepository(this);
 
     public RepositoryManager(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
@@ -30,6 +31,7 @@ public class RepositoryManager extends SQLiteOpenHelper {
         HYoyosRepository.create(db);
         HSpearsRepository.create(db);
         SpearsRepository.create(db);
+        BoomerangsRepository.create(db);
 
         swordsRepository.fill(db);
         hSwordsRepository.fill(db);
@@ -38,6 +40,7 @@ public class RepositoryManager extends SQLiteOpenHelper {
         HYoyosRepository.fill(db);
         HSpearsRepository.fill(db);
         SpearsRepository.fill(db);
+        BoomerangsRepository.fill(db);
     }
 
     @Override
@@ -49,6 +52,7 @@ public class RepositoryManager extends SQLiteOpenHelper {
         HYoyosRepository.drop(db);
         HSpearsRepository.drop(db);
         SpearsRepository.drop(db);
+        BoomerangsRepository.drop(db);
 
         onCreate(db);
     }
