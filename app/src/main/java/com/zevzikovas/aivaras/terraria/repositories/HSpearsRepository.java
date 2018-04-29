@@ -69,10 +69,10 @@ public class HSpearsRepository {
         prepareHspears(db, "Titanium Trident", R.drawable.item_titanium_trident, 40, "6.2 (Strong)", "4%", "22 (Fast)", "5", "None", "None", "None", "Light Red", "None","2 Gold 10 Silver");
         prepareHspears(db, "Gungnir", R.drawable.item_gungnir, 42, "6.4 (Strong)", "4%", "21 (Fast)", "5.6", "None", "None", "None", "Pink", "None", "4 Gold 60 Silver");
         prepareHspears(db, "Ghastly Glaive", R.drawable.item_ghastly_glaive, 45, "7 (Strong)", "4%", "27 (Average)", "42", "Summons ghosts as it hits enemies", "None", "None", "Pink", "None", "1 Gold");
-        prepareHspears(db, "Chlorophyte PArtisan", R.drawable.item_chlorophyte_partisan, 49, "6.2 (Strong)", "4%", "22 (Fast)", "24", "Right Click to guard with a shield", "Striking Moment", "None", "Pink", "None", "1 Gold");
-        prepareHspears(db, "Mushroom Spear", R.drawable.item_mushroom_spear, 44, "6", "4%", 25, "None", "None", "None", "None", "Light Red", "None", "2 Gold 7 Silver");
-        prepareHspears(db, "Obsidian Swordfish", R.drawable.item_obsidian_swordfish, 47, "6", "4%", 25, "None", "None", "None", "None", "Light Red", "None", "2 Gold 53 Silver");
-        prepareHspears(db, "North Pole", R.drawable.item_north_pole, 48, "4", "4%", 15, "8", "Shoots a spore cloud", "None", "None", "Lime", "None", "5 Gold 52 Silver");
+        prepareHspears(db, "Chlorophyte PArtisan", R.drawable.item_chlorophyte_partisan, 49, "6.2 (Strong)", "4%", "22 (Fast)", "5", "Shoots a spore cloud", "None", "None", "Lime", "None", "3 Gold 60 Silver");
+        prepareHspears(db, "Mushroom Spear", R.drawable.item_mushroom_spear, 60, "6.2 (Strong)", "4%", "39 (Very Slow)", "5.5", "None", "None", "None", "Lime", "70 Gold", "14 Gold");
+        prepareHspears(db, "Obsidian Swordfish", R.drawable.item_obsidian_swordfish, 70, "6.5 (Strong)", "24%", "19 (Very Fast)", "4", "None", "None", "None", "Lime", "None", "1 Gold");
+        prepareHspears(db, "North Pole", R.drawable.item_north_pole, 73, "6.7 (Strong)", "4%", "24 (Fast)", "4.75", "None", "None", "None", "Lime", "None", "3 Gold 60 Silver");
     }
 
     private void prepareHspears(SQLiteDatabase db, String name, int picture, int damage, String knockback, String critical_chance, String use_time, String velocity, String tooltip, String grants_buff, String inflicts_debuff, String rarity, String buy_price, String sell_price) {
