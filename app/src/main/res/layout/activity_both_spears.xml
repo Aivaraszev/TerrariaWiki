@@ -5,16 +5,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".activities.HYoyosActivity">
+    tools:context=".activities.BothSpearsActivity">
 
-    <ImageView
-        android:id="@+id/imageView8"
+    <Button
+        android:id="@+id/button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:src="@drawable/hardmode_yoyos" />
+        android:onClick="SpearsList"
+        android:text="Pre-hardmode spears" />
 
-    <ListView
-        android:id="@+id/HYoyosList"
+    <Button
+        android:id="@+id/button4"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="wrap_content"
+        android:onClick="HSpearsList"
+        android:text="Hardmode spears" />
 </LinearLayout>

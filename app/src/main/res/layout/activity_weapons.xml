@@ -20,4 +20,11 @@
         android:layout_height="wrap_content"
         android:onClick="BothYoyosActivity"
         android:text="Yoyos" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="BothSpearsActivity"
+        android:text="Spears" />
 </LinearLayout>

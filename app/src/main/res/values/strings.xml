@@ -10,4 +10,7 @@
     <string name="title_activity_both_yoyos">BothYoyosActivity</string>
     <string name="title_activity_hyoyos">HYoyosActivity</string>
     <string name="title_activity_hyoyos_description">HYoyosDescriptionActivity</string>
+    <string name="title_activity_hspears">HSpearsActivity</string>
+    <string name="title_activity_hspears_description">HSpearsDescriptionActivity</string>
+    <string name="title_activity_both_spears">BothSpearsActivity</string>
 </resources>
