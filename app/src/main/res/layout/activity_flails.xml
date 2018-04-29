@@ -5,16 +5,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".activities.BoomerangsActivity">
+    tools:context=".activities.FlailsActivity">
 
     <ImageView
         android:id="@+id/imageView8"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:src="@drawable/pre_hardmode_boomerangs" />
+        android:src="@drawable/hardmode_swords" />
 
     <ListView
-        android:id="@+id/BoomerangsList"
+        android:id="@+id/FlailsList"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 </LinearLayout>

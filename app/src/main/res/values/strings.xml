@@ -17,4 +17,6 @@
     <string name="title_activity_boomerangs">BoomerangsActivity</string>
     <string name="title_activity_boomerangs_description">BoomerangsDescriptionActivity</string>
     <string name="title_activity_both_boomernags">BothBoomernagsActivity</string>
+    <string name="title_activity_flails">FlailsActivity</string>
+    <string name="title_activity_flails_description">FlailsDescriptionActivity</string>
 </resources>

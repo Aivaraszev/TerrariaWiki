@@ -77,7 +77,13 @@
             android:label="@string/title_activity_boomerangs_description" />
         <activity
             android:name=".activities.BothBoomernagsActivity"
-            android:label="@string/title_activity_both_boomernags"></activity>
+            android:label="@string/title_activity_both_boomernags" />
+        <activity
+            android:name=".activities.FlailsActivity"
+            android:label="@string/title_activity_flails" />
+        <activity
+            android:name=".activities.FlailsDescriptionActivity"
+            android:label="@string/title_activity_flails_description"></activity>
     </application>
 
 </manifest>
