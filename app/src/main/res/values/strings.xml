@@ -22,4 +22,5 @@
     <string name="title_activity_hflails">HFlailsActivity</string>
     <string name="title_activity_hflails_description">HFlailsDescriptionActivity</string>
     <string name="title_activity_both_flails">BothFlailsActivity</string>
+    <string name="title_activity_others">OthersActivity</string>
 </resources>

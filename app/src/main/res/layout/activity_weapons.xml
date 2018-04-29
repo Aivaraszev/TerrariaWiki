@@ -8,7 +8,7 @@
     tools:context=".activities.WeaponsActivity">
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/Swords"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="BothSwordsActivity"
@@ -22,9 +22,16 @@
         android:text="Yoyos" />
 
     <Button
-        android:id="@+id/button7"
+        android:id="@+id/Spears"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="BothSpearsActivity"
         android:text="Spears" />
+
+    <Button
+        android:id="@+id/Boomerangs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="BothBoomerangsActivity"
+        android:text="Boomerangs" />
 </LinearLayout>

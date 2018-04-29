@@ -92,7 +92,10 @@
             android:label="@string/title_activity_hflails_description" />
         <activity
             android:name=".activities.BothFlailsActivity"
-            android:label="@string/title_activity_both_flails"></activity>
+            android:label="@string/title_activity_both_flails" />
+        <activity
+            android:name=".activities.OthersActivity"
+            android:label="@string/title_activity_others"></activity>
     </application>
 
 </manifest>
