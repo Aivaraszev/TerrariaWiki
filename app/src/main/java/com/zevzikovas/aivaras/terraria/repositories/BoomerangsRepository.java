@@ -59,15 +59,15 @@ public class BoomerangsRepository {
     public void drop(SQLiteDatabase db) {
         db.execSQL("DROP TABLE IF EXISTS " + TABLE_NAME);
     }
-    //TODO: make "crafting", add String to use time
+    //TODO: make "crafting"
     public void fill(SQLiteDatabase db) {
-        prepareBoomerangs(db, "Pearlwood Sword", R.drawable.item_pearlwood_sword, 11, "5 (Average)", "4%", "20 (Very Fast)", "None", "None", "None", "None", "White", "None", "20 Copper");
-        prepareBoomerangs(db, "Classy Cane", R.drawable.item_classy_cane, 16, "3.5 (Weak)", "4%", "14 (Very Fast)", "None", "None", "None","None", "Green", "None", "50 Silver");
-        prepareBoomerangs(db, "Slap Hand", R.drawable.item_slap_hand, 35, "20 (Insane)", "19%", "20 (Very Fast)", "None", "None", "None", "None", "Light Red", "25 Gold", "5 Gold");
-        prepareBoomerangs(db, "Breaker Blade", R.drawable.item_breaker_blade, 39, "8 (Very Strong)", "4%", "29 (Average)", "None", "None", "None", "None", "Light Red", "None", "3 Gold");
-        prepareBoomerangs(db, "Cobalt Sword", R.drawable.item_cobalt_sword, 39, "3.85 (Weak)", "4%", "22 (Fast)", "None", "None", "None", "None", "Light Red", "None", "1 Gold 50 Silver");
-        prepareBoomerangs(db, "Palladium Sword", R.drawable.item_palladium_sword, 41, "4.75 (Average)", "4%", "24 (Fast)", "None", "None", "None", "None", "Light Red", "None","1 Gold 84 Silver");
-        prepareBoomerangs(db, "Phasesaber", R.drawable.item_phasesaber, 41, "3 (Weak)", "4%", "24 (Fast)", "None", "None", "None", "None", "Light Red", "None", "54 Silver");
+        prepareBoomerangs(db, "Wooden Boomerang", R.drawable.item_wooden_boomerang, 8, "5 (Average)", "4%", "15 (Very Fast)", "6.5", "None", "None", "None", "White", "None", "10 Silver");
+        prepareBoomerangs(db, "Enchanted Boomerang", R.drawable.item_enchanted_boomerang, 13, "8 (Very Strong)", "4%", "14 (Very Fast)", "10", "None", "None","None", "Blue", "None", "1 Gold");
+        prepareBoomerangs(db, "Fruit Chakram", R.drawable.item_fruitcake_chakram, 14, "8 (Very Strong)", "4%", "14 (Very Fast)", "11", "None", "None", "None", "Blue", "None", "1 Gold");
+        prepareBoomerangs(db, "Bloody Machete", R.drawable.item_bloody_machete, 15, "5 (Average)", "4%", "14 (Very Fast)", "15", "None", "None", "None", "Green", "None", "1 Gold");
+        prepareBoomerangs(db, "Ice Boomerang", R.drawable.item_ice_boomerang, 16, "8.5 (Very Strong)", "6%", "14 (Very Fast)", "11.5", "None", "None", "None", "Blue", "None", "1 Gold");
+        prepareBoomerangs(db, "Thorn Chakram", R.drawable.item_thorn_chakram, 25, "8 (Very Strong)", "4%", "14 (Very Fast)", "11", "None", "None", "Poisoned (Slowly losing life)", "Orange", "None","1 Gold");
+        prepareBoomerangs(db, "Flamarang", R.drawable.item_flamarang, 32, "8 (Very Strong)", "4%", "14 (Very Fast)", "11", "None", "None", "On Fire! (Slowly losing life)", "Orange", "None", "2 Gold");
 
     }
 
