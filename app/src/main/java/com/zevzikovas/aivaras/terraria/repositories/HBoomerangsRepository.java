@@ -124,7 +124,7 @@ public class HBoomerangsRepository {
 
         if (cursor.moveToFirst()) {
             do {
-                HBoomerangs hBoomerangs = new HBoomerangs(
+                HBoomerangs hboomerangs = new HBoomerangs(
                         cursor.getInt(0),
                         cursor.getString(1),
                         cursor.getInt(2),
@@ -141,7 +141,7 @@ public class HBoomerangsRepository {
                         cursor.getString(13)
                 );
 
-                hboomerangs.add(hboomerangs);
+                hboomerang.add(hboomerangs);
             } while (cursor.moveToNext());
         }
 
@@ -151,7 +151,7 @@ public class HBoomerangsRepository {
         return hboomerang;
     }
 
-    public HBoomerangs getHboomerang(int id) {
+    public HBoomerangs getHBoomerang(int id) {
         SQLiteDatabase db = dbHelper.getReadableDatabase();
         String selectQuery = "SELECT * FROM " + TABLE_NAME + " WHERE ID = " + id;
         Cursor cursor = db.rawQuery(selectQuery, null);
