@@ -23,7 +23,7 @@ public class OthersListAdapter extends ArrayAdapter<Others> {
         Others others = getItem(position);
 
         if (convertView == null) {
-            convertView = LayoutInflater.from(getContext()).inflate(R.layout.hswords_list_item, parent, false);
+            convertView = LayoutInflater.from(getContext()).inflate(R.layout.others_list_item, parent, false);
         }
 
         if (others != null) {

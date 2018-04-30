@@ -8,7 +8,7 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 import com.zevzikovas.aivaras.terraria.R;
 import com.zevzikovas.aivaras.terraria.adapters.OthersListAdapter;
-import com.zevzikovas.aivaras.terraria.models.Hswords;
+import com.zevzikovas.aivaras.terraria.models.Others;
 import com.zevzikovas.aivaras.terraria.repositories.RepositoryManager;
 
 import java.util.List;
@@ -16,28 +16,28 @@ import java.util.List;
 public class OthersActivity extends Activity {
     ListView othersListView;
     OthersListAdapter othersListAdapter;
-    List<Hswords> others;
+    List<Others> others;
     RepositoryManager repositoryManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_hswords);
+        setContentView(R.layout.activity_others);
         repositoryManager = new RepositoryManager(this);
 
-        hswords = repositoryManager.hSwordsRepository.getAllHsword();
+        others = repositoryManager.OthersRepository.getAllOther();
 
-        hswordsListAdapter = new OthersListAdapter(this, R.layout.hswords_list_item, hswords);
+        othersListAdapter = new OthersListAdapter(this, R.layout.others_list_item, others);
 
-        hswordsListView = findViewById(R.id.HswordsList);
-        hswordsListView.setAdapter(othersListAdapter);
-        hswordsListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        othersListView = findViewById(R.id.OthersList);
+        othersListView.setAdapter(othersListAdapter);
+        othersListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
-                Intent i = new Intent(getApplicationContext(), HswordDescriptionActivity.class);
+                Intent i = new Intent(getApplicationContext(), OthersDescriptionActivity.class);
 
-                int hswordsId = hswords.get(position).id;
-                i.putExtra("hswordsId", hswordsId);
+                int othersId = others.get(position).id;
+                i.putExtra("othersId", othersId);
 
                 startActivity(i);
             }

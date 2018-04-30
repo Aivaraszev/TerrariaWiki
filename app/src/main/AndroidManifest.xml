@@ -95,7 +95,10 @@
             android:label="@string/title_activity_both_flails" />
         <activity
             android:name=".activities.OthersActivity"
-            android:label="@string/title_activity_others"></activity>
+            android:label="@string/title_activity_others" />
+        <activity
+            android:name=".activities.OthersDescriptionActivity"
+            android:label="@string/title_activity_others_description"></activity>
     </application>
 
 </manifest>
