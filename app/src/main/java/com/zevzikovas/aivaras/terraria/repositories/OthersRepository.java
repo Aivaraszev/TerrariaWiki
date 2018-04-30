@@ -111,7 +111,7 @@ public class OthersRepository {
         db.close();
     }
 
-    public List<Others> getAllother() {
+    public List<Others> getAllOther() {
         List<Others> other = new ArrayList<>();
         SQLiteDatabase db = dbHelper.getReadableDatabase();
         String selectQuery = "SELECT * FROM " + TABLE_NAME;
