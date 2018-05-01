@@ -62,10 +62,10 @@ public class HBoomerangsRepository {
     //TODO: make "crafting"
     public void fill(SQLiteDatabase db) {
         prepareHboomerangs(db, "Flying Knife", R.drawable.item_flying_knife, 40, "4.5 (Average)", "4%", "14 (Very Fast)", "17", "Throws a controllable flying knife", "None", "None", "Light Purple", "None", "8 Gold");
-        prepareHboomerangs(db, "Palladium Pike", R.drawable.item_light_disc, 57, "8 (Very Strong)", "4%", "14 (Very Fast)", "13", "Stacks up to 5 ", "None","None", "Pink", "None", "10 Gold");
-        prepareHboomerangs(db, "Mythril Halberd", R.drawable.item_bananarang, 55, "6.5 (Strong)", "4%", "13 (Very Fast)", "14", "None", "None", "None", "Pink", "None", "1 Gold 50 Silver");
-        prepareHboomerangs(db, "Oricha;cum Halberd", R.drawable.item_possessed_hatchet, 80, "5 (Average)", "4%", "13 (Very Fast)", "12", "Chases after your enemy", "None", "None", "Lime", "None", "10 Gold");
-        prepareHboomerangs(db, "Adamantite Glaive", R.drawable.item_paladins_hammer, 90, "9 (Very Strong)", "4%", "14 (Very Fast)", "14", "None", "None", "None", "Yellow", "None", "10 Gold");
+        prepareHboomerangs(db, "Light disc", R.drawable.item_light_disc, 57, "8 (Very Strong)", "4%", "14 (Very Fast)", "13", "Stacks up to 5 ", "None","None", "Pink", "None", "10 Gold");
+        prepareHboomerangs(db, "Bananarang", R.drawable.item_bananarang, 55, "6.5 (Strong)", "4%", "13 (Very Fast)", "14", "None", "None", "None", "Pink", "None", "1 Gold 50 Silver");
+        prepareHboomerangs(db, "Possessed Hatchet", R.drawable.item_possessed_hatchet, 80, "5 (Average)", "4%", "13 (Very Fast)", "12", "Chases after your enemy", "None", "None", "Lime", "None", "10 Gold");
+        prepareHboomerangs(db, "Paladins Hammer", R.drawable.item_paladins_hammer, 90, "9 (Very Strong)", "4%", "14 (Very Fast)", "14", "None", "None", "None", "Yellow", "None", "10 Gold");
     }
 
     private void prepareHboomerangs(SQLiteDatabase db, String name, int picture, int damage, String knockback, String critical_chance, String use_time, String velocity, String tooltip, String grants_buff, String inflicts_debuff, String rarity, String buy_price, String sell_price) {

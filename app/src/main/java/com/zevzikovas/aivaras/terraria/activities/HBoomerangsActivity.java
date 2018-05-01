@@ -34,7 +34,7 @@ public class HBoomerangsActivity extends Activity {
         hboomerangsListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
-                Intent i = new Intent(getApplicationContext(), HSpearsDescriptionActivity.class);
+                Intent i = new Intent(getApplicationContext(), HBoomerangsDescriptionActivity.class);
 
                 int hboomerangsId = hboomerangs.get(position).id;
                 i.putExtra("hboomerangsId", hboomerangsId);

@@ -12,7 +12,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class HYoyosRepository {
-    private static final String TABLE_NAME = "yoyos";
+    private static final String TABLE_NAME = "hyoyos";
 
     private static final String ID = "id";
     private static final String NAME = "name";

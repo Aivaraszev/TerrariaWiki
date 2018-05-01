@@ -10,7 +10,6 @@ import android.widget.TextView;
 
 import com.zevzikovas.aivaras.terraria.R;
 import com.zevzikovas.aivaras.terraria.models.HBoomerangs;
-import com.zevzikovas.aivaras.terraria.models.HSpears;
 
 import java.util.List;
 

@@ -7,7 +7,6 @@ import android.widget.TextView;
 
 import com.zevzikovas.aivaras.terraria.R;
 import com.zevzikovas.aivaras.terraria.models.HBoomerangs;
-import com.zevzikovas.aivaras.terraria.models.HBoomerangs;
 
 import com.zevzikovas.aivaras.terraria.repositories.RepositoryManager;
 
@@ -23,17 +22,17 @@ public class HBoomerangsDescriptionActivity extends Activity {
         Intent i = getIntent();
         HBoomerangs hboomerangs = repositoryManager.HBoomerangsRepository.getHBoomerang(i.getIntExtra("hboomerangsId", 0));
 
-        TextView hboomerangsDamage = findViewById(R.id.hboomerangsDamage);
-        TextView hboomerangsKnockback = findViewById(R.id.hboomerangsKnockback);
-        TextView hboomerangsCritical_chance = findViewById(R.id.hboomerangsCritical_chance);
-        TextView hboomerangsUse_time = findViewById(R.id.hboomerangsUse_time);
-        TextView hboomerangsVelocity = findViewById(R.id.hboomerangsVelocity);
-        TextView hboomerangsTooltip = findViewById(R.id.hboomerangsTooltip);
-        TextView hboomerangsGrants_buff = findViewById(R.id.hboomerangsGrants_buff);
-        TextView hboomerangsInflicts_debuff = findViewById(R.id.hboomerangsInflicts_debuff);
-        TextView hboomerangsRarity = findViewById(R.id.hboomerangsRarity);
-        TextView hboomerangsBuy_price = findViewById(R.id.hboomerangsBuy_price);
-        TextView hboomerangsSell_price = findViewById(R.id.hboomerangsSell_price);
+        TextView hboomerangsDamage = findViewById(R.id.hboomerangDamage);
+        TextView hboomerangsKnockback = findViewById(R.id.hboomerangKnockback);
+        TextView hboomerangsCritical_chance = findViewById(R.id.hboomerangCritical_chance);
+        TextView hboomerangsUse_time = findViewById(R.id.hboomerangUse_time);
+        TextView hboomerangsVelocity = findViewById(R.id.hboomerangVelocity);
+        TextView hboomerangsTooltip = findViewById(R.id.hboomerangTooltip);
+        TextView hboomerangsGrants_buff = findViewById(R.id.hboomerangGrants_buff);
+        TextView hboomerangsInflicts_debuff = findViewById(R.id.hboomerangInflicts_debuff);
+        TextView hboomerangsRarity = findViewById(R.id.hboomerangRarity);
+        TextView hboomerangsBuy_price = findViewById(R.id.hboomerangBuy_price);
+        TextView hboomerangsSell_price = findViewById(R.id.hboomerangSell_price);
 
         hboomerangsDamage.setText(Integer.toString(hboomerangs.damage));
         hboomerangsKnockback.setText((hboomerangs.knockback));

@@ -30,4 +30,8 @@ public class WeaponsActivity extends Activity {
         Intent intent = new Intent(getApplicationContext(), BothBoomerangsActivity.class);
         startActivity(intent);
     }
+    public void OthersActivity (View view) {
+        Intent intent = new Intent(getApplicationContext(), OthersActivity.class);
+        startActivity(intent);
+    }
 }

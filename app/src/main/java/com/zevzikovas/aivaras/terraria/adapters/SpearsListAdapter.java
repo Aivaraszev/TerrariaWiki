@@ -10,13 +10,12 @@ import android.widget.TextView;
 
 import com.zevzikovas.aivaras.terraria.R;
 import com.zevzikovas.aivaras.terraria.models.Spears;
-import com.zevzikovas.aivaras.terraria.models.Swords;
 
 import java.util.List;
 
 public class SpearsListAdapter extends ArrayAdapter<Spears> {
-    public SpearsListAdapter(Context context, int resource, List<Spears> swords) {
-        super(context, resource, swords);
+    public SpearsListAdapter(Context context, int resource, List<Spears> spears) {
+        super(context, resource, spears);
     }
 
     @Override
@@ -28,11 +27,11 @@ public class SpearsListAdapter extends ArrayAdapter<Spears> {
         }
 
         if (spears != null) {
-            TextView swordsName = convertView.findViewById(R.id.itemName);
-            ImageView swordsPicture = convertView.findViewById(R.id.itemPicture);
+            TextView spearsName = convertView.findViewById(R.id.spearsName);
+            ImageView spearsPicture = convertView.findViewById(R.id.spearsPicture);
 
-            swordsName.setText(spears.name);
-            swordsPicture.setImageResource(spears.picture);
+            spearsName.setText(spears.name);
+            spearsPicture.setImageResource(spears.picture);
         }
 
         return convertView;

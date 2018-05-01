@@ -19,7 +19,7 @@ public class BothBoomerangsActivity extends Activity {
         startActivity(intent);
     }
     public void HBoomerangsList (View view) {
-        Intent intent = new Intent(getApplicationContext(), HSpearsActivity.class);
+        Intent intent = new Intent(getApplicationContext(), HBoomerangsActivity.class);
         startActivity(intent);
     }
 }
