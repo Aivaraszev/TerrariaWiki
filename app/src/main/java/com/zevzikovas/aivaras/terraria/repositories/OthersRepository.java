@@ -61,12 +61,12 @@ public class OthersRepository {
     }
     //TODO: make "crafting"
     public void fill(SQLiteDatabase db) {
-        prepareOthers(db, "Shadowflame Knife", R.drawable.item_shadowflame_knife, 11, "5 (Average)", "4%", "20 (Very Fast)", "None", "None", "None", "None", "White", "None", "20 Copper");
-        prepareOthers(db, "Sleepy Octopod", R.drawable.item_sleepy_octopod, 16, "3.5 (Weak)", "4%", "14 (Very Fast)", "None", "None", "None","None", "Green", "None", "50 Silver");
-        prepareOthers(db, "Scourge of the Corruptor", R.drawable.item_scourge_of_the_corruptor, 35, "20 (Insane)", "19%", "20 (Very Fast)", "None", "None", "None", "None", "Light Red", "25 Gold", "5 Gold");
-        prepareOthers(db, "Vamipre Knives", R.drawable.item_vampire_knives, 39, "8 (Very Strong)", "4%", "29 (Average)", "None", "None", "None", "None", "Light Red", "None", "3 Gold");
-        prepareOthers(db, "Sky Dragon's Fury", R.drawable.item_sky_dragons_fury, 39, "3.85 (Weak)", "4%", "22 (Fast)", "None", "None", "None", "None", "Light Red", "None", "1 Gold 50 Silver");
-        prepareOthers(db, "Daybreak", R.drawable.item_daybreak, 41, "4.75 (Average)", "4%", "24 (Fast)", "None", "None", "None", "None", "Light Red", "None","1 Gold 84 Silver");
+        prepareOthers(db, "Shadowflame Knife", R.drawable.item_shadowflame_knife, 38, "5.75 (Average)", "7%", "11 (Very Fast)", "13", "Inflicts Shadowflame on hit", "None", "Shadowflame (Losing life)", "Pink", "None", "2 Gold");
+        prepareOthers(db, "Sleepy Octopod", R.drawable.item_sleepy_octopod, 40, "7 (Strong)", "4%", "30 (Average)", "24", "Charges power as it is swung to smash enemies", "None","None", "Pink", "None", "1 Gold");
+        prepareOthers(db, "Scourge of the Corruptor", R.drawable.item_scourge_of_the_corruptor, 64, "5 (Average)", "4%", "19 (Very Fast)", "14", "A powerful javelin that unleashes tiny eaters", "None", "None", "Yellow", "None", "20 Gold");
+        prepareOthers(db, "Vamipre Knives", R.drawable.item_vampire_knives, 31, "2.75 (Very Weak)", "4%", "15 (Very Fast)", "15", "Rapidly throws life stealing daggers", "None", "None", "Yellow", "None", "20 Gold");
+        prepareOthers(db, "Sky Dragon's Fury", R.drawable.item_sky_dragons_fury, 70, "8 (Average)", "4%", "30 (Average)", "24", "Right Click while holding for an alternate attack!", "None", "None", "Yellow", "None", "5 Gold");
+        prepareOthers(db, "Daybreak", R.drawable.item_daybreak, 150, "5 (Average)", "4%", "15 (Very Fast)", "10", "Rend your foes asunder with a spear of light!'", "None", "Daybroken (Incinerated by solar rays)", "Red", "None","10 Gold");
 
     }
 
