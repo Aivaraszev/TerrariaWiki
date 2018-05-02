@@ -6,7 +6,8 @@ import android.app.Activity;
 import android.view.View;
 
 import com.zevzikovas.aivaras.terraria.R;
-import com.zevzikovas.aivaras.terraria.activities.SwordsActivity;
+import com.zevzikovas.aivaras.terraria.activities.FlailsActivity;
+import com.zevzikovas.aivaras.terraria.activities.HFlailsActivity;
 
 public class BothFlailsActivity extends Activity {
 
@@ -16,11 +17,11 @@ public class BothFlailsActivity extends Activity {
         setContentView(R.layout.activity_both_flails);
     }
     public void HFlailsList (View view) {
-        Intent intent = new Intent(getApplicationContext(), HSwordsActivity.class);
+        Intent intent = new Intent(getApplicationContext(), HFlailsActivity.class);
         startActivity(intent);
     }
     public void FlailsList (View view) {
-        Intent intent = new Intent(getApplicationContext(), SwordsActivity.class);
+        Intent intent = new Intent(getApplicationContext(), FlailsActivity.class);
         startActivity(intent);
     }
 }
