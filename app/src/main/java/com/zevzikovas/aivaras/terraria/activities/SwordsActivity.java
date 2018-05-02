@@ -8,6 +8,7 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 
 import com.zevzikovas.aivaras.terraria.R;
+import com.zevzikovas.aivaras.terraria.activities.descriptions.SwordsDescriptionActivity;
 import com.zevzikovas.aivaras.terraria.adapters.SwordsListAdapter;
 import com.zevzikovas.aivaras.terraria.models.Swords;
 import com.zevzikovas.aivaras.terraria.repositories.RepositoryManager;

@@ -6,6 +6,10 @@ import android.app.Activity;
 import android.view.View;
 
 import com.zevzikovas.aivaras.terraria.R;
+import com.zevzikovas.aivaras.terraria.activities.both.BothBoomerangsActivity;
+import com.zevzikovas.aivaras.terraria.activities.both.BothSpearsActivity;
+import com.zevzikovas.aivaras.terraria.activities.both.BothSwordsActivity;
+import com.zevzikovas.aivaras.terraria.activities.both.BothYoyosActivity;
 
 public class WeaponsActivity extends Activity {
 

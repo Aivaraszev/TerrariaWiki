@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import com.zevzikovas.aivaras.terraria.R;
+import com.zevzikovas.aivaras.terraria.activities.descriptions.SpearsDescriptionActivity;
 import com.zevzikovas.aivaras.terraria.adapters.SpearsListAdapter;
 import com.zevzikovas.aivaras.terraria.models.Spears;
 import com.zevzikovas.aivaras.terraria.repositories.RepositoryManager;

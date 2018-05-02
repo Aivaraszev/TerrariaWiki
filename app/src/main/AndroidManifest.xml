@@ -16,14 +16,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activities.HswordDescriptionActivity" />
+        <activity android:name=".activities.descriptions.HswordDescriptionActivity" />
         <activity android:name=".activities.GameInfoActivity" />
         <activity android:name=".activities.ItemsActivity" />
         <!-- <activity android:name=".activities.MechanicsActivity" /> -->
         <!-- <activity android:name=".activities.BiomesActivity" /> -->
         <!-- <activity android:name=".activities.CharactersActivity" /> -->
-        <activity android:name=".activities.SwordsDescriptionActivity" />
-        <activity android:name=".activities.PickaxesDescriptionActivity" />
+        <activity android:name=".activities.descriptions.SwordsDescriptionActivity" />
+        <activity android:name=".activities.descriptions.PickaxesDescriptionActivity" />
         <activity
             android:name=".activities.WeaponsActivity"
             android:label="@string/title_activity_weapons" />
@@ -40,34 +40,34 @@
             android:name=".activities.YoyosActivity"
             android:label="@string/title_activity_yoyos" />
         <activity
-            android:name=".activities.YoyosDescriptionActivity"
+            android:name=".activities.descriptions.YoyosDescriptionActivity"
             android:label="@string/title_activity_yoyos_description" />
         <activity
-            android:name=".activities.HBoomerangsDescriptionActivity"
+            android:name=".activities.descriptions.HBoomerangsDescriptionActivity"
             android:label="@string/title_activity_yoyos_description" />
         <activity
-            android:name=".activities.BothSwordsActivity"
+            android:name=".activities.both.BothSwordsActivity"
             android:label="@string/title_activity_both_swords" />
         <activity
-            android:name=".activities.BothYoyosActivity"
+            android:name=".activities.both.BothYoyosActivity"
             android:label="@string/title_activity_both_yoyos" />
         <activity
             android:name=".activities.HYoyosActivity"
             android:label="@string/title_activity_hyoyos" />
         <activity
-            android:name=".activities.HYoyosDescriptionActivity"
+            android:name=".activities.descriptions.HYoyosDescriptionActivity"
             android:label="@string/title_activity_hyoyos_description" />
         <activity
             android:name=".activities.HSpearsActivity"
             android:label="@string/title_activity_hspears" />
         <activity
-            android:name=".activities.HSpearsDescriptionActivity"
+            android:name=".activities.descriptions.HSpearsDescriptionActivity"
             android:label="@string/title_activity_hspears_description" />
         <activity
-            android:name=".activities.SpearsDescriptionActivity"
+            android:name=".activities.descriptions.SpearsDescriptionActivity"
             android:label="@string/title_activity_hspears_description" />
         <activity
-            android:name=".activities.BothSpearsActivity"
+            android:name=".activities.both.BothSpearsActivity"
             android:label="@string/title_activity_both_spears" />
         <activity
             android:name=".activities.SpearsActivity"
@@ -79,31 +79,31 @@
             android:name=".activities.HBoomerangsActivity"
             android:label="@string/title_activity_boomerangs" />
         <activity
-            android:name=".activities.BoomerangsDescriptionActivity"
+            android:name=".activities.descriptions.BoomerangsDescriptionActivity"
             android:label="@string/title_activity_boomerangs_description" />
         <activity
             android:name=".activities.FlailsActivity"
             android:label="@string/title_activity_flails" />
         <activity
-            android:name=".activities.BothBoomerangsActivity"
+            android:name=".activities.both.BothBoomerangsActivity"
             android:label="@string/title_activity_flails" />
         <activity
-            android:name=".activities.FlailsDescriptionActivity"
+            android:name=".activities.descriptions.FlailsDescriptionActivity"
             android:label="@string/title_activity_flails_description" />
         <activity
             android:name=".activities.HFlailsActivity"
             android:label="@string/title_activity_hflails" />
         <activity
-            android:name=".activities.HFlailsDescriptionActivity"
+            android:name=".activities.descriptions.HFlailsDescriptionActivity"
             android:label="@string/title_activity_hflails_description" />
         <activity
-            android:name=".activities.BothFlailsActivity"
+            android:name=".activities.both.BothFlailsActivity"
             android:label="@string/title_activity_both_flails" />
         <activity
             android:name=".activities.OthersActivity"
             android:label="@string/title_activity_others" />
         <activity
-            android:name=".activities.OthersDescriptionActivity"
+            android:name=".activities.descriptions.OthersDescriptionActivity"
             android:label="@string/title_activity_others_description"></activity>
     </application>
 

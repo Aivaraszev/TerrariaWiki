@@ -8,6 +8,7 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 
 import com.zevzikovas.aivaras.terraria.R;
+import com.zevzikovas.aivaras.terraria.activities.descriptions.PickaxesDescriptionActivity;
 import com.zevzikovas.aivaras.terraria.adapters.PickaxesListAdapter;
 import com.zevzikovas.aivaras.terraria.models.Pickaxes;
 import com.zevzikovas.aivaras.terraria.repositories.RepositoryManager;

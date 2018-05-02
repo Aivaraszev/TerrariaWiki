@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import com.zevzikovas.aivaras.terraria.R;
+import com.zevzikovas.aivaras.terraria.activities.descriptions.HFlailsDescriptionActivity;
 import com.zevzikovas.aivaras.terraria.adapters.HFlailsListAdapter;
 import com.zevzikovas.aivaras.terraria.models.HFlails;
 import com.zevzikovas.aivaras.terraria.repositories.RepositoryManager;

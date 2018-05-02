@@ -1,4 +1,4 @@
-package com.zevzikovas.aivaras.terraria.activities;
+package com.zevzikovas.aivaras.terraria.activities.descriptions;
 
 import android.app.Activity;
 import android.content.Intent;

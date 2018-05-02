@@ -1,4 +1,4 @@
-package com.zevzikovas.aivaras.terraria.activities;
+package com.zevzikovas.aivaras.terraria.activities.both;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -6,6 +6,8 @@ import android.app.Activity;
 import android.view.View;
 
 import com.zevzikovas.aivaras.terraria.R;
+import com.zevzikovas.aivaras.terraria.activities.HswordsActivity;
+import com.zevzikovas.aivaras.terraria.activities.SwordsActivity;
 
 public class BothSwordsActivity extends Activity {
 
@@ -15,7 +17,7 @@ public class BothSwordsActivity extends Activity {
         setContentView(R.layout.activity_both_swords);
     }
     public void HswordsList (View view) {
-        Intent intent = new Intent(getApplicationContext(), HSwordsActivity.class);
+        Intent intent = new Intent(getApplicationContext(), HswordsActivity.class);
         startActivity(intent);
     }
     public void SwordsList (View view) {

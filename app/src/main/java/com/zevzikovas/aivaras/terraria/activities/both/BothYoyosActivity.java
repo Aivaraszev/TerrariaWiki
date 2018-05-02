@@ -1,4 +1,4 @@
-package com.zevzikovas.aivaras.terraria.activities;
+package com.zevzikovas.aivaras.terraria.activities.both;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -6,6 +6,8 @@ import android.app.Activity;
 import android.view.View;
 
 import com.zevzikovas.aivaras.terraria.R;
+import com.zevzikovas.aivaras.terraria.activities.HYoyosActivity;
+import com.zevzikovas.aivaras.terraria.activities.YoyosActivity;
 
 public class BothYoyosActivity extends Activity {
 
