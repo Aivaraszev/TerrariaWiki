@@ -44,7 +44,7 @@
             android:label="@string/title_activity_yoyos_description" />
         <activity
             android:name=".activities.descriptions.HBoomerangsDescriptionActivity"
-            android:label="@string/title_activity_yoyos_description" />
+            android:label="HBoomerangsDescriptionActivity" />
         <activity
             android:name=".activities.both.BothSwordsActivity"
             android:label="@string/title_activity_both_swords" />
@@ -65,7 +65,7 @@
             android:label="@string/title_activity_hspears_description" />
         <activity
             android:name=".activities.descriptions.SpearsDescriptionActivity"
-            android:label="@string/title_activity_hspears_description" />
+            android:label="SpearsDescriptionActivity" />
         <activity
             android:name=".activities.both.BothSpearsActivity"
             android:label="@string/title_activity_both_spears" />
@@ -77,7 +77,7 @@
             android:label="@string/title_activity_boomerangs" />
         <activity
             android:name=".activities.HBoomerangsActivity"
-            android:label="@string/title_activity_boomerangs" />
+            android:label="HBoomerangsActivity" />
         <activity
             android:name=".activities.descriptions.BoomerangsDescriptionActivity"
             android:label="@string/title_activity_boomerangs_description" />
@@ -86,7 +86,7 @@
             android:label="@string/title_activity_flails" />
         <activity
             android:name=".activities.both.BothBoomerangsActivity"
-            android:label="@string/title_activity_flails" />
+            android:label="BothBoomerangsActivity" />
         <activity
             android:name=".activities.descriptions.FlailsDescriptionActivity"
             android:label="@string/title_activity_flails_description" />
