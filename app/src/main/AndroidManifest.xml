@@ -31,7 +31,7 @@
             android:name=".activities.PickaxesActivity"
             android:label="PickaxesActivity" />
         <activity
-            android:name=".activities.HSwordsActivity"
+            android:name=".activities.HswordsActivity"
             android:label="@string/title_activity_hsword" />
         <activity
             android:name=".activities.SwordsActivity"

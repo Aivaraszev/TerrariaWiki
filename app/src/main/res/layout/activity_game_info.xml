@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/mountain_background_terraria"
     tools:context="com.zevzikovas.aivaras.terraria.activities.GameInfoActivity">
 
     <ImageView
