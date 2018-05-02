@@ -26,85 +26,85 @@
         <activity android:name=".activities.descriptions.PickaxesDescriptionActivity" />
         <activity
             android:name=".activities.WeaponsActivity"
-            android:label="@string/title_activity_weapons" />
+            android:label="Weapons" />
         <activity
             android:name=".activities.PickaxesActivity"
-            android:label="PickaxesActivity" />
+            android:label="Pickaxes" />
         <activity
             android:name=".activities.HswordsActivity"
-            android:label="@string/title_activity_hsword" />
+            android:label="Hardmode Swords" />
         <activity
             android:name=".activities.SwordsActivity"
-            android:label="@string/title_activity_sword" />
+            android:label="Pre-hardmode Swords" />
         <activity
             android:name=".activities.YoyosActivity"
-            android:label="@string/title_activity_yoyos" />
+            android:label="Pre-hardmode Yoyos" />
         <activity
             android:name=".activities.descriptions.YoyosDescriptionActivity"
-            android:label="@string/title_activity_yoyos_description" />
+            android:label="Yoyo Description" />
         <activity
             android:name=".activities.descriptions.HBoomerangsDescriptionActivity"
-            android:label="HBoomerangsDescriptionActivity" />
+            android:label="Boomerang Description" />
         <activity
             android:name=".activities.both.BothSwordsActivity"
-            android:label="@string/title_activity_both_swords" />
+            android:label="Swords" />
         <activity
             android:name=".activities.both.BothYoyosActivity"
-            android:label="@string/title_activity_both_yoyos" />
+            android:label="Yoyos" />
         <activity
             android:name=".activities.HYoyosActivity"
-            android:label="@string/title_activity_hyoyos" />
+            android:label="Hardmode Yoyos" />
         <activity
             android:name=".activities.descriptions.HYoyosDescriptionActivity"
-            android:label="@string/title_activity_hyoyos_description" />
+            android:label="Yoyo Description" />
         <activity
             android:name=".activities.HSpearsActivity"
-            android:label="@string/title_activity_hspears" />
+            android:label="Hardmode Spears" />
         <activity
             android:name=".activities.descriptions.HSpearsDescriptionActivity"
-            android:label="@string/title_activity_hspears_description" />
+            android:label="Spear Description" />
         <activity
             android:name=".activities.descriptions.SpearsDescriptionActivity"
-            android:label="SpearsDescriptionActivity" />
+            android:label="Spears Description" />
         <activity
             android:name=".activities.both.BothSpearsActivity"
-            android:label="@string/title_activity_both_spears" />
+            android:label="Spears" />
         <activity
             android:name=".activities.SpearsActivity"
-            android:label="@string/title_activity_spears" />
+            android:label="Pre-hardmode Spears" />
         <activity
             android:name=".activities.BoomerangsActivity"
-            android:label="@string/title_activity_boomerangs" />
+            android:label="Pre-hardmode Boomerangs" />
         <activity
             android:name=".activities.HBoomerangsActivity"
-            android:label="HBoomerangsActivity" />
+            android:label="Hardmode Boomerangs" />
         <activity
             android:name=".activities.descriptions.BoomerangsDescriptionActivity"
-            android:label="@string/title_activity_boomerangs_description" />
+            android:label="Boomerang Description" />
         <activity
             android:name=".activities.FlailsActivity"
-            android:label="@string/title_activity_flails" />
+            android:label="Pre-hardmode Flails" />
         <activity
             android:name=".activities.both.BothBoomerangsActivity"
-            android:label="BothBoomerangsActivity" />
+            android:label="Boomerangs" />
         <activity
             android:name=".activities.descriptions.FlailsDescriptionActivity"
-            android:label="@string/title_activity_flails_description" />
+            android:label="Flail Description" />
         <activity
             android:name=".activities.HFlailsActivity"
-            android:label="@string/title_activity_hflails" />
+            android:label="Hardmode Flails" />
         <activity
             android:name=".activities.descriptions.HFlailsDescriptionActivity"
-            android:label="@string/title_activity_hflails_description" />
+            android:label="Flails Description" />
         <activity
             android:name=".activities.both.BothFlailsActivity"
-            android:label="@string/title_activity_both_flails" />
+            android:label="Flails" />
         <activity
             android:name=".activities.OthersActivity"
-            android:label="@string/title_activity_others" />
+            android:label="Others" />
         <activity
             android:name=".activities.descriptions.OthersDescriptionActivity"
-            android:label="@string/title_activity_others_description"></activity>
+            android:label="Other Description"></activity>
     </application>
 
 </manifest>
