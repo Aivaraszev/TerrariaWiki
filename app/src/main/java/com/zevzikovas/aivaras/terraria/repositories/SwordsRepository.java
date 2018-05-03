@@ -59,7 +59,6 @@ public class SwordsRepository {
     public void drop(SQLiteDatabase db) {
         db.execSQL("DROP TABLE IF EXISTS " + TABLE_NAME);
     }
-    //TODO: make "crafting"
     public void fill(SQLiteDatabase db) {
         prepareSwords(db, "Copper Shortsword", R.drawable.item_copper_shortsword, 5, "4 (Weak)", "4%", "12 (Very Fast)", "None", "None", "None", "None", "White", "None", "70 Copper");
         prepareSwords(db, "Tin Shortsword", R.drawable.item_tin_shortsword, 7, "4 (Weak)", "4%", "11 (Very Fast)", "None", "None", "None", "None", "White", "None", "1 Silver 5 Copper");

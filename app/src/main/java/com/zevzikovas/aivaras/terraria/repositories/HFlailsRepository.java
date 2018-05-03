@@ -59,7 +59,6 @@ public class HFlailsRepository {
     public void drop(SQLiteDatabase db) {
         db.execSQL("DROP TABLE IF EXISTS " + TABLE_NAME);
     }
-    //TODO: make "crafting"
     public void fill(SQLiteDatabase db) {
         prepareHFlails(db, "Anchor", R.drawable.item_anchor, 30, "5 (Average)", "4%", "29 (Average)", "20", "None", "None", "None", "Orange", "None", "1 Gold");
         prepareHFlails(db, "KO Cannon", R.drawable.item_ko_cannon, 40, "6.5 (Very Strong)", "4%", "27 (Average)", "15", "Shoots a boxing glove", "None","None", "Light Red", "None", "2 Gold 70 Silver");

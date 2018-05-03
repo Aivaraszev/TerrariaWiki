@@ -57,7 +57,6 @@ public class PickaxesRepository {
     public void drop(SQLiteDatabase db) {
         db.execSQL("DROP TABLE IF EXISTS " + TABLE_NAME);
     }
-
     public void fill(SQLiteDatabase db) {
 
         preparePickaxes(db, "Copper Pickaxe", R.drawable.item_copper_pickaxe, 4, "2 (Very Weak)","-1 range", "4%", "22 (Fast)",15, "White", "5 Silver" ,"1 Silver", "35%", "None");

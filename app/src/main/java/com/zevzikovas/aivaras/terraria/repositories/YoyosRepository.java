@@ -57,7 +57,6 @@ public class YoyosRepository {
     public void drop(SQLiteDatabase db) {
         db.execSQL("DROP TABLE IF EXISTS " + TABLE_NAME);
     }
-
     public void fill(SQLiteDatabase db) {
         prepareYoyos(db, "Wooden Yoyo", R.drawable.item_wooden_yoyo, 9, "2.5 (Very Weak)", "4%", "24 (Fast)", "16",  "None", "None", "White", "None", "1 Silver");
         prepareYoyos(db, "Rally", R.drawable.item_rally, 14, "3.5 (Weak)", "4%", "24 (Fast)", "16",  "None","None", "Blue", "None", "50 Silver");

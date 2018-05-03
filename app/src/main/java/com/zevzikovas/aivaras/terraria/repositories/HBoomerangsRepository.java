@@ -59,7 +59,6 @@ public class HBoomerangsRepository {
     public void drop(SQLiteDatabase db) {
         db.execSQL("DROP TABLE IF EXISTS " + TABLE_NAME);
     }
-    //TODO: make "crafting"
     public void fill(SQLiteDatabase db) {
         prepareHboomerangs(db, "Flying Knife", R.drawable.item_flying_knife, 40, "4.5 (Average)", "4%", "14 (Very Fast)", "17", "Throws a controllable flying knife", "None", "None", "Light Purple", "None", "8 Gold");
         prepareHboomerangs(db, "Light disc", R.drawable.item_light_disc, 57, "8 (Very Strong)", "4%", "14 (Very Fast)", "13", "Stacks up to 5 ", "None","None", "Pink", "None", "10 Gold");

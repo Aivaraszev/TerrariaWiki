@@ -60,7 +60,6 @@ public class SpearsRepository {
     public void drop(SQLiteDatabase db) {
         db.execSQL("DROP TABLE IF EXISTS " + TABLE_NAME);
     }
-    //TODO: make "crafting"
     public void fill(SQLiteDatabase db) {
         prepareSpears(db, "Spear", R.drawable.item_spear, 8, "6.5 (Strong)", "4%", "30 (Average)", "3.7", "None", "None", "None", "White", "None", "2 Silver");
         prepareSpears(db, "Triden", R.drawable.item_trident, 11, "5 (Average)", "4%", "30 (Average)", "4", "None", "None", "None", "Blue", "None", "20 Silver");

@@ -59,7 +59,6 @@ public class OthersRepository {
     public void drop(SQLiteDatabase db) {
         db.execSQL("DROP TABLE IF EXISTS " + TABLE_NAME);
     }
-    //TODO: make "crafting"
     public void fill(SQLiteDatabase db) {
         prepareOthers(db, "Shadowflame Knife", R.drawable.item_shadowflame_knife, 38, "5.75 (Average)", "7%", "11 (Very Fast)", "13", "Inflicts Shadowflame on hit", "None", "Shadowflame (Losing life)", "Pink", "None", "2 Gold");
         prepareOthers(db, "Sleepy Octopod", R.drawable.item_sleepy_octopod, 40, "7 (Strong)", "4%", "30 (Average)", "24", "Charges power as it is swung to smash enemies", "None","None", "Pink", "None", "1 Gold");

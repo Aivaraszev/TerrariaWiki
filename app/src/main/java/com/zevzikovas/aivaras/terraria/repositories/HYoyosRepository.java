@@ -57,7 +57,6 @@ public class HYoyosRepository {
     public void drop(SQLiteDatabase db) {
         db.execSQL("DROP TABLE IF EXISTS " + TABLE_NAME);
     }
-
     public void fill(SQLiteDatabase db) {
         prepareYoyos(db, "Format:C", R.drawable.item_format_c, 29, "3.25 (Weak)", "4%", "24 (Fast)", "16",  "None", "None", "Orange", "20 Gold", "4 Gold");
         prepareYoyos(db, "Gradient", R.drawable.item_gradient, 34, "3.8 (Weak)", "4%", "24 (Fast)", "16",  "None","None", "Orange", "20 Gold", "4 Gold");
