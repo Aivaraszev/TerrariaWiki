@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/lunar_event_pink_smaller"
     tools:context=".activities.both.BothFlailsActivity">
 
     <Button
@@ -12,6 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="FlailsList"
+        android:textColor="#FFFFFF"
         android:text="Pre-hardmode flails" />
 
     <Button
@@ -19,5 +21,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="HFlailsList"
+        android:textColor="#FFFFFF"
         android:text="Hardmode flails" />
 </LinearLayout>

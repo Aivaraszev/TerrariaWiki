@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/lunar_event_pink_smaller"
     tools:context=".activities.both.BothYoyosActivity">
 
     <Button
@@ -12,6 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="YoyosList"
+        android:textColor="#FFFFFF"
         android:text="Pre-hardmode yoyos" />
 
     <Button
@@ -19,5 +21,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="HYoyosList"
+        android:textColor="#FFFFFF"
         android:text="Hardmode yoyos" />
 </LinearLayout>
