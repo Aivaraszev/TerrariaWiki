@@ -21,6 +21,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="GameInfo"
+        android:textColor="#FFFFFF"
         android:text="The Game" />
 
     <Button
@@ -28,6 +29,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="ItemsList"
+        android:textColor="#FFFFFF"
         android:text="Items" />
 
     <!--<Button-->
