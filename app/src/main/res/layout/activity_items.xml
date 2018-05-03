@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/mountain_background_terraria_smaller"
     tools:context="com.zevzikovas.aivaras.terraria.activities.ItemsActivity">
 
     <ImageView
@@ -18,6 +19,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="WeaponsList"
+        android:textColor="#FFFFFF"
         android:text="Weapons" />
 
     <Button
@@ -25,6 +27,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="PickaxesList"
+        android:textColor="#FFFFFF"
         android:text="Pickaxes" />
 
 </LinearLayout>
