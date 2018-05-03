@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/lunar_event_pink_smaller"
     tools:context=".activities.WeaponsActivity">
 
     <Button
@@ -12,6 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="BothSwordsActivity"
+        android:textColor="#FFFFFF"
         android:text="Swords" />
 
     <Button
@@ -19,6 +21,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="BothYoyosActivity"
+        android:textColor="#FFFFFF"
         android:text="Yoyos" />
 
     <Button
@@ -26,6 +29,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="BothSpearsActivity"
+        android:textColor="#FFFFFF"
         android:text="Spears" />
 
     <Button
@@ -33,11 +37,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="BothBoomerangsActivity"
+        android:textColor="#FFFFFF"
         android:text="Boomerangs" />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="OthersActivity"
+        android:textColor="#FFFFFF"
         android:text="Other" />
 </LinearLayout>
