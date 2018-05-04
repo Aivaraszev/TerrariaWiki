@@ -32,25 +32,4 @@
         android:textColor="#FFFFFF"
         android:text="Items" />
 
-    <!--<Button-->
-        <!--android:id="@+id/Mechanics"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:onClick="MechanicsList"-->
-        <!--android:text="Mechanics" />-->
-
-    <!--<Button-->
-        <!--android:id="@+id/Biomes"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:onClick="BiomesList"-->
-        <!--android:text="Biomes" />-->
-
-    <!--<Button-->
-        <!--android:id="@+id/Characters"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:onClick="CharactersList"-->
-        <!--android:text="Characters" />-->
-
 </LinearLayout>
