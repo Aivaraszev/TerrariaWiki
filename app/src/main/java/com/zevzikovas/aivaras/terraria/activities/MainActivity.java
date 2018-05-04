@@ -6,9 +6,6 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.zevzikovas.aivaras.terraria.R;
-import com.zevzikovas.aivaras.terraria.activities.Unused.BiomesActivity;
-import com.zevzikovas.aivaras.terraria.activities.Unused.CharactersActivity;
-import com.zevzikovas.aivaras.terraria.activities.Unused.MechanicsActivity;
 
 public class MainActivity extends Activity {
 
@@ -24,18 +21,6 @@ public class MainActivity extends Activity {
     }
     public void ItemsList(View view) {
         Intent intent = new Intent(getApplicationContext(), ItemsActivity.class);
-        startActivity(intent);
-    }
-    public void MechanicsList (View view) {
-        Intent intent = new Intent(getApplicationContext(), MechanicsActivity.class);
-        startActivity(intent);
-    }
-    public void BiomesList (View view) {
-        Intent intent = new Intent(getApplicationContext(), BiomesActivity.class);
-        startActivity(intent);
-    }
-    public void CharactersList (View view) {
-        Intent intent = new Intent(getApplicationContext(), CharactersActivity.class);
         startActivity(intent);
     }
 }
