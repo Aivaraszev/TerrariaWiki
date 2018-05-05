@@ -38,5 +38,3 @@ public class BoomerangsListAdapter extends ArrayAdapter<Boomerangs> {
     }
 
 }
-
-
