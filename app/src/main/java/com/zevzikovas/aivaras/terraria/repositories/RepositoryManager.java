@@ -21,6 +21,7 @@ public class RepositoryManager extends SQLiteOpenHelper {
     public FlailsRepository FlailsRepository = new FlailsRepository(this);
     public HFlailsRepository HFlailsRepository = new HFlailsRepository(this);
     public OthersRepository OthersRepository = new OthersRepository(this);
+    public BowsRepository BowsRepository = new BowsRepository(this);
 
     public RepositoryManager(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
