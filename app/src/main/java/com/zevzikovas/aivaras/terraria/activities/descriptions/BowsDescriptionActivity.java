@@ -33,16 +33,16 @@ public class BowsDescriptionActivity extends Activity {
         TextView bowBuy_price = findViewById(R.id.bowBuy_price);
         TextView bowSell_price = findViewById(R.id.bowSell_price);
 
-        bowDamage.setText(Integer.toString(Bow.damage));
-        bowKnockback.setText((Bow.knockback));
-        bowCritical_chance.setText((Bow.critical_chance));
-        bowUse_time.setText((Bow.use_time));
-        bowVelocity.setText((Bow.velocity));
-        bowTooltip.setText((Bow.tooltip));
-        bowGrants_buff.setText((Bow.grants_buff));
-        bowInflicts_debuff.setText((Bow.inflicts_debuff));
-        bowRarity.setText((Bow.rarity));
-        bowBuy_price.setText((Bow.buy_price));
-        bowSell_price.setText((Bow.sell_price));
+        bowDamage.setText(Integer.toString(bow.damage));
+        bowKnockback.setText((bow.knockback));
+        bowCritical_chance.setText((bow.critical_chance));
+        bowUse_time.setText((bow.use_time));
+        bowVelocity.setText((bow.velocity));
+        bowTooltip.setText((bow.tooltip));
+        bowGrants_buff.setText((bow.grants_buff));
+        bowInflicts_debuff.setText((bow.inflicts_debuff));
+        bowRarity.setText((bow.rarity));
+        bowBuy_price.setText((bow.buy_price));
+        bowSell_price.setText((bow.sell_price));
     }
 }
