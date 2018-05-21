@@ -62,6 +62,7 @@ public class BowsRepository {
     public void fill(SQLiteDatabase db) {
         prepareBows(db, "Wooden Bow", R.drawable.item_wooden_bow, 4, "0 (No Knockback)", "4%", "29 (Average)", "6.1", "None", "None", "None", "White", "None", "20 Copper");
 
+
     }
 
     private void prepareBows(SQLiteDatabase db, String name, int picture, int damage, String knockback, String critical_chance, String use_time, String velocity, String tooltip, String grants_buff, String inflicts_debuff, String rarity, String buy_price, String sell_price) {

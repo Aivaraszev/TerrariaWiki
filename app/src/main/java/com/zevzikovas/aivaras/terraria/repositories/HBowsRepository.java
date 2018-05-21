@@ -143,7 +143,7 @@ public class HBowsRepository {
         return hbow;
     }
 
-    public HBows getHBow(int id) {
+    public HBows getHBows(int id) {
         SQLiteDatabase db = dbHelper.getReadableDatabase();
         String selectQuery = "SELECT * FROM " + TABLE_NAME + " WHERE ID = " + id;
         Cursor cursor = db.rawQuery(selectQuery, null);

@@ -104,7 +104,20 @@
             android:label="Others" />
         <activity
             android:name=".activities.descriptions.OthersDescriptionActivity"
-            android:label="Other Description"></activity>
+            android:label="Other Description"/>
+        <activity
+            android:name=".activities.BowsActivity"
+            android:label="Pre-hardmode Bows"/>
+
+        <activity
+            android:name=".activities.HBowsActivity"
+            android:label="Hardmode Bows"/>
+
+        <activity
+            android:name=".activities.both.BothBowsActivity"
+            android:label="Bows">
+
+        </activity>
     </application>
 
 </manifest>

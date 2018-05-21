@@ -22,7 +22,7 @@ public class RepositoryManager extends SQLiteOpenHelper {
     public HFlailsRepository HFlailsRepository = new HFlailsRepository(this);
     public OthersRepository OthersRepository = new OthersRepository(this);
     public BowsRepository BowsRepository = new BowsRepository(this);
-    public BowsRepository HBowsRepository = new BowsRepository(this);
+    public HBowsRepository HBowsRepository = new HBowsRepository(this);
 
     public RepositoryManager(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
@@ -42,6 +42,8 @@ public class RepositoryManager extends SQLiteOpenHelper {
         FlailsRepository.create(db);
         HFlailsRepository.create(db);
         OthersRepository.create(db);
+        BowsRepository.create(db);
+        HBowsRepository.create(db);
 
         swordsRepository.fill(db);
         hSwordsRepository.fill(db);
@@ -71,6 +73,8 @@ public class RepositoryManager extends SQLiteOpenHelper {
         FlailsRepository.drop(db);
         HFlailsRepository.drop(db);
         OthersRepository.drop(db);
+        BowsRepository.drop(db);
+        HBowsRepository.drop(db);
 
         onCreate(db);
     }
